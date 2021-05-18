@@ -1,0 +1,25 @@
+{
+  "@id": "metadata-metadata.json",
+  "@context": { "http://www.w3.org/ns/csvw": { "@language": "en" } },
+  "columns": [{
+    "name": "key",
+    "titles": [ "key" ],
+    "dc:title": "Key",
+    "schema:description": "A metadata key name.",
+    "schema:dateCreated": "2021-05-18",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "value",
+    "titles": [ "value" ],
+    "dc:title": "Value",
+    "schema:description": "The metadata value.",
+    "schema:dateCreated": "2021-05-18",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  }]
+}

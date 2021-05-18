@@ -1,0 +1,105 @@
+{
+  "@id": "organisation-metadata.json",
+  "@context": { "http://www.w3.org/ns/csvw": { "@language": "en" } },
+  "columns": [{
+    "name": "organisation_path",
+    "titles": [ "organisation_path" ],
+    "dc:title": "Organisation Path",
+    "schema:description": "A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client.",
+    "schema:disambiguatingDescription": "type/organisation_path.rst",
+    "schema:dateCreated": "2021-05-18",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "instrument_key",
+    "titles": [ "instrument_key" ],
+    "dc:title": "Instrument Key",
+    "schema:description": "A sequence of characters which uniquely identifies the survey instrument to the Primary Health Network. Assigned by the Primary Health Network.",
+    "schema:disambiguatingDescription": "type/key.rst",
+    "schema:dateCreated": "2021-05-18",
+    "datatype": {
+      "base": "string",
+      "minLength": 2,
+      "maxLength": 50
+    },
+    "required": true
+  },{
+    "name": "survey_key",
+    "titles": [ "Survey_key" ],
+    "dc:title": "Survey Key",
+    "schema:description": "A sequence of characters which uniquely identifies the survey to the Primary Health Network. Assigned by the Primary Health Network.",
+    "schema:disambiguatingDescription": "type/key.rst",
+    "schema:dateCreated": "2021-05-18",
+    "datatype": {
+      "base": "string",
+      "minLength": 2,
+      "maxLength": 50
+    },
+    "required": true
+  },{
+    "name": "yes_phn_item1",
+    "titles": [ "yes_phn_item1" ],
+    "dc:title": "YES - PHN - Question 1",
+    "schema:description": "You felt welcome using this service",
+    "schema:disambiguatingDescription": "table/instrument/yes_phn/Q1.rst",
+    "schema:dateCreated": "2021-05-18",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  }, {
+
+... TODO add the rest of the items
+
+
+  }, {
+    "name": "yes_phn_experience_scale",
+    "titles": [ "yes_phn_experience_scale" ],
+    "dc:title" : "YES - PHN - Experience Scale",
+    "schema:disambiguatingDescription": "table/instrument/yes_phn/yes-phn-experience-scale.rst",
+    "schema:dateCreated": "2021-05-18",
+    "null": "99",
+    "datatype": {
+      "base": "integer",
+      "minimum": 0,
+      "maximum": 60
+    },
+    "required": true
+  }, {
+    "name": "yes_phn_outcome_scale",
+    "titles": [ "yes_phn_outcome_scale" ],
+    "dc:title" : "YES - PHN - Outcome Scale",
+    "schema:disambiguatingDescription": "table/instrument/yes_phn/yes-phn-outcome-scale.rst",
+    "schema:dateCreated": "2021-05-18",
+    "null": "99",
+    "datatype": {
+      "base": "integer",
+      "minimum": 0,
+      "maximum": 15
+    },
+    "required": true
+  }, {
+    "name": "yes_phn_tags",
+    "titles": [ "yes_phn_tags" ],
+    "dc:title" : "YES - PHN - Tags",
+    "schema:description": "List of tags for the instrument.",
+    "schema:disambiguatingDescription": "type/tags.rst",
+    "schema:dateCreated": "2021-05-18",
+    "datatype": {
+      "base": "string"
+    }
+   }],
+   "primaryKey": [ "organisation_path", "instruent_key" ],
+   "foreignKeys": [{
+     "columnReference": [ "organisation_path", "survey_key" ],
+     "reference": {
+       "resource": "data/surveys.csv",
+       "columnReference": [ "organisation_path", "survey_key" ]
+     }
+
+... TODO add the item foreign key references
+
+   }]
+}

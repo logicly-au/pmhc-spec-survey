@@ -1,0 +1,28 @@
+{
+  "@id": "table/organisation/type.json",
+  "@context": { "http://www.w3.org/ns/csvw": { "@language": "en" } },
+  "columns": [{
+    "name": "id",
+    "titles": [ "id" ],
+    "schema:dateCreated": "2021-05-18",
+    "datatype": "string",
+    "required": true
+  },{
+    "name": "description",
+    "titles": [ "description" ],
+    "schema:dateCreated": "2021-05-18",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "code",
+    "titles": [ "code" ],
+    "schema:dateCreated": "2021-05-18",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  }],
+  "primaryKey": "id"
+}

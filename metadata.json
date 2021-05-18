@@ -1,0 +1,45 @@
+{
+  "@type": "TableGroup",
+  "@context": { "http://www.w3.org/ns/csvw": { "@language": "en" } },
+  "dc:title": "PMHC MDS YES PHN Data Elements",
+  "dc:publisher": {
+    "schema:name": "Strategic Data Pty Ltd",
+    "schema:url": { "@id": "http://www.strategicdata.com.au" }
+  },
+  "schema:specification": {
+    "schema:name": "yes-phn",
+    "schema:version": "1.0"
+  },
+  "dc:modified": { "@value": "2021-05-18", "@type": "xsd:date"},
+  "tables": [{
+    "dc:title": "Metadata",
+    "url": "data/metadata.csv",
+    "schema:name": "metadata",
+    "schema:description": "table/metadata.rst",
+    "tableSchema": "table/metadata-metadata.json"
+  }, {
+    "dc:title": "Provider Organisation",
+    "url": "data/organisations.csv",
+    "schema:name": "organisation",
+    "schema:description": "table/organisations.rst",
+    "tableSchema": "table/organisation-metadata.json"
+  }, {
+    "dc:title": "Survey",
+    "url": "data/surveys.csv",
+    "schema:name": "survey",
+    "schema:description": "table/survey.rst",
+    "tableSchema": "table/survey-metadata.json"
+  }, {
+    "dc:title": "YES-PHN instrument",
+    "url": "data/yes-phn.csv",
+    "schema:name": "yes-phn-instrument",
+    "schema:description": "table/instrument/yes-phn-instrument.rst",
+    "tableSchema": "table/instrument/yes-phn-metadata.json"
+  }, {
+    "url": "table/organisation/type.csv",
+    "tableSchema": "table/organisation/type.json"
+  }, {
+    "url": "table/organisation/state.csv",
+    "tableSchema": "table/organisation/state.json"
+  }]
+}

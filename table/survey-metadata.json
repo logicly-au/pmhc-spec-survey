@@ -1,0 +1,61 @@
+{
+  "@id": "organisation-metadata.json",
+  "@context": { "http://www.w3.org/ns/csvw": { "@language": "en" } },
+  "columns": [{
+    "name": "organisation_path",
+    "titles": [ "organisation_path" ],
+    "dc:title": "Organisation Path",
+    "schema:description": "A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client.",
+    "schema:disambiguatingDescription": "type/organisation_path.rst",
+    "schema:dateCreated": "2021-05-18",
+    "datatype": {
+      "base": "string"
+    },
+    "required": true
+  },{
+    "name": "survey_key",
+    "titles": [ "survey_key" ],
+    "dc:title": "Survey Key",
+    "schema:description": "This is a number or code assigned to each survey activity. The Survey Key is unique and stable for each survey at the level of the organisation.",
+    "schema:disambiguatingDescription": "table/survey/key.rst",
+    "schema:dateCreated": "2021-05-18",
+    "datatype": {
+      "base": "string",
+      "minLength": 2,
+      "maxLength": 50
+    },
+    "required": true
+  },{
+    "name": "collection_date",
+    "titles": [ "collection_date" ],
+    "dc:title": "Collection Date",
+    "schema:description": "The collection date the survey instruments.",
+    "schema:disambiguatingDescription": "type/collection-date.rst",
+    "schema:dateCreated": "2021-05-18",
+    "datatype": {
+      "base": "date",
+      "format": "dMMyyyy",
+      "minimum": "2020-01-01"
+    },
+    "schema:dateMissingUnknown": "9999-09-09",
+    "required": true
+  },{
+    "name": "survey_tags",
+    "titles": [ "survey_tags" ],
+    "dc:title" : "Survey Tags",
+    "schema:description": "List of tags for the survey.",
+    "schema:disambiguatingDescription": "type/tags.rst",
+    "schema:dateCreated": "2021-05-18",
+    "datatype": {
+      "base": "string"
+    }
+  }],
+  "primaryKey": [ "organisation_path", "survey_key" ],
+  "foreignKeys": [{
+    "columnReference": [ "organisation_path" ],
+    "reference": {
+      "resource": "data/organisations.csv",
+      "columnReference": [ "organisation_path" ]
+    }
+  }]
+}
