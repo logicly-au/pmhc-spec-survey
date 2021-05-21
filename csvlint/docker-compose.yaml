@@ -1,0 +1,11 @@
+version: "3.7"
+
+services:
+  csvlint:
+    build:
+      context: ../
+      dockerfile: ./csvlint/Dockerfile
+    image: docker.sdlocal.net/pmhc-spec/csvlint:master
+    volumes:
+      - ../data:/spec/data
+
