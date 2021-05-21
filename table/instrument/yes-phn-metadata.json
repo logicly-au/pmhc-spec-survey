@@ -27,7 +27,7 @@
     "required": true
   },{
     "name": "survey_key",
-    "titles": [ "Survey_key" ],
+    "titles": [ "survey_key" ],
     "dc:title": "Survey Key",
     "schema:description": "A sequence of characters which uniquely identifies the survey to the Primary Health Network. Assigned by the Primary Health Network.",
     "schema:disambiguatingDescription": "type/key.rst",
@@ -393,7 +393,7 @@
       "minimum": 0,
       "maximum": 60
     },
-    "required": true
+    "required": false
   }, {
     "name": "yes_phn_outcome_scale",
     "titles": [ "yes_phn_outcome_scale" ],
@@ -406,7 +406,7 @@
       "minimum": 0,
       "maximum": 15
     },
-    "required": true
+    "required": false
   }, {
     "name": "yes_phn_tags",
     "titles": [ "yes_phn_tags" ],

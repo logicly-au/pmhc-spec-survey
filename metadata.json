@@ -41,5 +41,41 @@
   }, {
     "url": "table/organisation/state.csv",
     "tableSchema": "table/organisation/state.json"
+  }, {
+    "url": "table/instrument/yes_phn/how_often.csv",
+    "tableSchema": "type/lookup.json"
+  }, {
+    "url": "table/instrument/yes_phn/how_often_na.csv",
+    "tableSchema": "type/lookup.json"
+  }, {
+    "url": "table/instrument/yes_phn/how_well.csv",
+    "tableSchema": "type/lookup.json"
+  }, {
+    "url": "table/instrument/yes_phn/how_well_na.csv",
+    "tableSchema": "type/lookup.json"
+  }, {
+    "url": "table/instrument/yes_phn/gender.csv",
+    "tableSchema": "type/lookup.json"
+  }, {
+    "url": "table/instrument/yes_phn/language_at_home.csv",
+    "tableSchema": "type/lookup.json"
+  }, {
+    "url": "table/instrument/yes_phn/atsi.csv",
+    "tableSchema": "type/lookup.json"
+  }, {
+    "url": "table/instrument/yes_phn/age.csv",
+    "tableSchema": "type/lookup.json"
+  }, {
+    "url": "table/instrument/yes_phn/length_of_service.csv",
+    "tableSchema": "type/lookup.json"
+  }, {
+    "url": "table/instrument/yes_phn/referred_by.csv",
+    "tableSchema": "type/lookup.json"
+  }, {
+    "url": "table/instrument/yes_phn/involvement_choice.csv",
+    "tableSchema": "type/lookup.json"
+  }, {
+    "url": "table/instrument/yes_phn/survey_help.csv",
+    "tableSchema": "type/lookup.json"
   }]
 }
