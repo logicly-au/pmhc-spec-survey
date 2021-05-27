@@ -428,145 +428,145 @@
   }, {
     "columnReference": "yes_phn_item1",
     "reference": {
-      "resource": "table/instrument/yes_phn/how_often.csv",
+      "resource": "table/instrument/yes_phn/how-often.csv",
       "columnReference": "id"
     }
   }, {
     "columnReference": "yes_phn_item2",
     "reference": {
-      "resource": "table/instrument/yes_phn/how_often.csv",
+      "resource": "table/instrument/yes_phn/how-often.csv",
       "columnReference": "id"
     }
   }, {
     "columnReference": "yes_phn_item3",
     "reference": {
-      "resource": "table/instrument/yes_phn/how_often.csv",
+      "resource": "table/instrument/yes_phn/how-often.csv",
       "columnReference": "id"
     }
   }, {
     "columnReference": "yes_phn_item4",
     "reference": {
-      "resource": "table/instrument/yes_phn/how_often_na.csv",
+      "resource": "table/instrument/yes_phn/how-often-na.csv",
       "columnReference": "id"
     }
   }, {
     "columnReference": "yes_phn_item5",
     "reference": {
-      "resource": "table/instrument/yes_phn/how_often.csv",
+      "resource": "table/instrument/yes_phn/how-often.csv",
       "columnReference": "id"
     }
   }, {
     "columnReference": "yes_phn_item6",
     "reference": {
-      "resource": "table/instrument/yes_phn/how_often.csv",
+      "resource": "table/instrument/yes_phn/how-often.csv",
       "columnReference": "id"
     }
   }, {
     "columnReference": "yes_phn_item7",
     "reference": {
-      "resource": "table/instrument/yes_phn/how_often.csv",
+      "resource": "table/instrument/yes_phn/how-often.csv",
       "columnReference": "id"
     }
   }, {
     "columnReference": "yes_phn_item8",
     "reference": {
-      "resource": "table/instrument/yes_phn/how_often.csv",
+      "resource": "table/instrument/yes_phn/how-often.csv",
       "columnReference": "id"
     }
   }, {
     "columnReference": "yes_phn_item9",
     "reference": {
-      "resource": "table/instrument/yes_phn/how_often.csv",
+      "resource": "table/instrument/yes_phn/how-often.csv",
       "columnReference": "id"
     }
   }, {
     "columnReference": "yes_phn_item10",
     "reference": {
-      "resource": "table/instrument/yes_phn/how_well_na.csv",
+      "resource": "table/instrument/yes_phn/how-well-na.csv",
       "columnReference": "id"
     }
   }, {
     "columnReference": "yes_phn_item11",
     "reference": {
-      "resource": "table/instrument/yes_phn/how_well.csv",
+      "resource": "table/instrument/yes_phn/how-well.csv",
       "columnReference": "id"
     }
   }, {
     "columnReference": "yes_phn_item12",
     "reference": {
-      "resource": "table/instrument/yes_phn/how_well_na.csv",
+      "resource": "table/instrument/yes_phn/how-well-na.csv",
       "columnReference": "id"
     }
   }, {
     "columnReference": "yes_phn_item13",
     "reference": {
-      "resource": "table/instrument/yes_phn/how_well.csv",
+      "resource": "table/instrument/yes_phn/how-well.csv",
       "columnReference": "id"
     }
   }, {
     "columnReference": "yes_phn_item14",
     "reference": {
-      "resource": "table/instrument/yes_phn/how_well.csv",
+      "resource": "table/instrument/yes_phn/how-well.csv",
       "columnReference": "id"
     }
   }, {
     "columnReference": "yes_phn_item15",
     "reference": {
-      "resource": "table/instrument/yes_phn/how_well.csv",
+      "resource": "table/instrument/yes_phn/how-well.csv",
       "columnReference": "id"
     }
   }, {
     "columnReference": "yes_phn_item16",
     "reference": {
-      "resource": "table/instrument/yes_phn/how_well.csv",
+      "resource": "table/instrument/yes_phn/how-well.csv",
       "columnReference": "id"
     }
   }, {
     "columnReference": "yes_phn_item19",
     "reference": {
-      "resource": "table/instrument/yes_phn/gender.csv",
+      "resource": "table/instrument/yes_phn/gender-identity.csv",
       "columnReference": "id"
     }
   }, {
     "columnReference": "yes_phn_item20",
     "reference": {
-      "resource": "table/instrument/yes_phn/language_at_home.csv",
+      "resource": "table/instrument/yes_phn/main-language.csv",
       "columnReference": "id"
     }
   }, {
     "columnReference": "yes_phn_item21",
     "reference": {
-      "resource": "table/instrument/yes_phn/atsi.csv",
+      "resource": "table/instrument/yes_phn/atsi-status.csv",
       "columnReference": "id"
     }
   }, {
     "columnReference": "yes_phn_item22",
     "reference": {
-      "resource": "table/instrument/yes_phn/age.csv",
+      "resource": "table/instrument/yes_phn/age-group.csv",
       "columnReference": "id"
     }
   }, {
     "columnReference": "yes_phn_item23",
     "reference": {
-      "resource": "table/instrument/yes_phn/length_of_service.csv",
+      "resource": "table/instrument/yes_phn/service-length.csv",
       "columnReference": "id"
     }
   }, {
     "columnReference": "yes_phn_item24",
     "reference": {
-      "resource": "table/instrument/yes_phn/referred_by.csv",
+      "resource": "table/instrument/yes_phn/referral.csv",
       "columnReference": "id"
     }
   }, {
     "columnReference": "yes_phn_item25",
     "reference": {
-      "resource": "table/instrument/yes_phn/involvement_choice.csv",
+      "resource": "table/instrument/yes_phn/involvement.csv",
       "columnReference": "id"
     }
   }, {
     "columnReference": "yes_phn_item26",
     "reference": {
-      "resource": "table/instrument/yes_phn/survey_help.csv",
+      "resource": "table/instrument/yes_phn/completion-help.csv",
       "columnReference": "id"
     }
   }]

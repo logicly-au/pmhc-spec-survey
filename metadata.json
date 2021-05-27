@@ -42,40 +42,40 @@
     "url": "table/organisation/state.csv",
     "tableSchema": "table/organisation/state.json"
   }, {
-    "url": "table/instrument/yes_phn/how_often.csv",
+    "url": "table/instrument/yes_phn/how-often.csv",
     "tableSchema": "type/lookup.json"
   }, {
-    "url": "table/instrument/yes_phn/how_often_na.csv",
+    "url": "table/instrument/yes_phn/how-often-na.csv",
     "tableSchema": "type/lookup.json"
   }, {
-    "url": "table/instrument/yes_phn/how_well.csv",
+    "url": "table/instrument/yes_phn/how-well.csv",
     "tableSchema": "type/lookup.json"
   }, {
-    "url": "table/instrument/yes_phn/how_well_na.csv",
+    "url": "table/instrument/yes_phn/how-well-na.csv",
     "tableSchema": "type/lookup.json"
   }, {
-    "url": "table/instrument/yes_phn/gender.csv",
+    "url": "table/instrument/yes_phn/gender-identity.csv",
     "tableSchema": "type/lookup.json"
   }, {
-    "url": "table/instrument/yes_phn/language_at_home.csv",
+    "url": "table/instrument/yes_phn/main-language.csv",
     "tableSchema": "type/lookup.json"
   }, {
-    "url": "table/instrument/yes_phn/atsi.csv",
+    "url": "table/instrument/yes_phn/atsi-status.csv",
     "tableSchema": "type/lookup.json"
   }, {
-    "url": "table/instrument/yes_phn/age.csv",
+    "url": "table/instrument/yes_phn/age-group.csv",
     "tableSchema": "type/lookup.json"
   }, {
-    "url": "table/instrument/yes_phn/length_of_service.csv",
+    "url": "table/instrument/yes_phn/service-length.csv",
     "tableSchema": "type/lookup.json"
   }, {
-    "url": "table/instrument/yes_phn/referred_by.csv",
+    "url": "table/instrument/yes_phn/referral.csv",
     "tableSchema": "type/lookup.json"
   }, {
-    "url": "table/instrument/yes_phn/involvement_choice.csv",
+    "url": "table/instrument/yes_phn/involvement.csv",
     "tableSchema": "type/lookup.json"
   }, {
-    "url": "table/instrument/yes_phn/survey_help.csv",
+    "url": "table/instrument/yes_phn/completion-help.csv",
     "tableSchema": "type/lookup.json"
   }]
 }
