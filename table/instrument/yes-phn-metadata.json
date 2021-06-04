@@ -45,7 +45,6 @@
     "schema:description": "You felt welcome using this service",
     "schema:disambiguatingDescription": "table/instrument/yes_phn/Q1.rst",
     "schema:dateCreated": "2021-05-18",
-    "null": "99",
     "datatype": {
       "base": "string"
     },
@@ -57,7 +56,6 @@
     "schema:description": "You felt safe using this service",
     "schema:disambiguatingDescription": "table/instrument/yes_phn/Q2.rst",
     "schema:dateCreated": "2021-05-18",
-    "null": "99",
     "datatype": {
       "base": "string"
     },
@@ -69,7 +67,6 @@
     "schema:description": "You had access to this service when you needed",
     "schema:disambiguatingDescription": "table/instrument/yes_phn/Q3.rst",
     "schema:dateCreated": "2021-05-18",
-    "null": "99",
     "datatype": {
       "base": "string"
     },
@@ -81,7 +78,6 @@
     "schema:description": "You had opportunities for your family and friends to be involved in your support or care if you wanted",
     "schema:disambiguatingDescription": "table/instrument/yes_phn/Q4.rst",
     "schema:dateCreated": "2021-05-18",
-    "null": "99",
     "datatype": {
       "base": "string"
     },
@@ -93,7 +89,6 @@
     "schema:description": "Staff were able to provide information or advice to help you manage your physical health if you wanted",
     "schema:disambiguatingDescription": "table/instrument/yes_phn/Q5.rst",
     "schema:dateCreated": "2021-05-18",
-    "null": "99",
     "datatype": {
       "base": "string"
     },
@@ -105,7 +100,6 @@
     "schema:description": "Your individuality and values were respected (such as your culture, faith or gender identity, etc.)",
     "schema:disambiguatingDescription": "table/instrument/yes_phn/Q6.rst",
     "schema:dateCreated": "2021-05-18",
-    "null": "99",
     "datatype": {
       "base": "string"
     },
@@ -117,7 +111,6 @@
     "schema:description": "This service listened to and followed up on feedback or complaints",
     "schema:disambiguatingDescription": "table/instrument/yes_phn/Q7.rst",
     "schema:dateCreated": "2021-05-18",
-    "null": "99",
     "datatype": {
       "base": "string"
     },
@@ -129,7 +122,6 @@
     "schema:description": "The service respected your right to make decisions",
     "schema:disambiguatingDescription": "table/instrument/yes_phn/Q8.rst",
     "schema:dateCreated": "2021-05-18",
-    "null": "99",
     "datatype": {
       "base": "string"
     },
@@ -141,7 +133,6 @@
     "schema:description": "The support or care available met your needs",
     "schema:disambiguatingDescription": "table/instrument/yes_phn/Q9.rst",
     "schema:dateCreated": "2021-05-18",
-    "null": "99",
     "datatype": {
       "base": "string"
     },
@@ -153,7 +144,6 @@
     "schema:description": "Access to a peer worker/ lived experience worker, if you wanted",
     "schema:disambiguatingDescription": "table/instrument/yes_phn/Q10.rst",
     "schema:dateCreated": "2021-05-18",
-    "null": "99",
     "datatype": {
       "base": "string"
     },
@@ -165,7 +155,6 @@
     "schema:description": "The support or care available met your needs",
     "schema:disambiguatingDescription": "table/instrument/yes_phn/Q11.rst",
     "schema:dateCreated": "2021-05-18",
-    "null": "99",
     "datatype": {
       "base": "string"
     },
@@ -177,7 +166,6 @@
     "schema:description": "Development of a plan with you that considered all of your needs (including support, coordination and follow up)",
     "schema:disambiguatingDescription": "table/instrument/yes_phn/Q12.rst",
     "schema:dateCreated": "2021-05-18",
-    "null": "99",
     "datatype": {
       "base": "string"
     },
@@ -189,7 +177,6 @@
     "schema:description": "The effect of this service on your hopefulness for the future",
     "schema:disambiguatingDescription": "table/instrument/yes_phn/Q13.rst",
     "schema:dateCreated": "2021-05-18",
-    "null": "99",
     "datatype": {
       "base": "string"
     },
@@ -201,7 +188,6 @@
     "schema:description": "The effect of this service on your skills and strategies to look after your own health and wellbeing",
     "schema:disambiguatingDescription": "table/instrument/yes_phn/Q14.rst",
     "schema:dateCreated": "2021-05-18",
-    "null": "99",
     "datatype": {
       "base": "string"
     },
@@ -213,7 +199,6 @@
     "schema:description": "The effect of this service on your ability to manage your day to day life",
     "schema:disambiguatingDescription": "table/instrument/yes_phn/Q15.rst",
     "schema:dateCreated": "2021-05-18",
-    "null": "99",
     "datatype": {
       "base": "string"
     },
@@ -225,7 +210,6 @@
     "schema:description": "Overall, how would you rate your experience with this service in the last 3 months?",
     "schema:disambiguatingDescription": "table/instrument/yes_phn/Q16.rst",
     "schema:dateCreated": "2021-05-18",
-    "null": "99",
     "datatype": {
       "base": "string"
     },
@@ -282,7 +266,6 @@
     "schema:description": "What is the main language you speak at home?",
     "schema:disambiguatingDescription": "table/instrument/yes_phn/Q20.rst",
     "schema:dateCreated": "2021-05-18",
-    "null": "99",
     "datatype": {
       "base": "string"
     },
@@ -305,7 +288,6 @@
     "schema:description": "Are you of Aboriginal or Torres Strait Island origin?",
     "schema:disambiguatingDescription": "table/instrument/yes_phn/Q21.rst",
     "schema:dateCreated": "2021-05-18",
-    "null": "99",
     "datatype": {
       "base": "string"
     },
@@ -317,7 +299,6 @@
     "schema:description": "What is your age?",
     "schema:disambiguatingDescription": "table/instrument/yes_phn/Q22.rst",
     "schema:dateCreated": "2021-05-18",
-    "null": "99",
     "datatype": {
       "base": "string"
     },
@@ -329,7 +310,6 @@
     "schema:description": "How long have you been receiving support or care from this service?",
     "schema:disambiguatingDescription": "table/instrument/yes_phn/Q23.rst",
     "schema:dateCreated": "2021-05-18",
-    "null": "99",
     "datatype": {
       "base": "string"
     },
@@ -341,7 +321,6 @@
     "schema:description": "Who referred you to this service?",
     "schema:disambiguatingDescription": "table/instrument/yes_phn/Q24.rst",
     "schema:dateCreated": "2021-05-18",
-    "null": "99",
     "datatype": {
       "base": "string"
     },
@@ -364,7 +343,6 @@
     "schema:description": "How involved were you in choosing this service?",
     "schema:disambiguatingDescription": "table/instrument/yes_phn/Q25.rst",
     "schema:dateCreated": "2021-05-18",
-    "null": "99",
     "datatype": {
       "base": "string"
     },
@@ -376,7 +354,6 @@
     "schema:description": "Did someone help you complete this survey?",
     "schema:disambiguatingDescription": "table/instrument/yes_phn/Q26.rst",
     "schema:dateCreated": "2021-05-18",
-    "null": "99",
     "datatype": {
       "base": "string"
     },
