@@ -1,0 +1,338 @@
+
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>PMHC-MDS YES PHN Specification &mdash; PMHC MDS YES PHN Specification 1.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="1. Introduction" href="introduction.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="#" class="icon icon-home" alt="Documentation Home"> PMHC MDS YES PHN Specification
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of contents</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="identifier-management.html">2. Identifier management</a></li>
+<li class="toctree-l1"><a class="reference internal" href="specifications.html">3. Specifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload-specification.html">4. Upload specification</a></li>
+<li class="toctree-l1"><a class="reference internal" href="validation-rules.html">5. Validation Rules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="change-log.html">6. YES PHN Change log</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">PMHC MDS YES PHN Specification</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>PMHC-MDS YES PHN Specification</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="pmhc-mds-yes-phn-specification">
+<h1>PMHC-MDS YES PHN Specification<a class="headerlink" href="#pmhc-mds-yes-phn-specification" title="Permalink to this headline">¶</a></h1>
+<p>Version 1.0.0</p>
+<div class="section" id="getting-help">
+<h2>Getting Help<a class="headerlink" href="#getting-help" title="Permalink to this headline">¶</a></h2>
+<p>A dedicated <strong>Help Desk</strong> is available to support Primary Health Networks and
+Provider Organisations implementing PMHC in relation to the minimum dataset
+system. All enquiries should be directed to: <a class="reference external" href="mailto:support&#37;&#52;&#48;pmhc-mds&#46;com">support<span>&#64;</span>pmhc-mds<span>&#46;</span>com</a>.</p>
+</div>
+<div class="toctree-wrapper compound" id="data-docs">
+<p class="caption"><span class="caption-text">Table of contents</span><a class="headerlink" href="#data-docs" title="Permalink to this toctree">¶</a></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="identifier-management.html">2. Identifier management</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="identifier-management.html#managing-provider-organisation-keys">2.1. Managing Provider Organisation Keys</a></li>
+<li class="toctree-l2"><a class="reference internal" href="identifier-management.html#managing-all-other-entity-keys">2.2. Managing all other entity keys</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="specifications.html">3. Specifications</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="specifications.html#record-formats">3.1. Record formats</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="specifications.html#metadata">3.1.1. Metadata</a></li>
+<li class="toctree-l3"><a class="reference internal" href="specifications.html#provider-organisation">3.1.2. Provider Organisation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="specifications.html#survey">3.1.3. Survey</a></li>
+<li class="toctree-l3"><a class="reference internal" href="specifications.html#instruments">3.1.4. Instruments</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="specifications.html#definitions">3.2. Definitions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="specifications.html#collection-date">3.2.1. Collection Date</a></li>
+<li class="toctree-l3"><a class="reference internal" href="specifications.html#instrument-key">3.2.2. Instrument Key</a></li>
+<li class="toctree-l3"><a class="reference internal" href="specifications.html#key">3.2.3. Key</a></li>
+<li class="toctree-l3"><a class="reference internal" href="specifications.html#organisation-key">3.2.4. Organisation Key</a></li>
+<li class="toctree-l3"><a class="reference internal" href="specifications.html#organisation-path">3.2.5. Organisation Path</a></li>
+<li class="toctree-l3"><a class="reference internal" href="specifications.html#provider-organisation-abn">3.2.6. Provider Organisation - ABN</a></li>
+<li class="toctree-l3"><a class="reference internal" href="specifications.html#provider-organisation-end-date">3.2.7. Provider Organisation - End Date</a></li>
+<li class="toctree-l3"><a class="reference internal" href="specifications.html#provider-organisation-legal-name">3.2.8. Provider Organisation - Legal Name</a></li>
+<li class="toctree-l3"><a class="reference internal" href="specifications.html#provider-organisation-name">3.2.9. Provider Organisation - Name</a></li>
+<li class="toctree-l3"><a class="reference internal" href="specifications.html#provider-organisation-start-date">3.2.10. Provider Organisation - Start Date</a></li>
+<li class="toctree-l3"><a class="reference internal" href="specifications.html#provider-organisation-state">3.2.11. Provider Organisation - State</a></li>
+<li class="toctree-l3"><a class="reference internal" href="specifications.html#provider-organisation-tags">3.2.12. Provider Organisation - Tags</a></li>
+<li class="toctree-l3"><a class="reference internal" href="specifications.html#provider-organisation-type">3.2.13. Provider Organisation - Type</a></li>
+<li class="toctree-l3"><a class="reference internal" href="specifications.html#survey-key">3.2.14. Survey Key</a></li>
+<li class="toctree-l3"><a class="reference internal" href="specifications.html#survey-tags">3.2.15. Survey Tags</a></li>
+<li class="toctree-l3"><a class="reference internal" href="specifications.html#value">3.2.16. Value</a></li>
+<li class="toctree-l3"><a class="reference internal" href="specifications.html#yes-phn-experience-scale">3.2.17. YES - PHN - Experience Scale</a></li>
+<li class="toctree-l3"><a class="reference internal" href="specifications.html#yes-phn-outcome-scale">3.2.18. YES - PHN - Outcome Scale</a></li>
+<li class="toctree-l3"><a class="reference internal" href="specifications.html#yes-phn-question-1">3.2.19. YES - PHN - Question 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="specifications.html#yes-phn-question-2">3.2.20. YES - PHN - Question 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="specifications.html#yes-phn-question-3">3.2.21. YES - PHN - Question 3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="specifications.html#yes-phn-question-4">3.2.22. YES - PHN - Question 4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="specifications.html#yes-phn-question-5">3.2.23. YES - PHN - Question 5</a></li>
+<li class="toctree-l3"><a class="reference internal" href="specifications.html#yes-phn-question-6">3.2.24. YES - PHN - Question 6</a></li>
+<li class="toctree-l3"><a class="reference internal" href="specifications.html#yes-phn-question-7">3.2.25. YES - PHN - Question 7</a></li>
+<li class="toctree-l3"><a class="reference internal" href="specifications.html#yes-phn-question-8">3.2.26. YES - PHN - Question 8</a></li>
+<li class="toctree-l3"><a class="reference internal" href="specifications.html#yes-phn-question-9">3.2.27. YES - PHN - Question 9</a></li>
+<li class="toctree-l3"><a class="reference internal" href="specifications.html#yes-phn-question-10">3.2.28. YES - PHN - Question 10</a></li>
+<li class="toctree-l3"><a class="reference internal" href="specifications.html#yes-phn-question-11">3.2.29. YES - PHN - Question 11</a></li>
+<li class="toctree-l3"><a class="reference internal" href="specifications.html#yes-phn-question-12">3.2.30. YES - PHN - Question 12</a></li>
+<li class="toctree-l3"><a class="reference internal" href="specifications.html#yes-phn-question-13">3.2.31. YES - PHN - Question 13</a></li>
+<li class="toctree-l3"><a class="reference internal" href="specifications.html#yes-phn-question-14">3.2.32. YES - PHN - Question 14</a></li>
+<li class="toctree-l3"><a class="reference internal" href="specifications.html#yes-phn-question-15">3.2.33. YES - PHN - Question 15</a></li>
+<li class="toctree-l3"><a class="reference internal" href="specifications.html#yes-phn-question-16">3.2.34. YES - PHN - Question 16</a></li>
+<li class="toctree-l3"><a class="reference internal" href="specifications.html#yes-phn-question-17">3.2.35. YES - PHN - Question 17</a></li>
+<li class="toctree-l3"><a class="reference internal" href="specifications.html#yes-phn-question-18">3.2.36. YES - PHN - Question 18</a></li>
+<li class="toctree-l3"><a class="reference internal" href="specifications.html#yes-phn-question-19">3.2.37. YES - PHN - Question 19</a></li>
+<li class="toctree-l3"><a class="reference internal" href="specifications.html#yes-phn-question-19-other">3.2.38. YES - PHN - Question 19 Other</a></li>
+<li class="toctree-l3"><a class="reference internal" href="specifications.html#yes-phn-question-20">3.2.39. YES - PHN - Question 20</a></li>
+<li class="toctree-l3"><a class="reference internal" href="specifications.html#yes-phn-question-20-other">3.2.40. YES - PHN - Question 20 Other</a></li>
+<li class="toctree-l3"><a class="reference internal" href="specifications.html#yes-phn-question-21">3.2.41. YES - PHN - Question 21</a></li>
+<li class="toctree-l3"><a class="reference internal" href="specifications.html#yes-phn-question-22">3.2.42. YES - PHN - Question 22</a></li>
+<li class="toctree-l3"><a class="reference internal" href="specifications.html#yes-phn-question-23">3.2.43. YES - PHN - Question 23</a></li>
+<li class="toctree-l3"><a class="reference internal" href="specifications.html#yes-phn-question-24">3.2.44. YES - PHN - Question 24</a></li>
+<li class="toctree-l3"><a class="reference internal" href="specifications.html#yes-phn-question-24-other">3.2.45. YES - PHN - Question 24 Other</a></li>
+<li class="toctree-l3"><a class="reference internal" href="specifications.html#yes-phn-question-25">3.2.46. YES - PHN - Question 25</a></li>
+<li class="toctree-l3"><a class="reference internal" href="specifications.html#yes-phn-question-26">3.2.47. YES - PHN - Question 26</a></li>
+<li class="toctree-l3"><a class="reference internal" href="specifications.html#yes-phn-tags">3.2.48. YES - PHN - Tags</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="specifications.html#download-specification-files">3.3. Download Specification Files</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="upload-specification.html">4. Upload specification</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="upload-specification.html#file-requirements">4.1. File requirements</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="upload-specification.html#excel-workbook-xlsx">4.1.1. Excel Workbook (XLSX)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="upload-specification.html#zip-file-containing-comma-separated-values-csv">4.1.2. Zip file containing Comma Separated Values (CSV)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="upload-specification.html#file-size">4.1.3. File size</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="upload-specification.html#files-or-worksheets-to-upload">4.2. Files or worksheets to upload</a></li>
+<li class="toctree-l2"><a class="reference internal" href="upload-specification.html#file-format">4.3. File format</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="upload-specification.html#metadata-file">4.3.1. Metadata file</a></li>
+<li class="toctree-l3"><a class="reference internal" href="upload-specification.html#organisation-file-format">4.3.2. Organisation file format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="upload-specification.html#survey-file-format">4.3.3. Survey file format</a></li>
+<li class="toctree-l3"><a class="reference internal" href="upload-specification.html#yes-phn-instrument-file-format">4.3.4. YES PHN Instrument file format</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="upload-specification.html#example-upload-files">4.4. Example Upload files</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="validation-rules.html">5. Validation Rules</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="validation-rules.html#current-validations">5.1. Current Validations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="validation-rules.html#keys">5.1.1. Keys</a></li>
+<li class="toctree-l3"><a class="reference internal" href="validation-rules.html#organisation">5.1.2. Organisation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="change-log.html">6. YES PHN Change log</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="change-log.html#version-1-0">6.1. ??/??/2023 - Version 1.0</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<p>Download this specification as a <a class="reference download internal" download="" href="_downloads/6a9c0363d9589d86c1854495716372ab/YES-PHN-1.0.0.pdf"><code class="xref download docutils literal notranslate"><span class="pre">PDF</span></code></a>.</p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="introduction.html" class="btn btn-neutral float-right" title="1. Introduction" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2023, PMHC MDS Working Group
+
+    </p>
+  </div>
+    
+    
+      Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+    <!-- Theme Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-84023505-2', 'auto');
+    ga('send', 'pageview');
+    </script>
+
+    
+   
+
+</body>
+</html>

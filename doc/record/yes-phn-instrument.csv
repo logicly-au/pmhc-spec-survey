@@ -1,0 +1,220 @@
+"Data Element (Field Name)","Type (min,max)",Required,"Format / Values"
+"`Organisation Path`_ (organisation_path)
+
+",string,yes,"A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client."
+"`Instrument Key`_ (instrument_key)
+
+","string (2,50)",yes,"A sequence of characters which uniquely identifies the survey instrument to the Primary Health Network. Assigned by the Primary Health Network."
+"`Survey Key`_ (survey_key)
+
+","string (2,50)",yes,"A sequence of characters which uniquely identifies the survey to the Primary Health Network. Assigned by the Primary Health Network."
+"`YES - PHN - Question 1`_ (yes_phn_item1)
+
+",string,yes,":1: Never
+:2: Rarely
+:3: Sometimes
+:4: Usually
+:5: Always
+:99: Not stated / Missing"
+"`YES - PHN - Question 2`_ (yes_phn_item2)
+
+",string,yes,":1: Never
+:2: Rarely
+:3: Sometimes
+:4: Usually
+:5: Always
+:99: Not stated / Missing"
+"`YES - PHN - Question 3`_ (yes_phn_item3)
+
+",string,yes,":1: Never
+:2: Rarely
+:3: Sometimes
+:4: Usually
+:5: Always
+:99: Not stated / Missing"
+"`YES - PHN - Question 4`_ (yes_phn_item4)
+
+",string,yes,":1: Never
+:2: Rarely
+:3: Sometimes
+:4: Usually
+:5: Always
+:9: Not applicable
+:99: Not stated / Missing"
+"`YES - PHN - Question 5`_ (yes_phn_item5)
+
+",string,yes,":1: Never
+:2: Rarely
+:3: Sometimes
+:4: Usually
+:5: Always
+:99: Not stated / Missing"
+"`YES - PHN - Question 6`_ (yes_phn_item6)
+
+",string,yes,":1: Never
+:2: Rarely
+:3: Sometimes
+:4: Usually
+:5: Always
+:99: Not stated / Missing"
+"`YES - PHN - Question 7`_ (yes_phn_item7)
+
+",string,yes,":1: Never
+:2: Rarely
+:3: Sometimes
+:4: Usually
+:5: Always
+:99: Not stated / Missing"
+"`YES - PHN - Question 8`_ (yes_phn_item8)
+
+",string,yes,":1: Never
+:2: Rarely
+:3: Sometimes
+:4: Usually
+:5: Always
+:99: Not stated / Missing"
+"`YES - PHN - Question 9`_ (yes_phn_item9)
+
+",string,yes,":1: Never
+:2: Rarely
+:3: Sometimes
+:4: Usually
+:5: Always
+:99: Not stated / Missing"
+"`YES - PHN - Question 10`_ (yes_phn_item10)
+
+",string,yes,":1: Poor
+:2: Fair
+:3: Good
+:4: Very Good
+:5: Excellent
+:9: Not applicable
+:99: Not stated / Missing"
+"`YES - PHN - Question 11`_ (yes_phn_item11)
+
+",string,yes,":1: Poor
+:2: Fair
+:3: Good
+:4: Very Good
+:5: Excellent
+:99: Not stated / Missing"
+"`YES - PHN - Question 12`_ (yes_phn_item12)
+
+",string,yes,":1: Poor
+:2: Fair
+:3: Good
+:4: Very Good
+:5: Excellent
+:9: Not applicable
+:99: Not stated / Missing"
+"`YES - PHN - Question 13`_ (yes_phn_item13)
+
+",string,yes,":1: Poor
+:2: Fair
+:3: Good
+:4: Very Good
+:5: Excellent
+:99: Not stated / Missing"
+"`YES - PHN - Question 14`_ (yes_phn_item14)
+
+",string,yes,":1: Poor
+:2: Fair
+:3: Good
+:4: Very Good
+:5: Excellent
+:99: Not stated / Missing"
+"`YES - PHN - Question 15`_ (yes_phn_item15)
+
+",string,yes,":1: Poor
+:2: Fair
+:3: Good
+:4: Very Good
+:5: Excellent
+:99: Not stated / Missing"
+"`YES - PHN - Question 16`_ (yes_phn_item16)
+
+",string,yes,":1: Poor
+:2: Fair
+:3: Good
+:4: Very Good
+:5: Excellent
+:99: Not stated / Missing"
+"`YES - PHN - Question 17`_ (yes_phn_item17)
+
+",string,"—","My experience would have been better if … (write in)"
+"`YES - PHN - Question 18`_ (yes_phn_item18)
+
+",string,"—","The best things about this service were … (write in)"
+"`YES - PHN - Question 19`_ (yes_phn_item19)
+
+",string,yes,":1: Male
+:2: Female
+:3: Other
+:99: Not stated / Missing"
+"`YES - PHN - Question 19 Other`_ (yes_phn_item19_other)
+
+",string,"—","What is your gender identity (other)?"
+"`YES - PHN - Question 20`_ (yes_phn_item20)
+
+",string,yes,":1: English
+:2: Other
+:99: Not stated / Missing"
+"`YES - PHN - Question 20 Other`_ (yes_phn_item20_other)
+
+",string,"—","What is the main language you speak at home (other)?"
+"`YES - PHN - Question 21`_ (yes_phn_item21)
+
+",string,yes,":1: No
+:2: Yes — Aboriginal
+:3: Yes — Torres Strait Islander
+:4: Yes — Aboriginal and Torres Strait Islander
+:99: Not stated / Missing"
+"`YES - PHN - Question 22`_ (yes_phn_item22)
+
+",string,yes,":1: Under 18 years
+:2: 18 to 24 years
+:3: 25 to 44 years
+:4: 45 to 64 years
+:5: 65 years and over
+:99: Not stated / Missing"
+"`YES - PHN - Question 23`_ (yes_phn_item23)
+
+",string,yes,":1: 1 day to 2 weeks
+:2: 3 to 4 weeks
+:3: 1 to 3 months
+:4: 4 to 6 months
+:5: More than 6 months
+:99: Not stated / Missing"
+"`YES - PHN - Question 24`_ (yes_phn_item24)
+
+",string,yes,":1: Family doctor/GP
+:2: Nurse
+:3: Another health professional
+:4: Myself
+:5: Other
+:99: Not stated / Missing"
+"`YES - PHN - Question 24 Other`_ (yes_phn_item24_other)
+
+",string,"—","Who referred you to this service (other)?"
+"`YES - PHN - Question 25`_ (yes_phn_item25)
+
+",string,yes,":1: Not at all involved
+:2: A little involved
+:3: Fully involved
+:99: Not stated / Missing"
+"`YES - PHN - Question 26`_ (yes_phn_item26)
+
+",string,yes,":1: No
+:2: Yes — family or friend
+:3: Yes — someone from the service
+:4: Yes — someone else
+:99: Not stated / Missing"
+"`YES - PHN - Experience Scale`_ (yes_phn_experience_scale)
+
+",integer,yes,"0 - 60, 99 = Not stated / Missing"
+"`YES - PHN - Outcome Scale`_ (yes_phn_outcome_scale)
+
+",integer,yes,"0 - 15, 99 = Not stated / Missing"
+"`YES - PHN - Tags`_ (yes_phn_tags)
+
+",string,"—","List of tags for the instrument."

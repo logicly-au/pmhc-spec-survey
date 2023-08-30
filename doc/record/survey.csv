@@ -1,0 +1,13 @@
+"Data Element (Field Name)","Type (min,max)",Required,"Format / Values"
+"`Organisation Path`_ (organisation_path)
+
+",string,yes,"A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client."
+"`Survey Key`_ (survey_key)
+
+","string (2,50)",yes,"This is a number or code assigned to each survey activity. The Survey Key is unique and stable for each survey at the level of the organisation."
+"`Collection Date`_ (collection_date)
+
+",date,yes,"The collection date the survey instruments."
+"`Survey Tags`_ (survey_tags)
+
+",string,"—","List of tags for the survey."
