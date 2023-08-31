@@ -10,11 +10,11 @@ if [[ -z $RECORD_MATCH ]]; then
   RECORD_MATCH=".*"
 fi
 
-docker pull docker.sdlocal.net/csvw/metadata2rst:release
+docker pull docker.sdlocal.net/csvw/metadata2rst:multiplatform
 docker pull stratdat/sphinx:production
 docker pull stratdat/sphinx-html2pdf:production
 
-docker run --rm -v `pwd`:/mnt/cwd docker.sdlocal.net/csvw/metadata2rst:release \
+docker run --rm -v `pwd`:/mnt/cwd docker.sdlocal.net/csvw/metadata2rst:multiplatform \
   --meta=metadata.json \
   --record_match "${RECORD_MATCH}"
 

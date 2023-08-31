@@ -138,7 +138,7 @@ sub addCover {
     my $tree = shift;
 
     ( my $logo_position ) = $tree->find_by_tag_name( 'h1' );
-    $logo_position->preinsert( [ 'img', { src => '_static/logo.png', class => 'logo' } ] );
+    $logo_position->preinsert( [ 'img', { src => '_static/logo.svg', class => 'logo' } ] );
 
     chomp(my $commit_timestamp = `git log --perl-regexp --author='^((?!Jenkins).*)\$' -1 --format=%ct 2>/dev/null`);
     my $print_date = DateTime->from_epoch( epoch => $commit_timestamp * 1 )->set_time_zone('Australia/Canberra');

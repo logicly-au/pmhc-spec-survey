@@ -216,7 +216,7 @@ The state that the provider organisation operates in.
   - Code is from Meteor with the addition of code for Other Territories.
   
 
-:METeOR: `613718 <http://meteor.aihw.gov.au/content/index.phtml/itemId/613718>`__
+:METEOR: `613718 <https://meteor.aihw.gov.au/content/613718>`__
 
 ----------
 
