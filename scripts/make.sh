@@ -18,6 +18,15 @@ docker run --rm -v `pwd`:/mnt/cwd docker.sdlocal.net/csvw/metadata2rst:multiplat
   --meta=metadata.json \
   --record_match "${RECORD_MATCH}"
 
+# make example zip and xlsx Files
+echo "Making example files"
+pushd .
+cd doc/_static/example-files
+rm -fv *.zip
+zip YES-PHN-1-0.zip yes-phn/*
+zip YES-PHN-1-0-delete.zip yes-phn-delete/*
+popd
+
 # make zip file
 scripts/metadata2zip.sh
 # mv new zip to data-specification folder

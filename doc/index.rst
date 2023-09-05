@@ -25,8 +25,9 @@ Version |version|
    :maxdepth: 3
 
    introduction
+   resources
    identifier-management
-   specifications
+   data-model-and-specifications
    upload-specification
    validation-rules
    change-log

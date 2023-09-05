@@ -41,8 +41,8 @@
   }, {
     "name": "yes_phn_item1",
     "titles": [ "yes_phn_item1" ],
-    "dc:title": "YES - PHN - Question 1",
-    "schema:description": "You felt welcome using this service",
+    "dc:title": "YES PHN Question 1",
+    "schema:description": "You felt welcome using this service.",
     "schema:dateCreated": "2021-05-18",
     "datatype": {
       "base": "string"
@@ -51,8 +51,8 @@
   }, {
     "name": "yes_phn_item2",
     "titles": [ "yes_phn_item2" ],
-    "dc:title": "YES - PHN - Question 2",
-    "schema:description": "You felt safe using this service",
+    "dc:title": "YES PHN Question 2",
+    "schema:description": "You felt safe using this service.",
     "schema:dateCreated": "2021-05-18",
     "datatype": {
       "base": "string"
@@ -61,8 +61,8 @@
   }, {
     "name": "yes_phn_item3",
     "titles": [ "yes_phn_item3" ],
-    "dc:title": "YES - PHN - Question 3",
-    "schema:description": "You had access to this service when you needed",
+    "dc:title": "YES PHN Question 3",
+    "schema:description": "You had access to this service when you needed.",
     "schema:dateCreated": "2021-05-18",
     "datatype": {
       "base": "string"
@@ -71,8 +71,8 @@
   }, {
     "name": "yes_phn_item4",
     "titles": [ "yes_phn_item4" ],
-    "dc:title": "YES - PHN - Question 4",
-    "schema:description": "You had opportunities for your family and friends to be involved in your support or care if you wanted",
+    "dc:title": "YES PHN Question 4",
+    "schema:description": "You had opportunities for your family and friends to be involved in your support or care if you wanted.",
     "schema:dateCreated": "2021-05-18",
     "datatype": {
       "base": "string"
@@ -81,8 +81,8 @@
   }, {
     "name": "yes_phn_item5",
     "titles": [ "yes_phn_item5" ],
-    "dc:title": "YES - PHN - Question 5",
-    "schema:description": "Staff were able to provide information or advice to help you manage your physical health if you wanted",
+    "dc:title": "YES PHN Question 5",
+    "schema:description": "Staff were able to provide information or advice to help you manage your physical health if you wanted.",
     "schema:dateCreated": "2021-05-18",
     "datatype": {
       "base": "string"
@@ -91,7 +91,7 @@
   }, {
     "name": "yes_phn_item6",
     "titles": [ "yes_phn_item6" ],
-    "dc:title": "YES - PHN - Question 6",
+    "dc:title": "YES PHN Question 6",
     "schema:description": "Your individuality and values were respected (such as your culture, faith or gender identity, etc.)",
     "schema:dateCreated": "2021-05-18",
     "datatype": {
@@ -101,8 +101,8 @@
   }, {
     "name": "yes_phn_item7",
     "titles": [ "yes_phn_item7" ],
-    "dc:title": "YES - PHN - Question 7",
-    "schema:description": "This service listened to and followed up on feedback or complaints",
+    "dc:title": "YES PHN Question 7",
+    "schema:description": "This service listened to and followed up on feedback or complaints.",
     "schema:dateCreated": "2021-05-18",
     "datatype": {
       "base": "string"
@@ -111,8 +111,8 @@
   }, {
     "name": "yes_phn_item8",
     "titles": [ "yes_phn_item8" ],
-    "dc:title": "YES - PHN - Question 8",
-    "schema:description": "The service respected your right to make decisions",
+    "dc:title": "YES PHN Question 8",
+    "schema:description": "The service respected your right to make decisions.",
     "schema:dateCreated": "2021-05-18",
     "datatype": {
       "base": "string"
@@ -121,8 +121,8 @@
   }, {
     "name": "yes_phn_item9",
     "titles": [ "yes_phn_item9" ],
-    "dc:title": "YES - PHN - Question 9",
-    "schema:description": "The support or care available met your needs",
+    "dc:title": "YES PHN Question 9",
+    "schema:description": "The support or care available met your needs.",
     "schema:dateCreated": "2021-05-18",
     "datatype": {
       "base": "string"
@@ -131,8 +131,8 @@
   }, {
     "name": "yes_phn_item10",
     "titles": [ "yes_phn_item10" ],
-    "dc:title": "YES - PHN - Question 10",
-    "schema:description": "Access to a peer worker/ lived experience worker, if you wanted",
+    "dc:title": "YES PHN Question 10",
+    "schema:description": "Access to a peer worker/ lived experience worker, if you wanted.",
     "schema:dateCreated": "2021-05-18",
     "datatype": {
       "base": "string"
@@ -141,8 +141,8 @@
   }, {
     "name": "yes_phn_item11",
     "titles": [ "yes_phn_item11" ],
-    "dc:title": "YES - PHN - Question 11",
-    "schema:description": "The support or care available met your needs",
+    "dc:title": "YES PHN Question 11",
+    "schema:description": "The support or care available met your needs.",
     "schema:dateCreated": "2021-05-18",
     "datatype": {
       "base": "string"
@@ -151,8 +151,8 @@
   }, {
     "name": "yes_phn_item12",
     "titles": [ "yes_phn_item12" ],
-    "dc:title": "YES - PHN - Question 12",
-    "schema:description": "Development of a plan with you that considered all of your needs (including support, coordination and follow up)",
+    "dc:title": "YES PHN Question 12",
+    "schema:description": "Development of a plan with you that considered all of your needs (including support, coordination and follow up).",
     "schema:dateCreated": "2021-05-18",
     "datatype": {
       "base": "string"
@@ -161,8 +161,8 @@
   }, {
     "name": "yes_phn_item13",
     "titles": [ "yes_phn_item13" ],
-    "dc:title": "YES - PHN - Question 13",
-    "schema:description": "The effect of this service on your hopefulness for the future",
+    "dc:title": "YES PHN Question 13",
+    "schema:description": "The effect of this service on your hopefulness for the future.",
     "schema:dateCreated": "2021-05-18",
     "datatype": {
       "base": "string"
@@ -171,8 +171,8 @@
   }, {
     "name": "yes_phn_item14",
     "titles": [ "yes_phn_item14" ],
-    "dc:title": "YES - PHN - Question 14",
-    "schema:description": "The effect of this service on your skills and strategies to look after your own health and wellbeing",
+    "dc:title": "YES PHN Question 14",
+    "schema:description": "The effect of this service on your skills and strategies to look after your own health and wellbeing.",
     "schema:dateCreated": "2021-05-18",
     "datatype": {
       "base": "string"
@@ -181,8 +181,8 @@
   }, {
     "name": "yes_phn_item15",
     "titles": [ "yes_phn_item15" ],
-    "dc:title": "YES - PHN - Question 15",
-    "schema:description": "The effect of this service on your ability to manage your day to day life",
+    "dc:title": "YES PHN Question 15",
+    "schema:description": "The effect of this service on your ability to manage your day to day life.",
     "schema:dateCreated": "2021-05-18",
     "datatype": {
       "base": "string"
@@ -191,7 +191,7 @@
   }, {
     "name": "yes_phn_item16",
     "titles": [ "yes_phn_item16" ],
-    "dc:title": "YES - PHN - Question 16",
+    "dc:title": "YES PHN Question 16",
     "schema:description": "Overall, how would you rate your experience with this service in the last 3 months?",
     "schema:dateCreated": "2021-05-18",
     "datatype": {
@@ -201,8 +201,8 @@
   }, {
     "name": "yes_phn_item17",
     "titles": [ "yes_phn_item17" ],
-    "dc:title": "YES - PHN - Question 17",
-    "schema:description": "My experience would have been better if … (write in)",
+    "dc:title": "YES PHN Question 17",
+    "schema:description": "My experience would have been better if … (write in).",
     "schema:dateCreated": "2021-05-18",
     "datatype": {
       "base": "string"
@@ -211,8 +211,8 @@
   }, {
     "name": "yes_phn_item18",
     "titles": [ "yes_phn_item18" ],
-    "dc:title": "YES - PHN - Question 18",
-    "schema:description": "The best things about this service were … (write in)",
+    "dc:title": "YES PHN Question 18",
+    "schema:description": "The best things about this service were … (write in.)",
     "schema:dateCreated": "2021-05-18",
     "datatype": {
       "base": "string"
@@ -221,7 +221,7 @@
   }, {
     "name": "yes_phn_item19",
     "titles": [ "yes_phn_item19" ],
-    "dc:title": "YES - PHN - Question 19",
+    "dc:title": "YES PHN Question 19",
     "schema:description": "What is your gender identity?",
     "schema:dateCreated": "2021-05-18",
     "null": "99",
@@ -232,8 +232,9 @@
   }, {
     "name": "yes_phn_item19_other",
     "titles": [ "yes_phn_item19_other" ],
-    "dc:title": "YES - PHN - Question 19 Other",
+    "dc:title": "YES PHN Question 19 Other",
     "schema:description": "What is your gender identity (other)?",
+    "schema:disambiguatingDescription": "table/instrument/yes_phn/yes_phn_item19_other.rst",
     "schema:dateCreated": "2021-05-18",
     "datatype": {
       "base": "string"
@@ -242,7 +243,7 @@
   }, {
     "name": "yes_phn_item20",
     "titles": [ "yes_phn_item20" ],
-    "dc:title": "YES - PHN - Question 20",
+    "dc:title": "YES PHN Question 20",
     "schema:description": "What is the main language you speak at home?",
     "schema:dateCreated": "2021-05-18",
     "datatype": {
@@ -252,8 +253,9 @@
   }, {
     "name": "yes_phn_item20_other",
     "titles": [ "yes_phn_item20_other" ],
-    "dc:title": "YES - PHN - Question 20 Other",
+    "dc:title": "YES PHN Question 20 Other",
     "schema:description": "What is the main language you speak at home (other)?",
+    "schema:disambiguatingDescription": "table/instrument/yes_phn/yes_phn_item20_other.rst",
     "schema:dateCreated": "2021-05-18",
     "datatype": {
       "base": "string"
@@ -262,7 +264,7 @@
   }, {
     "name": "yes_phn_item21",
     "titles": [ "yes_phn_item21" ],
-    "dc:title": "YES - PHN - Question 21",
+    "dc:title": "YES PHN Question 21",
     "schema:description": "Are you of Aboriginal or Torres Strait Island origin?",
     "schema:dateCreated": "2021-05-18",
     "datatype": {
@@ -272,7 +274,7 @@
   }, {
     "name": "yes_phn_item22",
     "titles": [ "yes_phn_item22" ],
-    "dc:title": "YES - PHN - Question 22",
+    "dc:title": "YES PHN Question 22",
     "schema:description": "What is your age?",
     "schema:dateCreated": "2021-05-18",
     "datatype": {
@@ -282,7 +284,7 @@
   }, {
     "name": "yes_phn_item23",
     "titles": [ "yes_phn_item23" ],
-    "dc:title": "YES - PHN - Question 23",
+    "dc:title": "YES PHN Question 23",
     "schema:description": "How long have you been receiving support or care from this service?",
     "schema:dateCreated": "2021-05-18",
     "datatype": {
@@ -292,7 +294,7 @@
   }, {
     "name": "yes_phn_item24",
     "titles": [ "yes_phn_item24" ],
-    "dc:title": "YES - PHN - Question 24",
+    "dc:title": "YES PHN Question 24",
     "schema:description": "Who referred you to this service?",
     "schema:dateCreated": "2021-05-18",
     "datatype": {
@@ -302,8 +304,9 @@
   }, {
     "name": "yes_phn_item24_other",
     "titles": [ "yes_phn_item24_other" ],
-    "dc:title": "YES - PHN - Question 24 Other",
+    "dc:title": "YES PHN Question 24 Other",
     "schema:description": "Who referred you to this service (other)?",
+    "schema:disambiguatingDescription": "table/instrument/yes_phn/yes_phn_item24_other.rst",
     "schema:dateCreated": "2021-05-18",
     "datatype": {
       "base": "string"
@@ -312,7 +315,7 @@
   }, {
     "name": "yes_phn_item25",
     "titles": [ "yes_phn_item25" ],
-    "dc:title": "YES - PHN - Question 25",
+    "dc:title": "YES PHN Question 25",
     "schema:description": "How involved were you in choosing this service?",
     "schema:dateCreated": "2021-05-18",
     "datatype": {
@@ -322,7 +325,7 @@
   }, {
     "name": "yes_phn_item26",
     "titles": [ "yes_phn_item26" ],
-    "dc:title": "YES - PHN - Question 26",
+    "dc:title": "YES PHN Question 26",
     "schema:description": "Did someone help you complete this survey?",
     "schema:dateCreated": "2021-05-18",
     "datatype": {
@@ -332,7 +335,7 @@
   }, {
     "name": "yes_phn_experience_scale",
     "titles": [ "yes_phn_experience_scale" ],
-    "dc:title" : "YES - PHN - Experience Scale",
+    "dc:title" : "YES PHN Experience Scale",
     "schema:disambiguatingDescription": "table/instrument/yes_phn/yes-phn-experience-scale.rst",
     "schema:dateCreated": "2021-05-18",
     "null": "99",
@@ -345,7 +348,7 @@
   }, {
     "name": "yes_phn_outcome_scale",
     "titles": [ "yes_phn_outcome_scale" ],
-    "dc:title" : "YES - PHN - Outcome Scale",
+    "dc:title" : "YES PHN Outcome Scale",
     "schema:disambiguatingDescription": "table/instrument/yes_phn/yes-phn-outcome-scale.rst",
     "schema:dateCreated": "2021-05-18",
     "null": "99",
@@ -358,7 +361,7 @@
   }, {
     "name": "yes_phn_tags",
     "titles": [ "yes_phn_tags" ],
-    "dc:title" : "YES - PHN - Tags",
+    "dc:title" : "YES PHN Tags",
     "schema:description": "List of tags for the instrument.",
     "schema:disambiguatingDescription": "type/tags.rst",
     "schema:dateCreated": "2021-05-18",
