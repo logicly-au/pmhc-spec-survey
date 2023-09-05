@@ -203,6 +203,7 @@
     "titles": [ "yes_phn_item17" ],
     "dc:title": "YES PHN Question 17",
     "schema:description": "My experience would have been better if … (write in).",
+    "schema:disambiguatingDescription": "table/instrument/yes_phn/yes_phn_item17.rst",
     "schema:dateCreated": "2021-05-18",
     "datatype": {
       "base": "string"
@@ -213,6 +214,7 @@
     "titles": [ "yes_phn_item18" ],
     "dc:title": "YES PHN Question 18",
     "schema:description": "The best things about this service were … (write in.)",
+    "schema:disambiguatingDescription": "table/instrument/yes_phn/yes_phn_item18.rst",
     "schema:dateCreated": "2021-05-18",
     "datatype": {
       "base": "string"
