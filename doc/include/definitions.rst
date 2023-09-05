@@ -840,6 +840,9 @@ My experience would have been better if … (write in).
 
 :Required: no
 
+:Notes:
+  .. include:: shared/suppressed_field.rst
+
 ----------
 
 .. _dfn-yes_phn_item18:
@@ -854,6 +857,9 @@ The best things about this service were … (write in.)
 :Data type: string
 
 :Required: no
+
+:Notes:
+  .. include:: shared/suppressed_field.rst
 
 ----------
 
