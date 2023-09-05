@@ -43,3 +43,10 @@ Organisation
 
    4. The :ref:`dfn-organisation_abn` must adhere to the format defined by the Australian Business 
       Register at https://abr.business.gov.au/Help/AbnFormat
+
+.. _survey-current-validations:
+
+Survey
+~~~~~~
+
+  1. The :ref:`dfn-collection_date` must not be in the future

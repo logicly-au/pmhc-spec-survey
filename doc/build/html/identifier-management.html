@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>2. Identifier management &mdash; PMHC MDS YES PHN Specification 1.0.0 documentation</title>
+  <title>3. Identifier management &mdash; PMHC MDS YES PHN Specification 1.0.0 documentation</title>
   
 
   
@@ -37,8 +37,8 @@
   <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="3. Specifications" href="specifications.html" />
-    <link rel="prev" title="1. Introduction" href="introduction.html" /> 
+    <link rel="next" title="4. Data model and specifications" href="data-model-and-specifications.html" />
+    <link rel="prev" title="2. Resources" href="resources.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -90,15 +90,16 @@
               <p class="caption"><span class="caption-text">Table of contents</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">1. Introduction</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">2. Identifier management</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#managing-provider-organisation-keys">2.1. Managing Provider Organisation Keys</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#managing-all-other-entity-keys">2.2. Managing all other entity keys</a></li>
+<li class="toctree-l1"><a class="reference internal" href="resources.html">2. Resources</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">3. Identifier management</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#managing-provider-organisation-keys">3.1. Managing Provider Organisation Keys</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#managing-all-other-entity-keys">3.2. Managing all other entity keys</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="specifications.html">3. Specifications</a></li>
-<li class="toctree-l1"><a class="reference internal" href="upload-specification.html">4. Upload specification</a></li>
-<li class="toctree-l1"><a class="reference internal" href="validation-rules.html">5. Validation Rules</a></li>
-<li class="toctree-l1"><a class="reference internal" href="change-log.html">6. YES PHN Change log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-model-and-specifications.html">4. Data model and specifications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload-specification.html">5. Upload specification</a></li>
+<li class="toctree-l1"><a class="reference internal" href="validation-rules.html">6. Validation Rules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="change-log.html">7. YES PHN Change log</a></li>
 </ul>
 
             
@@ -145,7 +146,7 @@
     
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li><span class="section-number">2. </span>Identifier management</li>
+      <li><span class="section-number">3. </span>Identifier management</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -165,7 +166,7 @@
            <div itemprop="articleBody">
             
   <div class="section" id="identifier-management">
-<span id="id1"></span><h1><span class="section-number">2. </span>Identifier management<a class="headerlink" href="#identifier-management" title="Permalink to this headline">¶</a></h1>
+<span id="id1"></span><h1><span class="section-number">3. </span>Identifier management<a class="headerlink" href="#identifier-management" title="Permalink to this headline">¶</a></h1>
 <p>PMHC MDS keys are case sensitive and must have between 2-50 valid unicode characters.
 Keys must start with A-Za-z0-9 (POSIX :alnum:).</p>
 <p>Where data is being exported from client systems, these keys can be auto generated,
@@ -178,7 +179,7 @@ never clash.</p>
 <p>A recommended approach for the creation of keys is to compute <a class="reference external" href="https://en.wikipedia.org/wiki/Universally_unique_identifier">random
 UUIDs</a>.</p>
 <div class="section" id="managing-provider-organisation-keys">
-<span id="po-key"></span><h2><span class="section-number">2.1. </span>Managing Provider Organisation Keys<a class="headerlink" href="#managing-provider-organisation-keys" title="Permalink to this headline">¶</a></h2>
+<span id="po-key"></span><h2><span class="section-number">3.1. </span>Managing Provider Organisation Keys<a class="headerlink" href="#managing-provider-organisation-keys" title="Permalink to this headline">¶</a></h2>
 <p>Provider Organisations will be created and managed by Primary Health
 Networks (PHNs) via upload or data entry. Each PHN must either create their own
 Provider Organisations before any data can be uploaded, or if the PHN is
@@ -187,11 +188,11 @@ uploading the data, the Provider Organisation must be included in the upload.</p
 responsibility of the PHN to assign and manage these keys.</p>
 </div>
 <div class="section" id="managing-all-other-entity-keys">
-<span id="unique-keys"></span><h2><span class="section-number">2.2. </span>Managing all other entity keys<a class="headerlink" href="#managing-all-other-entity-keys" title="Permalink to this headline">¶</a></h2>
+<span id="unique-keys"></span><h2><span class="section-number">3.2. </span>Managing all other entity keys<a class="headerlink" href="#managing-all-other-entity-keys" title="Permalink to this headline">¶</a></h2>
 <p>The following entity keys will be created and managed by Provider Organisations:</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="specifications.html#survey-data-elements"><span class="std std-ref">Survey Key</span></a>,</p></li>
-<li><p><a class="reference internal" href="specifications.html#yes-phn-instrument-data-elements"><span class="std std-ref">YES PHN Instrument Key</span></a>,</p></li>
+<li><p><a class="reference internal" href="data-model-and-specifications.html#survey-data-elements"><span class="std std-ref">Survey Key</span></a>,</p></li>
+<li><p><a class="reference internal" href="data-model-and-specifications.html#yes-phn-instrument-data-elements"><span class="std std-ref">YES PHN Instrument Key</span></a>,</p></li>
 </ul>
 <p>The PMHC MDS specification requires each of these keys to be unique and
 stable at the Provider Organisation level.</p>
@@ -212,10 +213,10 @@ to</em> <a class="reference external" href="http://docs.pmhc-mds.com/en/v1/faqs/
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="specifications.html" class="btn btn-neutral float-right" title="3. Specifications" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="data-model-and-specifications.html" class="btn btn-neutral float-right" title="4. Data model and specifications" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="introduction.html" class="btn btn-neutral float-left" title="1. Introduction" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="resources.html" class="btn btn-neutral float-left" title="2. Resources" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

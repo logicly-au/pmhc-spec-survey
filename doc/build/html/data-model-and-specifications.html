@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>3. Specifications &mdash; PMHC MDS YES PHN Specification 1.0.0 documentation</title>
+  <title>4. Data model and specifications &mdash; PMHC MDS YES PHN Specification 1.0.0 documentation</title>
   
 
   
@@ -37,8 +37,8 @@
   <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="4. Upload specification" href="upload-specification.html" />
-    <link rel="prev" title="2. Identifier management" href="identifier-management.html" /> 
+    <link rel="next" title="5. Upload specification" href="upload-specification.html" />
+    <link rel="prev" title="3. Identifier management" href="identifier-management.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -90,75 +90,77 @@
               <p class="caption"><span class="caption-text">Table of contents</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="introduction.html">1. Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="identifier-management.html">2. Identifier management</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">3. Specifications</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#record-formats">3.1. Record formats</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#metadata">3.1.1. Metadata</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#provider-organisation">3.1.2. Provider Organisation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#survey">3.1.3. Survey</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#instruments">3.1.4. Instruments</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#yes-phn">3.1.4.1. YES PHN</a></li>
+<li class="toctree-l1"><a class="reference internal" href="resources.html">2. Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="identifier-management.html">3. Identifier management</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">4. Data model and specifications</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#data-model">4.1. Data model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#record-formats">4.2. Record formats</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#metadata">4.2.1. Metadata</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#provider-organisation">4.2.2. Provider Organisation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#survey">4.2.3. Survey</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#instruments">4.2.4. Instruments</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#yes-phn">4.2.4.1. YES PHN</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#definitions">3.2. Definitions</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#collection-date">3.2.1. Collection Date</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#instrument-key">3.2.2. Instrument Key</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#key">3.2.3. Key</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#organisation-key">3.2.4. Organisation Key</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#organisation-path">3.2.5. Organisation Path</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#provider-organisation-abn">3.2.6. Provider Organisation - ABN</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#provider-organisation-end-date">3.2.7. Provider Organisation - End Date</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#provider-organisation-legal-name">3.2.8. Provider Organisation - Legal Name</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#provider-organisation-name">3.2.9. Provider Organisation - Name</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#provider-organisation-start-date">3.2.10. Provider Organisation - Start Date</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#provider-organisation-state">3.2.11. Provider Organisation - State</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#provider-organisation-tags">3.2.12. Provider Organisation - Tags</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#provider-organisation-type">3.2.13. Provider Organisation - Type</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#survey-key">3.2.14. Survey Key</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#survey-tags">3.2.15. Survey Tags</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#value">3.2.16. Value</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#yes-phn-experience-scale">3.2.17. YES - PHN - Experience Scale</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#yes-phn-outcome-scale">3.2.18. YES - PHN - Outcome Scale</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-1">3.2.19. YES - PHN - Question 1</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-2">3.2.20. YES - PHN - Question 2</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-3">3.2.21. YES - PHN - Question 3</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-4">3.2.22. YES - PHN - Question 4</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-5">3.2.23. YES - PHN - Question 5</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-6">3.2.24. YES - PHN - Question 6</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-7">3.2.25. YES - PHN - Question 7</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-8">3.2.26. YES - PHN - Question 8</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-9">3.2.27. YES - PHN - Question 9</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-10">3.2.28. YES - PHN - Question 10</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-11">3.2.29. YES - PHN - Question 11</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-12">3.2.30. YES - PHN - Question 12</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-13">3.2.31. YES - PHN - Question 13</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-14">3.2.32. YES - PHN - Question 14</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-15">3.2.33. YES - PHN - Question 15</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-16">3.2.34. YES - PHN - Question 16</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-17">3.2.35. YES - PHN - Question 17</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-18">3.2.36. YES - PHN - Question 18</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-19">3.2.37. YES - PHN - Question 19</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-19-other">3.2.38. YES - PHN - Question 19 Other</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-20">3.2.39. YES - PHN - Question 20</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-20-other">3.2.40. YES - PHN - Question 20 Other</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-21">3.2.41. YES - PHN - Question 21</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-22">3.2.42. YES - PHN - Question 22</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-23">3.2.43. YES - PHN - Question 23</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-24">3.2.44. YES - PHN - Question 24</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-24-other">3.2.45. YES - PHN - Question 24 Other</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-25">3.2.46. YES - PHN - Question 25</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-26">3.2.47. YES - PHN - Question 26</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#yes-phn-tags">3.2.48. YES - PHN - Tags</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#definitions">4.3. Definitions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#abn">4.3.1. ABN</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#collection-date">4.3.2. Collection Date</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#instrument-key">4.3.3. Instrument Key</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#key">4.3.4. Key</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#legal-name">4.3.5. Legal Name</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#name">4.3.6. Name</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#organisation-end-date">4.3.7. Organisation End Date</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#organisation-key">4.3.8. Organisation Key</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#organisation-path">4.3.9. Organisation Path</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#organisation-start-date">4.3.10. Organisation Start Date</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#organisation-tags">4.3.11. Organisation Tags</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#organisation-type">4.3.12. Organisation Type</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#state">4.3.13. State</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#survey-key">4.3.14. Survey Key</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#survey-tags">4.3.15. Survey Tags</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#value">4.3.16. Value</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#yes-phn-experience-scale">4.3.17. YES PHN Experience Scale</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#yes-phn-outcome-scale">4.3.18. YES PHN Outcome Scale</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-1">4.3.19. YES PHN Question 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-2">4.3.20. YES PHN Question 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-3">4.3.21. YES PHN Question 3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-4">4.3.22. YES PHN Question 4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-5">4.3.23. YES PHN Question 5</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-6">4.3.24. YES PHN Question 6</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-7">4.3.25. YES PHN Question 7</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-8">4.3.26. YES PHN Question 8</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-9">4.3.27. YES PHN Question 9</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-10">4.3.28. YES PHN Question 10</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-11">4.3.29. YES PHN Question 11</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-12">4.3.30. YES PHN Question 12</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-13">4.3.31. YES PHN Question 13</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-14">4.3.32. YES PHN Question 14</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-15">4.3.33. YES PHN Question 15</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-16">4.3.34. YES PHN Question 16</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-17">4.3.35. YES PHN Question 17</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-18">4.3.36. YES PHN Question 18</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-19">4.3.37. YES PHN Question 19</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-19-other">4.3.38. YES PHN Question 19 Other</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-20">4.3.39. YES PHN Question 20</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-20-other">4.3.40. YES PHN Question 20 Other</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-21">4.3.41. YES PHN Question 21</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-22">4.3.42. YES PHN Question 22</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-23">4.3.43. YES PHN Question 23</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-24">4.3.44. YES PHN Question 24</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-24-other">4.3.45. YES PHN Question 24 Other</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-25">4.3.46. YES PHN Question 25</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#yes-phn-question-26">4.3.47. YES PHN Question 26</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#yes-phn-tags">4.3.48. YES PHN Tags</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#download-specification-files">3.3. Download Specification Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#download-specification-files">4.4. Download Specification Files</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="upload-specification.html">4. Upload specification</a></li>
-<li class="toctree-l1"><a class="reference internal" href="validation-rules.html">5. Validation Rules</a></li>
-<li class="toctree-l1"><a class="reference internal" href="change-log.html">6. YES PHN Change log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload-specification.html">5. Upload specification</a></li>
+<li class="toctree-l1"><a class="reference internal" href="validation-rules.html">6. Validation Rules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="change-log.html">7. YES PHN Change log</a></li>
 </ul>
 
             
@@ -205,13 +207,13 @@
     
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li><span class="section-number">3. </span>Specifications</li>
+      <li><span class="section-number">4. </span>Data model and specifications</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/specifications.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/data-model-and-specifications.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -224,16 +226,33 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="specifications">
-<span id="id1"></span><h1><span class="section-number">3. </span>Specifications<a class="headerlink" href="#specifications" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="data-model-and-specifications">
+<span id="id1"></span><h1><span class="section-number">4. </span>Data model and specifications<a class="headerlink" href="#data-model-and-specifications" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="data-model">
+<span id="id2"></span><h2><span class="section-number">4.1. </span>Data model<a class="headerlink" href="#data-model" title="Permalink to this headline">¶</a></h2>
+<p>The introductory wording on the YES PHN states ” All information collected in
+this survey is anonymous. None of the information collected will be used to identify you.”
+In order to preserve this client anonymity, the YES PHN specification uses a data model
+that stores the YES PHN survey against a Provider Organisation, not a client.</p>
+<div class="figure align-default" id="id5">
+<span id="data-model-diagram"></span><img alt="YES PHN Version 1.0 data model" src="_images/yes-phn-data-model-v1.0.svg" /><p class="caption"><span class="caption-number">Fig. 4.1 </span><span class="caption-text">YES PHN Version 1.0 data model</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul class="simple">
+<li><p>The above data model diagram is in the SVG format and can be enlarged
+or zoomed by opening in a new tab or window or by downloading it.</p></li>
+</ul>
+</div>
+</div>
 <div class="section" id="record-formats">
-<span id="id2"></span><h2><span class="section-number">3.1. </span>Record formats<a class="headerlink" href="#record-formats" title="Permalink to this headline">¶</a></h2>
+<span id="id3"></span><h2><span class="section-number">4.2. </span>Record formats<a class="headerlink" href="#record-formats" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="metadata">
-<span id="metadata-data-elements"></span><h3><span class="section-number">3.1.1. </span>Metadata<a class="headerlink" href="#metadata" title="Permalink to this headline">¶</a></h3>
+<span id="metadata-data-elements"></span><h3><span class="section-number">4.2.1. </span>Metadata<a class="headerlink" href="#metadata" title="Permalink to this headline">¶</a></h3>
 <p>The Metadata table must be included in file uploads in order to identify
 the type and version of the uploaded data.</p>
-<table class="docutils align-default" id="id4">
-<caption><span class="caption-number">Table 3.1 </span><span class="caption-text">Metadata record layout</span><a class="headerlink" href="#id4" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id6">
+<caption><span class="caption-number">Table 4.1 </span><span class="caption-text">Metadata record layout</span><a class="headerlink" href="#id6" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 25%" />
 <col style="width: 25%" />
@@ -262,8 +281,8 @@ the type and version of the uploaded data.</p>
 </table>
 <p>For this version of the specification the required content is shown in the
 following table:</p>
-<table class="docutils align-default" id="id5">
-<caption><span class="caption-number">Table 3.2 </span><span class="caption-text">Metadata file</span><a class="headerlink" href="#id5" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id7">
+<caption><span class="caption-number">Table 4.2 </span><span class="caption-text">Metadata file</span><a class="headerlink" href="#id7" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -283,14 +302,14 @@ following table:</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="provider-organisation">
-<span id="provider-organisation-data-elements"></span><h3><span class="section-number">3.1.2. </span>Provider Organisation<a class="headerlink" href="#provider-organisation" title="Permalink to this headline">¶</a></h3>
-<p>See <span class="xref std std-ref">key-concepts-provider-organisation</span> for the definition of a provider
-organisation.</p>
+<span id="provider-organisation-data-elements"></span><h3><span class="section-number">4.2.2. </span>Provider Organisation<a class="headerlink" href="#provider-organisation" title="Permalink to this headline">¶</a></h3>
+<p>See <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/v4/data-model-and-specifications.html#provider-organisation">Provider Organisation Key Concepts</a>
+for the definition of a provider organisation.</p>
 <p>Provider Organisation data is for administrative use within the PMHC MDS
 system. It is managed by the PHN’s via the PMHC MDS administrative interface,
 it cannot be uploaded.</p>
-<table class="docutils align-default" id="id6">
-<caption><span class="caption-number">Table 3.3 </span><span class="caption-text">Provider Organisation record layout</span><a class="headerlink" href="#id6" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id8">
+<caption><span class="caption-number">Table 4.3 </span><span class="caption-text">Provider Organisation record layout</span><a class="headerlink" href="#id8" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 25%" />
 <col style="width: 25%" />
@@ -315,22 +334,22 @@ it cannot be uploaded.</p>
 <td><p>yes</p></td>
 <td><p>A sequence of characters which uniquely identifies the provider organisation to the Primary Health Network. Assigned by the Primary Health Network.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#provider-organisation-name">Provider Organisation - Name</a> (organisation_name)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#name">Name</a> (organisation_name)</p></td>
 <td><p>string (2,100)</p></td>
 <td><p>yes</p></td>
 <td><p>The name of the provider organisation.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#provider-organisation-legal-name">Provider Organisation - Legal Name</a> (organisation_legal_name)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#legal-name">Legal Name</a> (organisation_legal_name)</p></td>
 <td><p>string</p></td>
 <td><p>—</p></td>
 <td><p>The legal name of the provider organisation.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#provider-organisation-abn">Provider Organisation - ABN</a> (organisation_abn)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#abn">ABN</a> (organisation_abn)</p></td>
 <td><p>string (11)</p></td>
 <td><p>yes</p></td>
 <td><p>The Australian Business Number of the provider organisation.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#provider-organisation-type">Provider Organisation - Type</a> (organisation_type)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#organisation-type">Organisation Type</a> (organisation_type)</p></td>
 <td><p>string</p></td>
 <td><p>yes</p></td>
 <td><dl class="field-list simple">
@@ -382,7 +401,7 @@ it cannot be uploaded.</p>
 </dl>
 </td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#provider-organisation-state">Provider Organisation - State</a> (organisation_state)</p>
+<tr class="row-even"><td><p><a class="reference internal" href="#state">State</a> (organisation_state)</p>
 <p>METEOR: <a class="reference external" href="https://meteor.aihw.gov.au/content/613718">613718</a></p>
 </td>
 <td><p>string</p></td>
@@ -418,17 +437,17 @@ it cannot be uploaded.</p>
 </dl>
 </td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#provider-organisation-start-date">Provider Organisation - Start Date</a> (organisation_start_date)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#organisation-start-date">Organisation Start Date</a> (organisation_start_date)</p></td>
 <td><p>date</p></td>
 <td><p>yes</p></td>
 <td><p>The date on which a provider organisation started delivering services.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#provider-organisation-end-date">Provider Organisation - End Date</a> (organisation_end_date)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#organisation-end-date">Organisation End Date</a> (organisation_end_date)</p></td>
 <td><p>date</p></td>
 <td><p>yes</p></td>
 <td><p>The date on which a provider organisation stopped delivering services.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#provider-organisation-tags">Provider Organisation - Tags</a> (organisation_tags)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#organisation-tags">Organisation Tags</a> (organisation_tags)</p></td>
 <td><p>string</p></td>
 <td><p>—</p></td>
 <td><p>List of tags for the provider organisation.</p></td>
@@ -438,10 +457,10 @@ it cannot be uploaded.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="survey">
-<span id="survey-data-elements"></span><h3><span class="section-number">3.1.3. </span>Survey<a class="headerlink" href="#survey" title="Permalink to this headline">¶</a></h3>
+<span id="survey-data-elements"></span><h3><span class="section-number">4.2.3. </span>Survey<a class="headerlink" href="#survey" title="Permalink to this headline">¶</a></h3>
 <p>Survey data is managed by the PHN’s or Provider Organisations via upload.</p>
-<table class="docutils align-default" id="id7">
-<caption><span class="caption-number">Table 3.4 </span><span class="caption-text">Survey record layout</span><a class="headerlink" href="#id7" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id9">
+<caption><span class="caption-number">Table 4.4 </span><span class="caption-text">Survey record layout</span><a class="headerlink" href="#id9" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 25%" />
 <col style="width: 25%" />
@@ -481,12 +500,13 @@ it cannot be uploaded.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="instruments">
-<span id="instument-data-elements"></span><h3><span class="section-number">3.1.4. </span>Instruments<a class="headerlink" href="#instruments" title="Permalink to this headline">¶</a></h3>
+<span id="instument-data-elements"></span><h3><span class="section-number">4.2.4. </span>Instruments<a class="headerlink" href="#instruments" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="yes-phn">
-<span id="yes-phn-instrument-data-elements"></span><h4><span class="section-number">3.1.4.1. </span>YES PHN<a class="headerlink" href="#yes-phn" title="Permalink to this headline">¶</a></h4>
+<span id="yes-phn-instrument-data-elements"></span><h4><span class="section-number">4.2.4.1. </span>YES PHN<a class="headerlink" href="#yes-phn" title="Permalink to this headline">¶</a></h4>
+<p>Further information about the YES PHN Survey is available from <a class="reference internal" href="introduction.html#introduction"><span class="std std-ref">Introduction</span></a> and <a class="reference internal" href="resources.html#resources"><span class="std std-ref">Resources</span></a>.</p>
 <p>YES PHN data is managed by the PHN’s or Provider Organisations via upload.</p>
-<table class="docutils align-default" id="id8">
-<caption><span class="caption-number">Table 3.5 </span><span class="caption-text">YES PHN record layout</span><a class="headerlink" href="#id8" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id10">
+<caption><span class="caption-number">Table 4.5 </span><span class="caption-text">YES PHN record layout</span><a class="headerlink" href="#id10" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 25%" />
 <col style="width: 25%" />
@@ -516,7 +536,7 @@ it cannot be uploaded.</p>
 <td><p>yes</p></td>
 <td><p>A sequence of characters which uniquely identifies the survey to the Primary Health Network. Assigned by the Primary Health Network.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#yes-phn-question-1">YES - PHN - Question 1</a> (yes_phn_item1)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#yes-phn-question-1">YES PHN Question 1</a> (yes_phn_item1)</p></td>
 <td><p>string</p></td>
 <td><p>yes</p></td>
 <td><dl class="field-list simple">
@@ -541,7 +561,7 @@ it cannot be uploaded.</p>
 </dl>
 </td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#yes-phn-question-2">YES - PHN - Question 2</a> (yes_phn_item2)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#yes-phn-question-2">YES PHN Question 2</a> (yes_phn_item2)</p></td>
 <td><p>string</p></td>
 <td><p>yes</p></td>
 <td><dl class="field-list simple">
@@ -566,7 +586,7 @@ it cannot be uploaded.</p>
 </dl>
 </td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#yes-phn-question-3">YES - PHN - Question 3</a> (yes_phn_item3)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#yes-phn-question-3">YES PHN Question 3</a> (yes_phn_item3)</p></td>
 <td><p>string</p></td>
 <td><p>yes</p></td>
 <td><dl class="field-list simple">
@@ -591,7 +611,7 @@ it cannot be uploaded.</p>
 </dl>
 </td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#yes-phn-question-4">YES - PHN - Question 4</a> (yes_phn_item4)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#yes-phn-question-4">YES PHN Question 4</a> (yes_phn_item4)</p></td>
 <td><p>string</p></td>
 <td><p>yes</p></td>
 <td><dl class="field-list simple">
@@ -619,7 +639,7 @@ it cannot be uploaded.</p>
 </dl>
 </td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#yes-phn-question-5">YES - PHN - Question 5</a> (yes_phn_item5)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#yes-phn-question-5">YES PHN Question 5</a> (yes_phn_item5)</p></td>
 <td><p>string</p></td>
 <td><p>yes</p></td>
 <td><dl class="field-list simple">
@@ -644,7 +664,7 @@ it cannot be uploaded.</p>
 </dl>
 </td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#yes-phn-question-6">YES - PHN - Question 6</a> (yes_phn_item6)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#yes-phn-question-6">YES PHN Question 6</a> (yes_phn_item6)</p></td>
 <td><p>string</p></td>
 <td><p>yes</p></td>
 <td><dl class="field-list simple">
@@ -669,7 +689,7 @@ it cannot be uploaded.</p>
 </dl>
 </td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#yes-phn-question-7">YES - PHN - Question 7</a> (yes_phn_item7)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#yes-phn-question-7">YES PHN Question 7</a> (yes_phn_item7)</p></td>
 <td><p>string</p></td>
 <td><p>yes</p></td>
 <td><dl class="field-list simple">
@@ -694,7 +714,7 @@ it cannot be uploaded.</p>
 </dl>
 </td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#yes-phn-question-8">YES - PHN - Question 8</a> (yes_phn_item8)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#yes-phn-question-8">YES PHN Question 8</a> (yes_phn_item8)</p></td>
 <td><p>string</p></td>
 <td><p>yes</p></td>
 <td><dl class="field-list simple">
@@ -719,7 +739,7 @@ it cannot be uploaded.</p>
 </dl>
 </td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#yes-phn-question-9">YES - PHN - Question 9</a> (yes_phn_item9)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#yes-phn-question-9">YES PHN Question 9</a> (yes_phn_item9)</p></td>
 <td><p>string</p></td>
 <td><p>yes</p></td>
 <td><dl class="field-list simple">
@@ -744,7 +764,7 @@ it cannot be uploaded.</p>
 </dl>
 </td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#yes-phn-question-10">YES - PHN - Question 10</a> (yes_phn_item10)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#yes-phn-question-10">YES PHN Question 10</a> (yes_phn_item10)</p></td>
 <td><p>string</p></td>
 <td><p>yes</p></td>
 <td><dl class="field-list simple">
@@ -772,7 +792,7 @@ it cannot be uploaded.</p>
 </dl>
 </td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#yes-phn-question-11">YES - PHN - Question 11</a> (yes_phn_item11)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#yes-phn-question-11">YES PHN Question 11</a> (yes_phn_item11)</p></td>
 <td><p>string</p></td>
 <td><p>yes</p></td>
 <td><dl class="field-list simple">
@@ -797,7 +817,7 @@ it cannot be uploaded.</p>
 </dl>
 </td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#yes-phn-question-12">YES - PHN - Question 12</a> (yes_phn_item12)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#yes-phn-question-12">YES PHN Question 12</a> (yes_phn_item12)</p></td>
 <td><p>string</p></td>
 <td><p>yes</p></td>
 <td><dl class="field-list simple">
@@ -825,7 +845,7 @@ it cannot be uploaded.</p>
 </dl>
 </td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#yes-phn-question-13">YES - PHN - Question 13</a> (yes_phn_item13)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#yes-phn-question-13">YES PHN Question 13</a> (yes_phn_item13)</p></td>
 <td><p>string</p></td>
 <td><p>yes</p></td>
 <td><dl class="field-list simple">
@@ -850,7 +870,7 @@ it cannot be uploaded.</p>
 </dl>
 </td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#yes-phn-question-14">YES - PHN - Question 14</a> (yes_phn_item14)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#yes-phn-question-14">YES PHN Question 14</a> (yes_phn_item14)</p></td>
 <td><p>string</p></td>
 <td><p>yes</p></td>
 <td><dl class="field-list simple">
@@ -875,7 +895,7 @@ it cannot be uploaded.</p>
 </dl>
 </td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#yes-phn-question-15">YES - PHN - Question 15</a> (yes_phn_item15)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#yes-phn-question-15">YES PHN Question 15</a> (yes_phn_item15)</p></td>
 <td><p>string</p></td>
 <td><p>yes</p></td>
 <td><dl class="field-list simple">
@@ -900,7 +920,7 @@ it cannot be uploaded.</p>
 </dl>
 </td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#yes-phn-question-16">YES - PHN - Question 16</a> (yes_phn_item16)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#yes-phn-question-16">YES PHN Question 16</a> (yes_phn_item16)</p></td>
 <td><p>string</p></td>
 <td><p>yes</p></td>
 <td><dl class="field-list simple">
@@ -925,17 +945,17 @@ it cannot be uploaded.</p>
 </dl>
 </td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#yes-phn-question-17">YES - PHN - Question 17</a> (yes_phn_item17)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#yes-phn-question-17">YES PHN Question 17</a> (yes_phn_item17)</p></td>
 <td><p>string</p></td>
 <td><p>—</p></td>
-<td><p>My experience would have been better if … (write in)</p></td>
+<td><p>My experience would have been better if … (write in).</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#yes-phn-question-18">YES - PHN - Question 18</a> (yes_phn_item18)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#yes-phn-question-18">YES PHN Question 18</a> (yes_phn_item18)</p></td>
 <td><p>string</p></td>
 <td><p>—</p></td>
-<td><p>The best things about this service were … (write in)</p></td>
+<td><p>The best things about this service were … (write in.)</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#yes-phn-question-19">YES - PHN - Question 19</a> (yes_phn_item19)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#yes-phn-question-19">YES PHN Question 19</a> (yes_phn_item19)</p></td>
 <td><p>string</p></td>
 <td><p>yes</p></td>
 <td><dl class="field-list simple">
@@ -954,12 +974,12 @@ it cannot be uploaded.</p>
 </dl>
 </td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#yes-phn-question-19-other">YES - PHN - Question 19 Other</a> (yes_phn_item19_other)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#yes-phn-question-19-other">YES PHN Question 19 Other</a> (yes_phn_item19_other)</p></td>
 <td><p>string</p></td>
 <td><p>—</p></td>
 <td><p>What is your gender identity (other)?</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#yes-phn-question-20">YES - PHN - Question 20</a> (yes_phn_item20)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#yes-phn-question-20">YES PHN Question 20</a> (yes_phn_item20)</p></td>
 <td><p>string</p></td>
 <td><p>yes</p></td>
 <td><dl class="field-list simple">
@@ -975,12 +995,12 @@ it cannot be uploaded.</p>
 </dl>
 </td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#yes-phn-question-20-other">YES - PHN - Question 20 Other</a> (yes_phn_item20_other)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#yes-phn-question-20-other">YES PHN Question 20 Other</a> (yes_phn_item20_other)</p></td>
 <td><p>string</p></td>
 <td><p>—</p></td>
 <td><p>What is the main language you speak at home (other)?</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#yes-phn-question-21">YES - PHN - Question 21</a> (yes_phn_item21)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#yes-phn-question-21">YES PHN Question 21</a> (yes_phn_item21)</p></td>
 <td><p>string</p></td>
 <td><p>yes</p></td>
 <td><dl class="field-list simple">
@@ -1002,7 +1022,7 @@ it cannot be uploaded.</p>
 </dl>
 </td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#yes-phn-question-22">YES - PHN - Question 22</a> (yes_phn_item22)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#yes-phn-question-22">YES PHN Question 22</a> (yes_phn_item22)</p></td>
 <td><p>string</p></td>
 <td><p>yes</p></td>
 <td><dl class="field-list simple">
@@ -1027,7 +1047,7 @@ it cannot be uploaded.</p>
 </dl>
 </td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#yes-phn-question-23">YES - PHN - Question 23</a> (yes_phn_item23)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#yes-phn-question-23">YES PHN Question 23</a> (yes_phn_item23)</p></td>
 <td><p>string</p></td>
 <td><p>yes</p></td>
 <td><dl class="field-list simple">
@@ -1052,7 +1072,7 @@ it cannot be uploaded.</p>
 </dl>
 </td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#yes-phn-question-24">YES - PHN - Question 24</a> (yes_phn_item24)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#yes-phn-question-24">YES PHN Question 24</a> (yes_phn_item24)</p></td>
 <td><p>string</p></td>
 <td><p>yes</p></td>
 <td><dl class="field-list simple">
@@ -1077,12 +1097,12 @@ it cannot be uploaded.</p>
 </dl>
 </td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#yes-phn-question-24-other">YES - PHN - Question 24 Other</a> (yes_phn_item24_other)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#yes-phn-question-24-other">YES PHN Question 24 Other</a> (yes_phn_item24_other)</p></td>
 <td><p>string</p></td>
 <td><p>—</p></td>
 <td><p>Who referred you to this service (other)?</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#yes-phn-question-25">YES - PHN - Question 25</a> (yes_phn_item25)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#yes-phn-question-25">YES PHN Question 25</a> (yes_phn_item25)</p></td>
 <td><p>string</p></td>
 <td><p>yes</p></td>
 <td><dl class="field-list simple">
@@ -1101,7 +1121,7 @@ it cannot be uploaded.</p>
 </dl>
 </td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#yes-phn-question-26">YES - PHN - Question 26</a> (yes_phn_item26)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#yes-phn-question-26">YES PHN Question 26</a> (yes_phn_item26)</p></td>
 <td><p>string</p></td>
 <td><p>yes</p></td>
 <td><dl class="field-list simple">
@@ -1123,17 +1143,17 @@ it cannot be uploaded.</p>
 </dl>
 </td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#yes-phn-experience-scale">YES - PHN - Experience Scale</a> (yes_phn_experience_scale)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#yes-phn-experience-scale">YES PHN Experience Scale</a> (yes_phn_experience_scale)</p></td>
 <td><p>integer</p></td>
 <td><p>yes</p></td>
 <td><p>0 - 60, 99 = Not stated / Missing</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#yes-phn-outcome-scale">YES - PHN - Outcome Scale</a> (yes_phn_outcome_scale)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#yes-phn-outcome-scale">YES PHN Outcome Scale</a> (yes_phn_outcome_scale)</p></td>
 <td><p>integer</p></td>
 <td><p>yes</p></td>
 <td><p>0 - 15, 99 = Not stated / Missing</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#yes-phn-tags">YES - PHN - Tags</a> (yes_phn_tags)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#yes-phn-tags">YES PHN Tags</a> (yes_phn_tags)</p></td>
 <td><p>string</p></td>
 <td><p>—</p></td>
 <td><p>List of tags for the instrument.</p></td>
@@ -1145,9 +1165,25 @@ it cannot be uploaded.</p>
 </div>
 <hr class="docutils" />
 <div class="section" id="definitions">
-<h2><span class="section-number">3.2. </span>Definitions<a class="headerlink" href="#definitions" title="Permalink to this headline">¶</a></h2>
+<h2><span class="section-number">4.3. </span>Definitions<a class="headerlink" href="#definitions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="abn">
+<span id="dfn-organisation-abn"></span><h3><span class="section-number">4.3.1. </span>ABN<a class="headerlink" href="#abn" title="Permalink to this headline">¶</a></h3>
+<p>The Australian Business Number of the provider organisation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Field name</dt>
+<dd class="field-odd"><p>organisation_abn</p>
+</dd>
+<dt class="field-even">Data type</dt>
+<dd class="field-even"><p>string (11)</p>
+</dd>
+<dt class="field-odd">Required</dt>
+<dd class="field-odd"><p>yes</p>
+</dd>
+</dl>
+<hr class="docutils" />
+</div>
 <div class="section" id="collection-date">
-<span id="dfn-collection-date"></span><h3><span class="section-number">3.2.1. </span>Collection Date<a class="headerlink" href="#collection-date" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-collection-date"></span><h3><span class="section-number">4.3.2. </span>Collection Date<a class="headerlink" href="#collection-date" title="Permalink to this headline">¶</a></h3>
 <p>The collection date the survey instruments.</p>
 <dl class="field-list">
 <dt class="field-odd">Field name</dt>
@@ -1177,7 +1213,7 @@ before 1st January 2020, otherwise, the collection date must not be before
 <hr class="docutils" />
 </div>
 <div class="section" id="instrument-key">
-<span id="dfn-instrument-key"></span><h3><span class="section-number">3.2.2. </span>Instrument Key<a class="headerlink" href="#instrument-key" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-instrument-key"></span><h3><span class="section-number">4.3.3. </span>Instrument Key<a class="headerlink" href="#instrument-key" title="Permalink to this headline">¶</a></h3>
 <p>A sequence of characters which uniquely identifies the survey instrument to the Primary Health Network. Assigned by the Primary Health Network.</p>
 <dl class="field-list">
 <dt class="field-odd">Field name</dt>
@@ -1206,7 +1242,7 @@ UUIDs</a>.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="key">
-<span id="dfn-key"></span><h3><span class="section-number">3.2.3. </span>Key<a class="headerlink" href="#key" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-key"></span><h3><span class="section-number">4.3.4. </span>Key<a class="headerlink" href="#key" title="Permalink to this headline">¶</a></h3>
 <p>A metadata key name.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name</dt>
@@ -1221,8 +1257,56 @@ UUIDs</a>.</p>
 </dl>
 <hr class="docutils" />
 </div>
+<div class="section" id="legal-name">
+<span id="dfn-organisation-legal-name"></span><h3><span class="section-number">4.3.5. </span>Legal Name<a class="headerlink" href="#legal-name" title="Permalink to this headline">¶</a></h3>
+<p>The legal name of the provider organisation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Field name</dt>
+<dd class="field-odd"><p>organisation_legal_name</p>
+</dd>
+<dt class="field-even">Data type</dt>
+<dd class="field-even"><p>string</p>
+</dd>
+<dt class="field-odd">Required</dt>
+<dd class="field-odd"><p>no</p>
+</dd>
+</dl>
+<hr class="docutils" />
+</div>
+<div class="section" id="name">
+<span id="dfn-organisation-name"></span><h3><span class="section-number">4.3.6. </span>Name<a class="headerlink" href="#name" title="Permalink to this headline">¶</a></h3>
+<p>The name of the provider organisation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Field name</dt>
+<dd class="field-odd"><p>organisation_name</p>
+</dd>
+<dt class="field-even">Data type</dt>
+<dd class="field-even"><p>string (2,100)</p>
+</dd>
+<dt class="field-odd">Required</dt>
+<dd class="field-odd"><p>yes</p>
+</dd>
+</dl>
+<hr class="docutils" />
+</div>
+<div class="section" id="organisation-end-date">
+<span id="dfn-organisation-end-date"></span><h3><span class="section-number">4.3.7. </span>Organisation End Date<a class="headerlink" href="#organisation-end-date" title="Permalink to this headline">¶</a></h3>
+<p>The date on which a provider organisation stopped delivering services.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Field name</dt>
+<dd class="field-odd"><p>organisation_end_date</p>
+</dd>
+<dt class="field-even">Data type</dt>
+<dd class="field-even"><p>date</p>
+</dd>
+<dt class="field-odd">Required</dt>
+<dd class="field-odd"><p>yes</p>
+</dd>
+</dl>
+<hr class="docutils" />
+</div>
 <div class="section" id="organisation-key">
-<span id="dfn-organisation-key"></span><h3><span class="section-number">3.2.4. </span>Organisation Key<a class="headerlink" href="#organisation-key" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-organisation-key"></span><h3><span class="section-number">4.3.8. </span>Organisation Key<a class="headerlink" href="#organisation-key" title="Permalink to this headline">¶</a></h3>
 <p>A sequence of characters which uniquely identifies the provider organisation to the Primary Health Network. Assigned by the Primary Health Network.</p>
 <dl class="field-list">
 <dt class="field-odd">Field name</dt>
@@ -1243,7 +1327,7 @@ across time. See <a class="reference internal" href="identifier-management.html#
 <hr class="docutils" />
 </div>
 <div class="section" id="organisation-path">
-<span id="dfn-organisation-path"></span><h3><span class="section-number">3.2.5. </span>Organisation Path<a class="headerlink" href="#organisation-path" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-organisation-path"></span><h3><span class="section-number">4.3.9. </span>Organisation Path<a class="headerlink" href="#organisation-path" title="Permalink to this headline">¶</a></h3>
 <p>A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client.</p>
 <dl class="field-list">
 <dt class="field-odd">Field name</dt>
@@ -1294,72 +1378,8 @@ Provider Organisation’s Organisation Key separated by a colon.</p>
 </dl>
 <hr class="docutils" />
 </div>
-<div class="section" id="provider-organisation-abn">
-<span id="dfn-organisation-abn"></span><h3><span class="section-number">3.2.6. </span>Provider Organisation - ABN<a class="headerlink" href="#provider-organisation-abn" title="Permalink to this headline">¶</a></h3>
-<p>The Australian Business Number of the provider organisation.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Field name</dt>
-<dd class="field-odd"><p>organisation_abn</p>
-</dd>
-<dt class="field-even">Data type</dt>
-<dd class="field-even"><p>string (11)</p>
-</dd>
-<dt class="field-odd">Required</dt>
-<dd class="field-odd"><p>yes</p>
-</dd>
-</dl>
-<hr class="docutils" />
-</div>
-<div class="section" id="provider-organisation-end-date">
-<span id="dfn-organisation-end-date"></span><h3><span class="section-number">3.2.7. </span>Provider Organisation - End Date<a class="headerlink" href="#provider-organisation-end-date" title="Permalink to this headline">¶</a></h3>
-<p>The date on which a provider organisation stopped delivering services.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Field name</dt>
-<dd class="field-odd"><p>organisation_end_date</p>
-</dd>
-<dt class="field-even">Data type</dt>
-<dd class="field-even"><p>date</p>
-</dd>
-<dt class="field-odd">Required</dt>
-<dd class="field-odd"><p>yes</p>
-</dd>
-</dl>
-<hr class="docutils" />
-</div>
-<div class="section" id="provider-organisation-legal-name">
-<span id="dfn-organisation-legal-name"></span><h3><span class="section-number">3.2.8. </span>Provider Organisation - Legal Name<a class="headerlink" href="#provider-organisation-legal-name" title="Permalink to this headline">¶</a></h3>
-<p>The legal name of the provider organisation.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Field name</dt>
-<dd class="field-odd"><p>organisation_legal_name</p>
-</dd>
-<dt class="field-even">Data type</dt>
-<dd class="field-even"><p>string</p>
-</dd>
-<dt class="field-odd">Required</dt>
-<dd class="field-odd"><p>no</p>
-</dd>
-</dl>
-<hr class="docutils" />
-</div>
-<div class="section" id="provider-organisation-name">
-<span id="dfn-organisation-name"></span><h3><span class="section-number">3.2.9. </span>Provider Organisation - Name<a class="headerlink" href="#provider-organisation-name" title="Permalink to this headline">¶</a></h3>
-<p>The name of the provider organisation.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Field name</dt>
-<dd class="field-odd"><p>organisation_name</p>
-</dd>
-<dt class="field-even">Data type</dt>
-<dd class="field-even"><p>string (2,100)</p>
-</dd>
-<dt class="field-odd">Required</dt>
-<dd class="field-odd"><p>yes</p>
-</dd>
-</dl>
-<hr class="docutils" />
-</div>
-<div class="section" id="provider-organisation-start-date">
-<span id="dfn-organisation-start-date"></span><h3><span class="section-number">3.2.10. </span>Provider Organisation - Start Date<a class="headerlink" href="#provider-organisation-start-date" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="organisation-start-date">
+<span id="dfn-organisation-start-date"></span><h3><span class="section-number">4.3.10. </span>Organisation Start Date<a class="headerlink" href="#organisation-start-date" title="Permalink to this headline">¶</a></h3>
 <p>The date on which a provider organisation started delivering services.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name</dt>
@@ -1374,65 +1394,8 @@ Provider Organisation’s Organisation Key separated by a colon.</p>
 </dl>
 <hr class="docutils" />
 </div>
-<div class="section" id="provider-organisation-state">
-<span id="dfn-organisation-state"></span><h3><span class="section-number">3.2.11. </span>Provider Organisation - State<a class="headerlink" href="#provider-organisation-state" title="Permalink to this headline">¶</a></h3>
-<p>The state that the provider organisation operates in.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Field name</dt>
-<dd class="field-odd"><p>organisation_state</p>
-</dd>
-<dt class="field-even">Data type</dt>
-<dd class="field-even"><p>string</p>
-</dd>
-<dt class="field-odd">Required</dt>
-<dd class="field-odd"><p>yes</p>
-</dd>
-<dt class="field-even">Domain</dt>
-<dd class="field-even"><dl class="field-list simple">
-<dt class="field-odd">1</dt>
-<dd class="field-odd"><p>New South Wales</p>
-</dd>
-<dt class="field-even">2</dt>
-<dd class="field-even"><p>Victoria</p>
-</dd>
-<dt class="field-odd">3</dt>
-<dd class="field-odd"><p>Queensland</p>
-</dd>
-<dt class="field-even">4</dt>
-<dd class="field-even"><p>South Australia</p>
-</dd>
-<dt class="field-odd">5</dt>
-<dd class="field-odd"><p>Western Australia</p>
-</dd>
-<dt class="field-even">6</dt>
-<dd class="field-even"><p>Tasmania</p>
-</dd>
-<dt class="field-odd">7</dt>
-<dd class="field-odd"><p>Northern Territory</p>
-</dd>
-<dt class="field-even">8</dt>
-<dd class="field-even"><p>Australian Capital Territory</p>
-</dd>
-<dt class="field-odd">9</dt>
-<dd class="field-odd"><p>Other Territories</p>
-</dd>
-</dl>
-</dd>
-<dt class="field-even">Notes</dt>
-<dd class="field-even"><ul class="simple">
-<li><p>Name is taken from Australian <a class="reference external" href="http://www.abs.gov.au/ausstats/abs&#64;.nsf/0/871A7FF33DF471FBCA257801000DCD5F?Opendocument">Statistical Geography Standard (ASGS) July
-2011</a>.</p></li>
-<li><p>Code is from Meteor with the addition of code for Other Territories.</p></li>
-</ul>
-</dd>
-<dt class="field-odd">METEOR</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://meteor.aihw.gov.au/content/613718">613718</a></p>
-</dd>
-</dl>
-<hr class="docutils" />
-</div>
-<div class="section" id="provider-organisation-tags">
-<span id="dfn-organisation-tags"></span><h3><span class="section-number">3.2.12. </span>Provider Organisation - Tags<a class="headerlink" href="#provider-organisation-tags" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="organisation-tags">
+<span id="dfn-organisation-tags"></span><h3><span class="section-number">4.3.11. </span>Organisation Tags<a class="headerlink" href="#organisation-tags" title="Permalink to this headline">¶</a></h3>
 <p>List of tags for the provider organisation.</p>
 <dl class="field-list">
 <dt class="field-odd">Field name</dt>
@@ -1457,8 +1420,8 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 </dl>
 <hr class="docutils" />
 </div>
-<div class="section" id="provider-organisation-type">
-<span id="dfn-organisation-type"></span><h3><span class="section-number">3.2.13. </span>Provider Organisation - Type<a class="headerlink" href="#provider-organisation-type" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="organisation-type">
+<span id="dfn-organisation-type"></span><h3><span class="section-number">4.3.12. </span>Organisation Type<a class="headerlink" href="#organisation-type" title="Permalink to this headline">¶</a></h3>
 <p>The category that best describes the provider organisation.</p>
 <dl class="field-list">
 <dt class="field-odd">Field name</dt>
@@ -1581,8 +1544,65 @@ option to commission external providers.</p>
 </dl>
 <hr class="docutils" />
 </div>
+<div class="section" id="state">
+<span id="dfn-organisation-state"></span><h3><span class="section-number">4.3.13. </span>State<a class="headerlink" href="#state" title="Permalink to this headline">¶</a></h3>
+<p>The state that the provider organisation operates in.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Field name</dt>
+<dd class="field-odd"><p>organisation_state</p>
+</dd>
+<dt class="field-even">Data type</dt>
+<dd class="field-even"><p>string</p>
+</dd>
+<dt class="field-odd">Required</dt>
+<dd class="field-odd"><p>yes</p>
+</dd>
+<dt class="field-even">Domain</dt>
+<dd class="field-even"><dl class="field-list simple">
+<dt class="field-odd">1</dt>
+<dd class="field-odd"><p>New South Wales</p>
+</dd>
+<dt class="field-even">2</dt>
+<dd class="field-even"><p>Victoria</p>
+</dd>
+<dt class="field-odd">3</dt>
+<dd class="field-odd"><p>Queensland</p>
+</dd>
+<dt class="field-even">4</dt>
+<dd class="field-even"><p>South Australia</p>
+</dd>
+<dt class="field-odd">5</dt>
+<dd class="field-odd"><p>Western Australia</p>
+</dd>
+<dt class="field-even">6</dt>
+<dd class="field-even"><p>Tasmania</p>
+</dd>
+<dt class="field-odd">7</dt>
+<dd class="field-odd"><p>Northern Territory</p>
+</dd>
+<dt class="field-even">8</dt>
+<dd class="field-even"><p>Australian Capital Territory</p>
+</dd>
+<dt class="field-odd">9</dt>
+<dd class="field-odd"><p>Other Territories</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Notes</dt>
+<dd class="field-even"><ul class="simple">
+<li><p>Name is taken from Australian <a class="reference external" href="http://www.abs.gov.au/ausstats/abs&#64;.nsf/0/871A7FF33DF471FBCA257801000DCD5F?Opendocument">Statistical Geography Standard (ASGS) July
+2011</a>.</p></li>
+<li><p>Code is from Meteor with the addition of code for Other Territories.</p></li>
+</ul>
+</dd>
+<dt class="field-odd">METEOR</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://meteor.aihw.gov.au/content/613718">613718</a></p>
+</dd>
+</dl>
+<hr class="docutils" />
+</div>
 <div class="section" id="survey-key">
-<span id="dfn-survey-key"></span><h3><span class="section-number">3.2.14. </span>Survey Key<a class="headerlink" href="#survey-key" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-survey-key"></span><h3><span class="section-number">4.3.14. </span>Survey Key<a class="headerlink" href="#survey-key" title="Permalink to this headline">¶</a></h3>
 <p>This is a number or code assigned to each survey activity. The Survey Key is unique and stable for each survey at the level of the organisation.</p>
 <dl class="field-list">
 <dt class="field-odd">Field name</dt>
@@ -1611,7 +1631,7 @@ UUIDs</a>.</p>
 <hr class="docutils" />
 </div>
 <div class="section" id="survey-tags">
-<span id="dfn-survey-tags"></span><h3><span class="section-number">3.2.15. </span>Survey Tags<a class="headerlink" href="#survey-tags" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-survey-tags"></span><h3><span class="section-number">4.3.15. </span>Survey Tags<a class="headerlink" href="#survey-tags" title="Permalink to this headline">¶</a></h3>
 <p>List of tags for the survey.</p>
 <dl class="field-list">
 <dt class="field-odd">Field name</dt>
@@ -1637,7 +1657,7 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 <hr class="docutils" />
 </div>
 <div class="section" id="value">
-<span id="dfn-value"></span><h3><span class="section-number">3.2.16. </span>Value<a class="headerlink" href="#value" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-value"></span><h3><span class="section-number">4.3.16. </span>Value<a class="headerlink" href="#value" title="Permalink to this headline">¶</a></h3>
 <p>The metadata value.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name</dt>
@@ -1653,7 +1673,7 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 <hr class="docutils" />
 </div>
 <div class="section" id="yes-phn-experience-scale">
-<span id="dfn-yes-phn-experience-scale"></span><h3><span class="section-number">3.2.17. </span>YES - PHN - Experience Scale<a class="headerlink" href="#yes-phn-experience-scale" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-yes-phn-experience-scale"></span><h3><span class="section-number">4.3.17. </span>YES PHN Experience Scale<a class="headerlink" href="#yes-phn-experience-scale" title="Permalink to this headline">¶</a></h3>
 <dl class="field-list simple">
 <dt class="field-odd">Field name</dt>
 <dd class="field-odd"><p>yes_phn_experience_scale</p>
@@ -1673,7 +1693,7 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 <hr class="docutils" />
 </div>
 <div class="section" id="yes-phn-outcome-scale">
-<span id="dfn-yes-phn-outcome-scale"></span><h3><span class="section-number">3.2.18. </span>YES - PHN - Outcome Scale<a class="headerlink" href="#yes-phn-outcome-scale" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-yes-phn-outcome-scale"></span><h3><span class="section-number">4.3.18. </span>YES PHN Outcome Scale<a class="headerlink" href="#yes-phn-outcome-scale" title="Permalink to this headline">¶</a></h3>
 <dl class="field-list simple">
 <dt class="field-odd">Field name</dt>
 <dd class="field-odd"><p>yes_phn_outcome_scale</p>
@@ -1693,8 +1713,8 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 <hr class="docutils" />
 </div>
 <div class="section" id="yes-phn-question-1">
-<span id="dfn-yes-phn-item1"></span><h3><span class="section-number">3.2.19. </span>YES - PHN - Question 1<a class="headerlink" href="#yes-phn-question-1" title="Permalink to this headline">¶</a></h3>
-<p>You felt welcome using this service</p>
+<span id="dfn-yes-phn-item1"></span><h3><span class="section-number">4.3.19. </span>YES PHN Question 1<a class="headerlink" href="#yes-phn-question-1" title="Permalink to this headline">¶</a></h3>
+<p>You felt welcome using this service.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name</dt>
 <dd class="field-odd"><p>yes_phn_item1</p>
@@ -1731,8 +1751,8 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 <hr class="docutils" />
 </div>
 <div class="section" id="yes-phn-question-2">
-<span id="dfn-yes-phn-item2"></span><h3><span class="section-number">3.2.20. </span>YES - PHN - Question 2<a class="headerlink" href="#yes-phn-question-2" title="Permalink to this headline">¶</a></h3>
-<p>You felt safe using this service</p>
+<span id="dfn-yes-phn-item2"></span><h3><span class="section-number">4.3.20. </span>YES PHN Question 2<a class="headerlink" href="#yes-phn-question-2" title="Permalink to this headline">¶</a></h3>
+<p>You felt safe using this service.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name</dt>
 <dd class="field-odd"><p>yes_phn_item2</p>
@@ -1769,8 +1789,8 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 <hr class="docutils" />
 </div>
 <div class="section" id="yes-phn-question-3">
-<span id="dfn-yes-phn-item3"></span><h3><span class="section-number">3.2.21. </span>YES - PHN - Question 3<a class="headerlink" href="#yes-phn-question-3" title="Permalink to this headline">¶</a></h3>
-<p>You had access to this service when you needed</p>
+<span id="dfn-yes-phn-item3"></span><h3><span class="section-number">4.3.21. </span>YES PHN Question 3<a class="headerlink" href="#yes-phn-question-3" title="Permalink to this headline">¶</a></h3>
+<p>You had access to this service when you needed.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name</dt>
 <dd class="field-odd"><p>yes_phn_item3</p>
@@ -1807,8 +1827,8 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 <hr class="docutils" />
 </div>
 <div class="section" id="yes-phn-question-4">
-<span id="dfn-yes-phn-item4"></span><h3><span class="section-number">3.2.22. </span>YES - PHN - Question 4<a class="headerlink" href="#yes-phn-question-4" title="Permalink to this headline">¶</a></h3>
-<p>You had opportunities for your family and friends to be involved in your support or care if you wanted</p>
+<span id="dfn-yes-phn-item4"></span><h3><span class="section-number">4.3.22. </span>YES PHN Question 4<a class="headerlink" href="#yes-phn-question-4" title="Permalink to this headline">¶</a></h3>
+<p>You had opportunities for your family and friends to be involved in your support or care if you wanted.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name</dt>
 <dd class="field-odd"><p>yes_phn_item4</p>
@@ -1848,8 +1868,8 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 <hr class="docutils" />
 </div>
 <div class="section" id="yes-phn-question-5">
-<span id="dfn-yes-phn-item5"></span><h3><span class="section-number">3.2.23. </span>YES - PHN - Question 5<a class="headerlink" href="#yes-phn-question-5" title="Permalink to this headline">¶</a></h3>
-<p>Staff were able to provide information or advice to help you manage your physical health if you wanted</p>
+<span id="dfn-yes-phn-item5"></span><h3><span class="section-number">4.3.23. </span>YES PHN Question 5<a class="headerlink" href="#yes-phn-question-5" title="Permalink to this headline">¶</a></h3>
+<p>Staff were able to provide information or advice to help you manage your physical health if you wanted.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name</dt>
 <dd class="field-odd"><p>yes_phn_item5</p>
@@ -1886,7 +1906,7 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 <hr class="docutils" />
 </div>
 <div class="section" id="yes-phn-question-6">
-<span id="dfn-yes-phn-item6"></span><h3><span class="section-number">3.2.24. </span>YES - PHN - Question 6<a class="headerlink" href="#yes-phn-question-6" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-yes-phn-item6"></span><h3><span class="section-number">4.3.24. </span>YES PHN Question 6<a class="headerlink" href="#yes-phn-question-6" title="Permalink to this headline">¶</a></h3>
 <p>Your individuality and values were respected (such as your culture, faith or gender identity, etc.)</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name</dt>
@@ -1924,8 +1944,8 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 <hr class="docutils" />
 </div>
 <div class="section" id="yes-phn-question-7">
-<span id="dfn-yes-phn-item7"></span><h3><span class="section-number">3.2.25. </span>YES - PHN - Question 7<a class="headerlink" href="#yes-phn-question-7" title="Permalink to this headline">¶</a></h3>
-<p>This service listened to and followed up on feedback or complaints</p>
+<span id="dfn-yes-phn-item7"></span><h3><span class="section-number">4.3.25. </span>YES PHN Question 7<a class="headerlink" href="#yes-phn-question-7" title="Permalink to this headline">¶</a></h3>
+<p>This service listened to and followed up on feedback or complaints.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name</dt>
 <dd class="field-odd"><p>yes_phn_item7</p>
@@ -1962,8 +1982,8 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 <hr class="docutils" />
 </div>
 <div class="section" id="yes-phn-question-8">
-<span id="dfn-yes-phn-item8"></span><h3><span class="section-number">3.2.26. </span>YES - PHN - Question 8<a class="headerlink" href="#yes-phn-question-8" title="Permalink to this headline">¶</a></h3>
-<p>The service respected your right to make decisions</p>
+<span id="dfn-yes-phn-item8"></span><h3><span class="section-number">4.3.26. </span>YES PHN Question 8<a class="headerlink" href="#yes-phn-question-8" title="Permalink to this headline">¶</a></h3>
+<p>The service respected your right to make decisions.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name</dt>
 <dd class="field-odd"><p>yes_phn_item8</p>
@@ -2000,8 +2020,8 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 <hr class="docutils" />
 </div>
 <div class="section" id="yes-phn-question-9">
-<span id="dfn-yes-phn-item9"></span><h3><span class="section-number">3.2.27. </span>YES - PHN - Question 9<a class="headerlink" href="#yes-phn-question-9" title="Permalink to this headline">¶</a></h3>
-<p>The support or care available met your needs</p>
+<span id="dfn-yes-phn-item9"></span><h3><span class="section-number">4.3.27. </span>YES PHN Question 9<a class="headerlink" href="#yes-phn-question-9" title="Permalink to this headline">¶</a></h3>
+<p>The support or care available met your needs.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name</dt>
 <dd class="field-odd"><p>yes_phn_item9</p>
@@ -2038,8 +2058,8 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 <hr class="docutils" />
 </div>
 <div class="section" id="yes-phn-question-10">
-<span id="dfn-yes-phn-item10"></span><h3><span class="section-number">3.2.28. </span>YES - PHN - Question 10<a class="headerlink" href="#yes-phn-question-10" title="Permalink to this headline">¶</a></h3>
-<p>Access to a peer worker/ lived experience worker, if you wanted</p>
+<span id="dfn-yes-phn-item10"></span><h3><span class="section-number">4.3.28. </span>YES PHN Question 10<a class="headerlink" href="#yes-phn-question-10" title="Permalink to this headline">¶</a></h3>
+<p>Access to a peer worker/ lived experience worker, if you wanted.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name</dt>
 <dd class="field-odd"><p>yes_phn_item10</p>
@@ -2079,8 +2099,8 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 <hr class="docutils" />
 </div>
 <div class="section" id="yes-phn-question-11">
-<span id="dfn-yes-phn-item11"></span><h3><span class="section-number">3.2.29. </span>YES - PHN - Question 11<a class="headerlink" href="#yes-phn-question-11" title="Permalink to this headline">¶</a></h3>
-<p>The support or care available met your needs</p>
+<span id="dfn-yes-phn-item11"></span><h3><span class="section-number">4.3.29. </span>YES PHN Question 11<a class="headerlink" href="#yes-phn-question-11" title="Permalink to this headline">¶</a></h3>
+<p>The support or care available met your needs.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name</dt>
 <dd class="field-odd"><p>yes_phn_item11</p>
@@ -2117,8 +2137,8 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 <hr class="docutils" />
 </div>
 <div class="section" id="yes-phn-question-12">
-<span id="dfn-yes-phn-item12"></span><h3><span class="section-number">3.2.30. </span>YES - PHN - Question 12<a class="headerlink" href="#yes-phn-question-12" title="Permalink to this headline">¶</a></h3>
-<p>Development of a plan with you that considered all of your needs (including support, coordination and follow up)</p>
+<span id="dfn-yes-phn-item12"></span><h3><span class="section-number">4.3.30. </span>YES PHN Question 12<a class="headerlink" href="#yes-phn-question-12" title="Permalink to this headline">¶</a></h3>
+<p>Development of a plan with you that considered all of your needs (including support, coordination and follow up).</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name</dt>
 <dd class="field-odd"><p>yes_phn_item12</p>
@@ -2158,8 +2178,8 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 <hr class="docutils" />
 </div>
 <div class="section" id="yes-phn-question-13">
-<span id="dfn-yes-phn-item13"></span><h3><span class="section-number">3.2.31. </span>YES - PHN - Question 13<a class="headerlink" href="#yes-phn-question-13" title="Permalink to this headline">¶</a></h3>
-<p>The effect of this service on your hopefulness for the future</p>
+<span id="dfn-yes-phn-item13"></span><h3><span class="section-number">4.3.31. </span>YES PHN Question 13<a class="headerlink" href="#yes-phn-question-13" title="Permalink to this headline">¶</a></h3>
+<p>The effect of this service on your hopefulness for the future.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name</dt>
 <dd class="field-odd"><p>yes_phn_item13</p>
@@ -2196,8 +2216,8 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 <hr class="docutils" />
 </div>
 <div class="section" id="yes-phn-question-14">
-<span id="dfn-yes-phn-item14"></span><h3><span class="section-number">3.2.32. </span>YES - PHN - Question 14<a class="headerlink" href="#yes-phn-question-14" title="Permalink to this headline">¶</a></h3>
-<p>The effect of this service on your skills and strategies to look after your own health and wellbeing</p>
+<span id="dfn-yes-phn-item14"></span><h3><span class="section-number">4.3.32. </span>YES PHN Question 14<a class="headerlink" href="#yes-phn-question-14" title="Permalink to this headline">¶</a></h3>
+<p>The effect of this service on your skills and strategies to look after your own health and wellbeing.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name</dt>
 <dd class="field-odd"><p>yes_phn_item14</p>
@@ -2234,8 +2254,8 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 <hr class="docutils" />
 </div>
 <div class="section" id="yes-phn-question-15">
-<span id="dfn-yes-phn-item15"></span><h3><span class="section-number">3.2.33. </span>YES - PHN - Question 15<a class="headerlink" href="#yes-phn-question-15" title="Permalink to this headline">¶</a></h3>
-<p>The effect of this service on your ability to manage your day to day life</p>
+<span id="dfn-yes-phn-item15"></span><h3><span class="section-number">4.3.33. </span>YES PHN Question 15<a class="headerlink" href="#yes-phn-question-15" title="Permalink to this headline">¶</a></h3>
+<p>The effect of this service on your ability to manage your day to day life.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name</dt>
 <dd class="field-odd"><p>yes_phn_item15</p>
@@ -2272,7 +2292,7 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 <hr class="docutils" />
 </div>
 <div class="section" id="yes-phn-question-16">
-<span id="dfn-yes-phn-item16"></span><h3><span class="section-number">3.2.34. </span>YES - PHN - Question 16<a class="headerlink" href="#yes-phn-question-16" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-yes-phn-item16"></span><h3><span class="section-number">4.3.34. </span>YES PHN Question 16<a class="headerlink" href="#yes-phn-question-16" title="Permalink to this headline">¶</a></h3>
 <p>Overall, how would you rate your experience with this service in the last 3 months?</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name</dt>
@@ -2310,8 +2330,8 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 <hr class="docutils" />
 </div>
 <div class="section" id="yes-phn-question-17">
-<span id="dfn-yes-phn-item17"></span><h3><span class="section-number">3.2.35. </span>YES - PHN - Question 17<a class="headerlink" href="#yes-phn-question-17" title="Permalink to this headline">¶</a></h3>
-<p>My experience would have been better if … (write in)</p>
+<span id="dfn-yes-phn-item17"></span><h3><span class="section-number">4.3.35. </span>YES PHN Question 17<a class="headerlink" href="#yes-phn-question-17" title="Permalink to this headline">¶</a></h3>
+<p>My experience would have been better if … (write in).</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name</dt>
 <dd class="field-odd"><p>yes_phn_item17</p>
@@ -2326,8 +2346,8 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 <hr class="docutils" />
 </div>
 <div class="section" id="yes-phn-question-18">
-<span id="dfn-yes-phn-item18"></span><h3><span class="section-number">3.2.36. </span>YES - PHN - Question 18<a class="headerlink" href="#yes-phn-question-18" title="Permalink to this headline">¶</a></h3>
-<p>The best things about this service were … (write in)</p>
+<span id="dfn-yes-phn-item18"></span><h3><span class="section-number">4.3.36. </span>YES PHN Question 18<a class="headerlink" href="#yes-phn-question-18" title="Permalink to this headline">¶</a></h3>
+<p>The best things about this service were … (write in.)</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name</dt>
 <dd class="field-odd"><p>yes_phn_item18</p>
@@ -2342,7 +2362,7 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 <hr class="docutils" />
 </div>
 <div class="section" id="yes-phn-question-19">
-<span id="dfn-yes-phn-item19"></span><h3><span class="section-number">3.2.37. </span>YES - PHN - Question 19<a class="headerlink" href="#yes-phn-question-19" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-yes-phn-item19"></span><h3><span class="section-number">4.3.37. </span>YES PHN Question 19<a class="headerlink" href="#yes-phn-question-19" title="Permalink to this headline">¶</a></h3>
 <p>What is your gender identity?</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name</dt>
@@ -2374,9 +2394,9 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 <hr class="docutils" />
 </div>
 <div class="section" id="yes-phn-question-19-other">
-<span id="dfn-yes-phn-item19-other"></span><h3><span class="section-number">3.2.38. </span>YES - PHN - Question 19 Other<a class="headerlink" href="#yes-phn-question-19-other" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-yes-phn-item19-other"></span><h3><span class="section-number">4.3.38. </span>YES PHN Question 19 Other<a class="headerlink" href="#yes-phn-question-19-other" title="Permalink to this headline">¶</a></h3>
 <p>What is your gender identity (other)?</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Field name</dt>
 <dd class="field-odd"><p>yes_phn_item19_other</p>
 </dd>
@@ -2386,11 +2406,15 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 <dt class="field-odd">Required</dt>
 <dd class="field-odd"><p>no</p>
 </dd>
+<dt class="field-even">Notes</dt>
+<dd class="field-even"><p>As this is a free text field there is a risk that a client could provide identifying information.</p>
+<p>Any response in this field will be suppressed in data extracts to avoid spilling any such identifying information.</p>
+</dd>
 </dl>
 <hr class="docutils" />
 </div>
 <div class="section" id="yes-phn-question-20">
-<span id="dfn-yes-phn-item20"></span><h3><span class="section-number">3.2.39. </span>YES - PHN - Question 20<a class="headerlink" href="#yes-phn-question-20" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-yes-phn-item20"></span><h3><span class="section-number">4.3.39. </span>YES PHN Question 20<a class="headerlink" href="#yes-phn-question-20" title="Permalink to this headline">¶</a></h3>
 <p>What is the main language you speak at home?</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name</dt>
@@ -2419,9 +2443,9 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 <hr class="docutils" />
 </div>
 <div class="section" id="yes-phn-question-20-other">
-<span id="dfn-yes-phn-item20-other"></span><h3><span class="section-number">3.2.40. </span>YES - PHN - Question 20 Other<a class="headerlink" href="#yes-phn-question-20-other" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-yes-phn-item20-other"></span><h3><span class="section-number">4.3.40. </span>YES PHN Question 20 Other<a class="headerlink" href="#yes-phn-question-20-other" title="Permalink to this headline">¶</a></h3>
 <p>What is the main language you speak at home (other)?</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Field name</dt>
 <dd class="field-odd"><p>yes_phn_item20_other</p>
 </dd>
@@ -2431,11 +2455,15 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 <dt class="field-odd">Required</dt>
 <dd class="field-odd"><p>no</p>
 </dd>
+<dt class="field-even">Notes</dt>
+<dd class="field-even"><p>As this is a free text field there is a risk that a client could provide identifying information.</p>
+<p>Any response in this field will be suppressed in data extracts to avoid spilling any such identifying information.</p>
+</dd>
 </dl>
 <hr class="docutils" />
 </div>
 <div class="section" id="yes-phn-question-21">
-<span id="dfn-yes-phn-item21"></span><h3><span class="section-number">3.2.41. </span>YES - PHN - Question 21<a class="headerlink" href="#yes-phn-question-21" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-yes-phn-item21"></span><h3><span class="section-number">4.3.41. </span>YES PHN Question 21<a class="headerlink" href="#yes-phn-question-21" title="Permalink to this headline">¶</a></h3>
 <p>Are you of Aboriginal or Torres Strait Island origin?</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name</dt>
@@ -2470,7 +2498,7 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 <hr class="docutils" />
 </div>
 <div class="section" id="yes-phn-question-22">
-<span id="dfn-yes-phn-item22"></span><h3><span class="section-number">3.2.42. </span>YES - PHN - Question 22<a class="headerlink" href="#yes-phn-question-22" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-yes-phn-item22"></span><h3><span class="section-number">4.3.42. </span>YES PHN Question 22<a class="headerlink" href="#yes-phn-question-22" title="Permalink to this headline">¶</a></h3>
 <p>What is your age?</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name</dt>
@@ -2508,7 +2536,7 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 <hr class="docutils" />
 </div>
 <div class="section" id="yes-phn-question-23">
-<span id="dfn-yes-phn-item23"></span><h3><span class="section-number">3.2.43. </span>YES - PHN - Question 23<a class="headerlink" href="#yes-phn-question-23" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-yes-phn-item23"></span><h3><span class="section-number">4.3.43. </span>YES PHN Question 23<a class="headerlink" href="#yes-phn-question-23" title="Permalink to this headline">¶</a></h3>
 <p>How long have you been receiving support or care from this service?</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name</dt>
@@ -2546,7 +2574,7 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 <hr class="docutils" />
 </div>
 <div class="section" id="yes-phn-question-24">
-<span id="dfn-yes-phn-item24"></span><h3><span class="section-number">3.2.44. </span>YES - PHN - Question 24<a class="headerlink" href="#yes-phn-question-24" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-yes-phn-item24"></span><h3><span class="section-number">4.3.44. </span>YES PHN Question 24<a class="headerlink" href="#yes-phn-question-24" title="Permalink to this headline">¶</a></h3>
 <p>Who referred you to this service?</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name</dt>
@@ -2584,9 +2612,9 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 <hr class="docutils" />
 </div>
 <div class="section" id="yes-phn-question-24-other">
-<span id="dfn-yes-phn-item24-other"></span><h3><span class="section-number">3.2.45. </span>YES - PHN - Question 24 Other<a class="headerlink" href="#yes-phn-question-24-other" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-yes-phn-item24-other"></span><h3><span class="section-number">4.3.45. </span>YES PHN Question 24 Other<a class="headerlink" href="#yes-phn-question-24-other" title="Permalink to this headline">¶</a></h3>
 <p>Who referred you to this service (other)?</p>
-<dl class="field-list simple">
+<dl class="field-list">
 <dt class="field-odd">Field name</dt>
 <dd class="field-odd"><p>yes_phn_item24_other</p>
 </dd>
@@ -2596,11 +2624,15 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 <dt class="field-odd">Required</dt>
 <dd class="field-odd"><p>no</p>
 </dd>
+<dt class="field-even">Notes</dt>
+<dd class="field-even"><p>As this is a free text field there is a risk that a client could provide identifying information.</p>
+<p>Any response in this field will be suppressed in data extracts to avoid spilling any such identifying information.</p>
+</dd>
 </dl>
 <hr class="docutils" />
 </div>
 <div class="section" id="yes-phn-question-25">
-<span id="dfn-yes-phn-item25"></span><h3><span class="section-number">3.2.46. </span>YES - PHN - Question 25<a class="headerlink" href="#yes-phn-question-25" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-yes-phn-item25"></span><h3><span class="section-number">4.3.46. </span>YES PHN Question 25<a class="headerlink" href="#yes-phn-question-25" title="Permalink to this headline">¶</a></h3>
 <p>How involved were you in choosing this service?</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name</dt>
@@ -2632,7 +2664,7 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 <hr class="docutils" />
 </div>
 <div class="section" id="yes-phn-question-26">
-<span id="dfn-yes-phn-item26"></span><h3><span class="section-number">3.2.47. </span>YES - PHN - Question 26<a class="headerlink" href="#yes-phn-question-26" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-yes-phn-item26"></span><h3><span class="section-number">4.3.47. </span>YES PHN Question 26<a class="headerlink" href="#yes-phn-question-26" title="Permalink to this headline">¶</a></h3>
 <p>Did someone help you complete this survey?</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name</dt>
@@ -2667,7 +2699,7 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 <hr class="docutils" />
 </div>
 <div class="section" id="yes-phn-tags">
-<span id="dfn-yes-phn-tags"></span><h3><span class="section-number">3.2.48. </span>YES - PHN - Tags<a class="headerlink" href="#yes-phn-tags" title="Permalink to this headline">¶</a></h3>
+<span id="dfn-yes-phn-tags"></span><h3><span class="section-number">4.3.48. </span>YES PHN Tags<a class="headerlink" href="#yes-phn-tags" title="Permalink to this headline">¶</a></h3>
 <p>List of tags for the instrument.</p>
 <dl class="field-list">
 <dt class="field-odd">Field name</dt>
@@ -2694,7 +2726,7 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 </div>
 </div>
 <div class="section" id="download-specification-files">
-<span id="data-specifications-download"></span><h2><span class="section-number">3.3. </span>Download Specification Files<a class="headerlink" href="#download-specification-files" title="Permalink to this headline">¶</a></h2>
+<span id="data-specifications-download"></span><h2><span class="section-number">4.4. </span>Download Specification Files<a class="headerlink" href="#download-specification-files" title="Permalink to this headline">¶</a></h2>
 <p>Available for software developers designing extracts for the PMHC MDS, please
 click the link below to download the PMHC MDS YES PHN Specification files:</p>
 <ul class="simple">
@@ -2711,10 +2743,10 @@ click the link below to download the PMHC MDS YES PHN Specification files:</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="upload-specification.html" class="btn btn-neutral float-right" title="4. Upload specification" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="upload-specification.html" class="btn btn-neutral float-right" title="5. Upload specification" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="identifier-management.html" class="btn btn-neutral float-left" title="2. Identifier management" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="identifier-management.html" class="btn btn-neutral float-left" title="3. Identifier management" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

@@ -1,6 +1,21 @@
 Definitions
 -----------
 
+.. _dfn-organisation_abn:
+
+ABN
+^^^
+
+The Australian Business Number of the provider organisation.
+
+:Field name: organisation_abn
+
+:Data type: string (11)
+
+:Required: yes
+
+----------
+
 .. _dfn-collection_date:
 
 Collection Date
@@ -65,6 +80,51 @@ A metadata key name.
 
 ----------
 
+.. _dfn-organisation_legal_name:
+
+Legal Name
+^^^^^^^^^^
+
+The legal name of the provider organisation.
+
+:Field name: organisation_legal_name
+
+:Data type: string
+
+:Required: no
+
+----------
+
+.. _dfn-organisation_name:
+
+Name
+^^^^
+
+The name of the provider organisation.
+
+:Field name: organisation_name
+
+:Data type: string (2,100)
+
+:Required: yes
+
+----------
+
+.. _dfn-organisation_end_date:
+
+Organisation End Date
+^^^^^^^^^^^^^^^^^^^^^
+
+The date on which a provider organisation stopped delivering services.
+
+:Field name: organisation_end_date
+
+:Data type: date
+
+:Required: yes
+
+----------
+
 .. _dfn-organisation_key:
 
 Organisation Key
@@ -109,70 +169,10 @@ A sequence of colon separated Organisation Keys that fully specifies the Provide
 
 ----------
 
-.. _dfn-organisation_abn:
-
-Provider Organisation - ABN
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The Australian Business Number of the provider organisation.
-
-:Field name: organisation_abn
-
-:Data type: string (11)
-
-:Required: yes
-
-----------
-
-.. _dfn-organisation_end_date:
-
-Provider Organisation - End Date
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The date on which a provider organisation stopped delivering services.
-
-:Field name: organisation_end_date
-
-:Data type: date
-
-:Required: yes
-
-----------
-
-.. _dfn-organisation_legal_name:
-
-Provider Organisation - Legal Name
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The legal name of the provider organisation.
-
-:Field name: organisation_legal_name
-
-:Data type: string
-
-:Required: no
-
-----------
-
-.. _dfn-organisation_name:
-
-Provider Organisation - Name
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The name of the provider organisation.
-
-:Field name: organisation_name
-
-:Data type: string (2,100)
-
-:Required: yes
-
-----------
-
 .. _dfn-organisation_start_date:
 
-Provider Organisation - Start Date
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Organisation Start Date
+^^^^^^^^^^^^^^^^^^^^^^^
 
 The date on which a provider organisation started delivering services.
 
@@ -184,46 +184,10 @@ The date on which a provider organisation started delivering services.
 
 ----------
 
-.. _dfn-organisation_state:
-
-Provider Organisation - State
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The state that the provider organisation operates in.
-
-:Field name: organisation_state
-
-:Data type: string
-
-:Required: yes
-
-:Domain:
-  :1: New South Wales
-  :2: Victoria
-  :3: Queensland
-  :4: South Australia
-  :5: Western Australia
-  :6: Tasmania
-  :7: Northern Territory
-  :8: Australian Capital Territory
-  :9: Other Territories
-
-:Notes:
-  - Name is taken from Australian `Statistical Geography Standard (ASGS) July
-    2011
-    <http://www.abs.gov.au/ausstats/abs@.nsf/0/871A7FF33DF471FBCA257801000DCD5
-    F?Opendocument>`_.
-  - Code is from Meteor with the addition of code for Other Territories.
-  
-
-:METEOR: `613718 <https://meteor.aihw.gov.au/content/613718>`__
-
-----------
-
 .. _dfn-organisation_tags:
 
-Provider Organisation - Tags
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Organisation Tags
+^^^^^^^^^^^^^^^^^
 
 List of tags for the provider organisation.
 
@@ -251,8 +215,8 @@ List of tags for the provider organisation.
 
 .. _dfn-organisation_type:
 
-Provider Organisation - Type
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Organisation Type
+^^^^^^^^^^^^^^^^^
 
 The category that best describes the provider organisation.
 
@@ -354,6 +318,42 @@ The category that best describes the provider organisation.
 
 ----------
 
+.. _dfn-organisation_state:
+
+State
+^^^^^
+
+The state that the provider organisation operates in.
+
+:Field name: organisation_state
+
+:Data type: string
+
+:Required: yes
+
+:Domain:
+  :1: New South Wales
+  :2: Victoria
+  :3: Queensland
+  :4: South Australia
+  :5: Western Australia
+  :6: Tasmania
+  :7: Northern Territory
+  :8: Australian Capital Territory
+  :9: Other Territories
+
+:Notes:
+  - Name is taken from Australian `Statistical Geography Standard (ASGS) July
+    2011
+    <http://www.abs.gov.au/ausstats/abs@.nsf/0/871A7FF33DF471FBCA257801000DCD5
+    F?Opendocument>`_.
+  - Code is from Meteor with the addition of code for Other Territories.
+  
+
+:METEOR: `613718 <https://meteor.aihw.gov.au/content/613718>`__
+
+----------
+
 .. _dfn-survey_key:
 
 Survey Key
@@ -418,8 +418,8 @@ The metadata value.
 
 .. _dfn-yes_phn_experience_scale:
 
-YES - PHN - Experience Scale
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+YES PHN Experience Scale
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 :Field name: yes_phn_experience_scale
@@ -438,8 +438,8 @@ YES - PHN - Experience Scale
 
 .. _dfn-yes_phn_outcome_scale:
 
-YES - PHN - Outcome Scale
-^^^^^^^^^^^^^^^^^^^^^^^^^
+YES PHN Outcome Scale
+^^^^^^^^^^^^^^^^^^^^^
 
 
 :Field name: yes_phn_outcome_scale
@@ -458,10 +458,10 @@ YES - PHN - Outcome Scale
 
 .. _dfn-yes_phn_item1:
 
-YES - PHN - Question 1
-^^^^^^^^^^^^^^^^^^^^^^
+YES PHN Question 1
+^^^^^^^^^^^^^^^^^^
 
-You felt welcome using this service
+You felt welcome using this service.
 
 :Field name: yes_phn_item1
 
@@ -481,10 +481,10 @@ You felt welcome using this service
 
 .. _dfn-yes_phn_item2:
 
-YES - PHN - Question 2
-^^^^^^^^^^^^^^^^^^^^^^
+YES PHN Question 2
+^^^^^^^^^^^^^^^^^^
 
-You felt safe using this service
+You felt safe using this service.
 
 :Field name: yes_phn_item2
 
@@ -504,10 +504,10 @@ You felt safe using this service
 
 .. _dfn-yes_phn_item3:
 
-YES - PHN - Question 3
-^^^^^^^^^^^^^^^^^^^^^^
+YES PHN Question 3
+^^^^^^^^^^^^^^^^^^
 
-You had access to this service when you needed
+You had access to this service when you needed.
 
 :Field name: yes_phn_item3
 
@@ -527,10 +527,10 @@ You had access to this service when you needed
 
 .. _dfn-yes_phn_item4:
 
-YES - PHN - Question 4
-^^^^^^^^^^^^^^^^^^^^^^
+YES PHN Question 4
+^^^^^^^^^^^^^^^^^^
 
-You had opportunities for your family and friends to be involved in your support or care if you wanted
+You had opportunities for your family and friends to be involved in your support or care if you wanted.
 
 :Field name: yes_phn_item4
 
@@ -551,10 +551,10 @@ You had opportunities for your family and friends to be involved in your support
 
 .. _dfn-yes_phn_item5:
 
-YES - PHN - Question 5
-^^^^^^^^^^^^^^^^^^^^^^
+YES PHN Question 5
+^^^^^^^^^^^^^^^^^^
 
-Staff were able to provide information or advice to help you manage your physical health if you wanted
+Staff were able to provide information or advice to help you manage your physical health if you wanted.
 
 :Field name: yes_phn_item5
 
@@ -574,8 +574,8 @@ Staff were able to provide information or advice to help you manage your physica
 
 .. _dfn-yes_phn_item6:
 
-YES - PHN - Question 6
-^^^^^^^^^^^^^^^^^^^^^^
+YES PHN Question 6
+^^^^^^^^^^^^^^^^^^
 
 Your individuality and values were respected (such as your culture, faith or gender identity, etc.)
 
@@ -597,10 +597,10 @@ Your individuality and values were respected (such as your culture, faith or gen
 
 .. _dfn-yes_phn_item7:
 
-YES - PHN - Question 7
-^^^^^^^^^^^^^^^^^^^^^^
+YES PHN Question 7
+^^^^^^^^^^^^^^^^^^
 
-This service listened to and followed up on feedback or complaints
+This service listened to and followed up on feedback or complaints.
 
 :Field name: yes_phn_item7
 
@@ -620,10 +620,10 @@ This service listened to and followed up on feedback or complaints
 
 .. _dfn-yes_phn_item8:
 
-YES - PHN - Question 8
-^^^^^^^^^^^^^^^^^^^^^^
+YES PHN Question 8
+^^^^^^^^^^^^^^^^^^
 
-The service respected your right to make decisions
+The service respected your right to make decisions.
 
 :Field name: yes_phn_item8
 
@@ -643,10 +643,10 @@ The service respected your right to make decisions
 
 .. _dfn-yes_phn_item9:
 
-YES - PHN - Question 9
-^^^^^^^^^^^^^^^^^^^^^^
+YES PHN Question 9
+^^^^^^^^^^^^^^^^^^
 
-The support or care available met your needs
+The support or care available met your needs.
 
 :Field name: yes_phn_item9
 
@@ -666,10 +666,10 @@ The support or care available met your needs
 
 .. _dfn-yes_phn_item10:
 
-YES - PHN - Question 10
-^^^^^^^^^^^^^^^^^^^^^^^
+YES PHN Question 10
+^^^^^^^^^^^^^^^^^^^
 
-Access to a peer worker/ lived experience worker, if you wanted
+Access to a peer worker/ lived experience worker, if you wanted.
 
 :Field name: yes_phn_item10
 
@@ -690,10 +690,10 @@ Access to a peer worker/ lived experience worker, if you wanted
 
 .. _dfn-yes_phn_item11:
 
-YES - PHN - Question 11
-^^^^^^^^^^^^^^^^^^^^^^^
+YES PHN Question 11
+^^^^^^^^^^^^^^^^^^^
 
-The support or care available met your needs
+The support or care available met your needs.
 
 :Field name: yes_phn_item11
 
@@ -713,10 +713,10 @@ The support or care available met your needs
 
 .. _dfn-yes_phn_item12:
 
-YES - PHN - Question 12
-^^^^^^^^^^^^^^^^^^^^^^^
+YES PHN Question 12
+^^^^^^^^^^^^^^^^^^^
 
-Development of a plan with you that considered all of your needs (including support, coordination and follow up)
+Development of a plan with you that considered all of your needs (including support, coordination and follow up).
 
 :Field name: yes_phn_item12
 
@@ -737,10 +737,10 @@ Development of a plan with you that considered all of your needs (including supp
 
 .. _dfn-yes_phn_item13:
 
-YES - PHN - Question 13
-^^^^^^^^^^^^^^^^^^^^^^^
+YES PHN Question 13
+^^^^^^^^^^^^^^^^^^^
 
-The effect of this service on your hopefulness for the future
+The effect of this service on your hopefulness for the future.
 
 :Field name: yes_phn_item13
 
@@ -760,10 +760,10 @@ The effect of this service on your hopefulness for the future
 
 .. _dfn-yes_phn_item14:
 
-YES - PHN - Question 14
-^^^^^^^^^^^^^^^^^^^^^^^
+YES PHN Question 14
+^^^^^^^^^^^^^^^^^^^
 
-The effect of this service on your skills and strategies to look after your own health and wellbeing
+The effect of this service on your skills and strategies to look after your own health and wellbeing.
 
 :Field name: yes_phn_item14
 
@@ -783,10 +783,10 @@ The effect of this service on your skills and strategies to look after your own 
 
 .. _dfn-yes_phn_item15:
 
-YES - PHN - Question 15
-^^^^^^^^^^^^^^^^^^^^^^^
+YES PHN Question 15
+^^^^^^^^^^^^^^^^^^^
 
-The effect of this service on your ability to manage your day to day life
+The effect of this service on your ability to manage your day to day life.
 
 :Field name: yes_phn_item15
 
@@ -806,8 +806,8 @@ The effect of this service on your ability to manage your day to day life
 
 .. _dfn-yes_phn_item16:
 
-YES - PHN - Question 16
-^^^^^^^^^^^^^^^^^^^^^^^
+YES PHN Question 16
+^^^^^^^^^^^^^^^^^^^
 
 Overall, how would you rate your experience with this service in the last 3 months?
 
@@ -829,10 +829,10 @@ Overall, how would you rate your experience with this service in the last 3 mont
 
 .. _dfn-yes_phn_item17:
 
-YES - PHN - Question 17
-^^^^^^^^^^^^^^^^^^^^^^^
+YES PHN Question 17
+^^^^^^^^^^^^^^^^^^^
 
-My experience would have been better if … (write in)
+My experience would have been better if … (write in).
 
 :Field name: yes_phn_item17
 
@@ -844,10 +844,10 @@ My experience would have been better if … (write in)
 
 .. _dfn-yes_phn_item18:
 
-YES - PHN - Question 18
-^^^^^^^^^^^^^^^^^^^^^^^
+YES PHN Question 18
+^^^^^^^^^^^^^^^^^^^
 
-The best things about this service were … (write in)
+The best things about this service were … (write in.)
 
 :Field name: yes_phn_item18
 
@@ -859,8 +859,8 @@ The best things about this service were … (write in)
 
 .. _dfn-yes_phn_item19:
 
-YES - PHN - Question 19
-^^^^^^^^^^^^^^^^^^^^^^^
+YES PHN Question 19
+^^^^^^^^^^^^^^^^^^^
 
 What is your gender identity?
 
@@ -880,8 +880,8 @@ What is your gender identity?
 
 .. _dfn-yes_phn_item19_other:
 
-YES - PHN - Question 19 Other
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+YES PHN Question 19 Other
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 What is your gender identity (other)?
 
@@ -891,12 +891,15 @@ What is your gender identity (other)?
 
 :Required: no
 
+:Notes:
+  .. include:: shared/suppressed_field.rst
+
 ----------
 
 .. _dfn-yes_phn_item20:
 
-YES - PHN - Question 20
-^^^^^^^^^^^^^^^^^^^^^^^
+YES PHN Question 20
+^^^^^^^^^^^^^^^^^^^
 
 What is the main language you speak at home?
 
@@ -915,8 +918,8 @@ What is the main language you speak at home?
 
 .. _dfn-yes_phn_item20_other:
 
-YES - PHN - Question 20 Other
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+YES PHN Question 20 Other
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 What is the main language you speak at home (other)?
 
@@ -926,12 +929,15 @@ What is the main language you speak at home (other)?
 
 :Required: no
 
+:Notes:
+  .. include:: shared/suppressed_field.rst
+
 ----------
 
 .. _dfn-yes_phn_item21:
 
-YES - PHN - Question 21
-^^^^^^^^^^^^^^^^^^^^^^^
+YES PHN Question 21
+^^^^^^^^^^^^^^^^^^^
 
 Are you of Aboriginal or Torres Strait Island origin?
 
@@ -952,8 +958,8 @@ Are you of Aboriginal or Torres Strait Island origin?
 
 .. _dfn-yes_phn_item22:
 
-YES - PHN - Question 22
-^^^^^^^^^^^^^^^^^^^^^^^
+YES PHN Question 22
+^^^^^^^^^^^^^^^^^^^
 
 What is your age?
 
@@ -975,8 +981,8 @@ What is your age?
 
 .. _dfn-yes_phn_item23:
 
-YES - PHN - Question 23
-^^^^^^^^^^^^^^^^^^^^^^^
+YES PHN Question 23
+^^^^^^^^^^^^^^^^^^^
 
 How long have you been receiving support or care from this service?
 
@@ -998,8 +1004,8 @@ How long have you been receiving support or care from this service?
 
 .. _dfn-yes_phn_item24:
 
-YES - PHN - Question 24
-^^^^^^^^^^^^^^^^^^^^^^^
+YES PHN Question 24
+^^^^^^^^^^^^^^^^^^^
 
 Who referred you to this service?
 
@@ -1021,8 +1027,8 @@ Who referred you to this service?
 
 .. _dfn-yes_phn_item24_other:
 
-YES - PHN - Question 24 Other
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+YES PHN Question 24 Other
+^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Who referred you to this service (other)?
 
@@ -1032,12 +1038,15 @@ Who referred you to this service (other)?
 
 :Required: no
 
+:Notes:
+  .. include:: shared/suppressed_field.rst
+
 ----------
 
 .. _dfn-yes_phn_item25:
 
-YES - PHN - Question 25
-^^^^^^^^^^^^^^^^^^^^^^^
+YES PHN Question 25
+^^^^^^^^^^^^^^^^^^^
 
 How involved were you in choosing this service?
 
@@ -1057,8 +1066,8 @@ How involved were you in choosing this service?
 
 .. _dfn-yes_phn_item26:
 
-YES - PHN - Question 26
-^^^^^^^^^^^^^^^^^^^^^^^
+YES PHN Question 26
+^^^^^^^^^^^^^^^^^^^
 
 Did someone help you complete this survey?
 
@@ -1079,8 +1088,8 @@ Did someone help you complete this survey?
 
 .. _dfn-yes_phn_tags:
 
-YES - PHN - Tags
-^^^^^^^^^^^^^^^^
+YES PHN Tags
+^^^^^^^^^^^^
 
 List of tags for the instrument.
 

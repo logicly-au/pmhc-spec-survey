@@ -154,6 +154,34 @@ Data elements for the YES PHN instrument upload file/worksheet are defined at
 
 Example YES PHN Instrument files can be found in any of the example files at :ref:`example-upload-files`.
 
+.. _deleting-records:
+
+Deleting records
+----------------
+
+All records except for Organisation records can be deleted via upload.
+Please email support@pmhc-mds.com if you need to delete an organisation.
+
+* An extra optional "delete" column can be added to each of the supported
+  upload files/worksheets.
+
+* If included, this column must be the third column in each file, after the organisation
+  path and the record's entity key.
+
+* To delete a record, include its organisation path and its entity key, leave
+  all other fields blank and put "delete" in the "delete" column. Please note
+  that case is important. "DELETE" will not be accepted.
+
+* Marking a record as deleted will require all child records of that record also
+  to be marked for deletion. For example, marking a survey as deleted will
+  require all YES PHN records associated with that survey to be marked for deletion.
+
+* While deletions can be included in the same upload as insertions/updates,
+  we recommend that you include all deletions in a separate upload that is
+  uploaded before the insertions/updates.
+
+Example files showing how to delete records can be found the example files at :ref:`example-upload-files`.
+
 .. _example-upload-files:
 
 Example Upload files
@@ -166,9 +194,17 @@ Each of the example files assumes the following organisation structure:
 +==========================+================================================+=============================================+=====================+
 | PHN999                   | Test PHN                                       | Primary Health Network                      | None                |
 +--------------------------+------------------------------------------------+---------------------------------------------+---------------------+
-| PHN999:Treatment01       | Example Treatment Organisation                 | Private Allied Health Professional Practice | PHN999              |
+| PHN999:NFP01             | Example Treatment Organisation                 | Private Allied Health Professional Practice | PHN999              |
++--------------------------+------------------------------------------------+---------------------------------------------+---------------------+
+| PHN999:NFP02             | Example Treatment Organisation                 | Private Allied Health Professional Practice | PHN999              |
 +--------------------------+------------------------------------------------+---------------------------------------------+---------------------+
 
 .. csv-table:: Summary of example upload files
   :file: example-files.csv
   :header-rows: 1
+
+Frequently Asked Questions
+--------------------------
+
+Please also refer to `Uploading data <http://docs.pmhc-mds.com/en/v1/faqs/system/uploading.html#uploading-data-faqs>`_ for answers to frequently
+asked questions about uploading data.
