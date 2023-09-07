@@ -1,5 +1,0 @@
-version: 1.0.0
-
-commit_hash: 90b56fb2570b02e0770e35d0228fc3201acfbea9
-commit_date: Tue Sep 5 16:03:51 2023
-
