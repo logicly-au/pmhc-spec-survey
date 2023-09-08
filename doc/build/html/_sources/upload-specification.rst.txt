@@ -136,23 +136,23 @@ Example Organisation files can be found in any of the example files at :ref:`exa
 
 Survey file format
 ^^^^^^^^^^^^^^^^^^
-The survey file/worksheet is required to be uploaded each time. 
+The Survey file/worksheet is required to be uploaded each time. 
 
-Data elements for the survey upload file/worksheet are defined at
+Data elements for the Survey upload file/worksheet are defined at
 :ref:`survey-data-elements`.
 
 Example Survey files can be found in any of the example files at :ref:`example-upload-files`.
 
-.. _yes-phn-instrument-format:
+.. _yes-phn-format:
 
-YES PHN Instrument file format
+YES PHN file format
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-The YES PHN instrument file/worksheet is required to be uploaded each time. 
+The YES PHN file/worksheet is required to be uploaded each time. 
 
-Data elements for the YES PHN instrument upload file/worksheet are defined at
-:ref:`yes-phn-instrument-data-elements`.
+Data elements for the YES PHN  upload file/worksheet are defined at
+:ref:`yes-phn-data-elements`.
 
-Example YES PHN Instrument files can be found in any of the example files at :ref:`example-upload-files`.
+Example YES PHN files can be found in any of the example files at :ref:`example-upload-files`.
 
 .. _deleting-records:
 

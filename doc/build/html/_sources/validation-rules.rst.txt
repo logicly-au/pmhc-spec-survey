@@ -49,4 +49,15 @@ Organisation
 Survey
 ~~~~~~
 
-  1. The :ref:`dfn-collection_date` must not be in the future
+  1. Refer to :ref:`key-current-validations` for Survey Key validations
+  2. The :ref:`dfn-collection_date` must not be in the future
+
+.. _yes-phn-current-validations:
+
+YES PHN
+~~~~~~~
+
+  1. Refer to :ref:`key-current-validations` for Instrument Key validations
+  2. If both question scores and subscales are specified, the sum of the items
+     must agree with the subscales score (as per :ref:`Scoring the YES PHN Experience Scale <dfn-yes_phn_experience_scale>` and
+     :ref:`Scoring the YES PHN Outcome Scale <dfn-yes_phn_outcome_scale>`)

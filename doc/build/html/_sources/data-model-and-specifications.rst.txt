@@ -59,8 +59,8 @@ See `Provider Organisation Key Concepts <https://docs.pmhc-mds.com/projects/data
 for the definition of a provider organisation.
 
 Provider Organisation data is for administrative use within the PMHC MDS
-system. It is managed by the PHN's via the PMHC MDS administrative interface,
-it cannot be uploaded.
+system. It is managed by the PHNs via the PMHC MDS administrative interface,
+or upload.
 
 .. csv-table:: Provider Organisation record layout
   :file: record/organisation.csv
@@ -73,7 +73,7 @@ it cannot be uploaded.
 Survey
 ^^^^^^
 
-Survey data is managed by the PHN's or Provider Organisations via upload.
+Survey data is managed by the PHNs or Provider Organisations via upload.
 
 .. csv-table:: Survey record layout
   :file: record/survey.csv
@@ -86,14 +86,14 @@ Survey data is managed by the PHN's or Provider Organisations via upload.
 Instruments
 ^^^^^^^^^^^
 
-.. _yes-phn-instrument-data-elements:
+.. _yes-phn-data-elements:
 
 YES PHN
 """""""
 
 Further information about the YES PHN Survey is available from :ref:`introduction` and :ref:`resources`.
 
-YES PHN data is managed by the PHN's or Provider Organisations via upload.
+YES PHN data is managed by the PHNs or Provider Organisations via upload.
 
 .. csv-table:: YES PHN record layout
   :file: record/yes-phn-instrument.csv
