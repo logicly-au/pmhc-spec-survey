@@ -60,7 +60,7 @@ for the definition of a provider organisation.
 
 Provider Organisation data is for administrative use within the PMHC MDS
 system. It is managed by the PHNs via the PMHC MDS administrative interface,
-it cannot be uploaded.
+or upload.
 
 .. csv-table:: Provider Organisation record layout
   :file: record/organisation.csv
@@ -86,7 +86,7 @@ Survey data is managed by the PHNs or Provider Organisations via upload.
 Instruments
 ^^^^^^^^^^^
 
-.. _yes-phn-instrument-data-elements:
+.. _yes-phn-data-elements:
 
 YES PHN
 """""""

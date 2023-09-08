@@ -26,7 +26,7 @@ Managing all other entity keys
 The following entity keys will be created and managed by Provider Organisations:
 
 * :ref:`Survey Key <survey-data-elements>`,
-* :ref:`YES PHN Instrument Key <yes-phn-instrument-data-elements>`,
+* :ref:`YES PHN Instrument Key <yes-phn-data-elements>`,
 
 The PMHC MDS specification requires each of these keys to be unique and
 stable at the Provider Organisation level.
