@@ -8,7 +8,7 @@ Data model and specifications
 Data model
 ----------
 
-The introductory wording on the YES PHN states " All information collected in 
+The introductory wording on the YES PHN states "All information collected in 
 this survey is anonymous. None of the information collected will be used to identify you."
 In order to preserve this client anonymity, the YES PHN specification uses a data model 
 that stores the YES PHN survey against a Provider Organisation, not a client.
