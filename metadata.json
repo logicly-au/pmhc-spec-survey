@@ -7,7 +7,7 @@
     "schema:url": { "@id": "http://www.strategicdata.com.au" }
   },
   "schema:specification": {
-    "schema:name": "yes-phn",
+    "schema:name": "survey",
     "schema:version": "1.0"
   },
   "dc:modified": { "@value": "2021-05-18", "@type": "xsd:date"},
