@@ -1,13 +1,13 @@
 {
   "@type": "TableGroup",
   "@context": { "http://www.w3.org/ns/csvw": { "@language": "en" } },
-  "dc:title": "PMHC MDS YES PHN Data Elements",
+  "dc:title": "PMHC MDS Survey Data Elements",
   "dc:publisher": {
-    "schema:name": "Strategic Data Pty Ltd",
-    "schema:url": { "@id": "http://www.strategicdata.com.au" }
+    "schema:name": "Logicly Pty Ltd",
+    "schema:url": { "@id": "https://www.logicly.com.au" }
   },
   "schema:specification": {
-    "schema:name": "yes-phn",
+    "schema:name": "survey",
     "schema:version": "1.0"
   },
   "dc:modified": { "@value": "2021-05-18", "@type": "xsd:date"},
