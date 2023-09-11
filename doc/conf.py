@@ -58,7 +58,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'PMHC MDS YES PHN Specification'
+project = u'PMHC MDS Survey Specification'
 copyright = u'2023, Australian Government - Department of Health and Aged Care'
 author = u'PMHC MDS Working Group'
 
@@ -220,7 +220,7 @@ html_css_files = [
 #html_search_scorer = 'scorer.js'
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'PMHC-MDS-YES-PHN-Specification'
+htmlhelp_basename = 'PMHC-MDS-Survey-Specification'
 
 # -- Options for LaTeX output ---------------------------------------------
 
@@ -242,8 +242,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  (master_doc, 'PMHC-MDS-YES-PHN-spec.tex',
-   u'Primary Mental Health Care Minimum Dataset YES PHN specification',
+  (master_doc, 'PMHC-MDS-Survey-spec.tex',
+   u'Primary Mental Health Care Minimum Dataset Survey Specification',
    author, 'manual'),
 ]
 
@@ -273,8 +273,8 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'PMHC MDS YES PHN Specification',
-     u'Primary Mental Health Care Minimum Dataset YES PHN specification',
+    (master_doc, 'PMHC MDS Survey Specification',
+     u'Primary Mental Health Care Minimum Dataset Survey Specification',
      [author], 1)
 ]
 
@@ -288,10 +288,10 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  (master_doc, 'PMHC-MDS-YES-PHN-spec',
-   u'Primary Mental Health Care Minimum Dataset YES PHN specification',
-   author, 'PMHC-MDS-YES-PHN-spec',
-   'Primary Mental Health Care Minimum Dataset YES PHN specification',
+  (master_doc, 'PMHC-MDS-Survey-spec',
+   u'Primary Mental Health Care Minimum Dataset Survey specification',
+   author, 'PMHC-MDS-Survey-spec',
+   'Primary Mental Health Care Minimum Dataset Survey specification',
    'Miscellaneous'),
 ]
 

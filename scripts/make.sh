@@ -23,14 +23,14 @@ echo "Making example files"
 pushd .
 cd doc/_static/example-files
 rm -fv *.zip
-zip YES-PHN-1-0.zip yes-phn/*
-zip YES-PHN-1-0-delete.zip yes-phn-delete/*
+zip PMHC-MDS-Survey-1-0.zip survey/*
+zip PMHC-MDS-Survey-1-0-delete.zip survey-delete/*
 popd
 
 # make zip file
 scripts/metadata2zip.sh
 # mv new zip to data-specification folder
-#mv pmhcmds-yes-phn-spec-meta.zip doc/_static/
+mv pmhcmds-survey-spec-meta.zip doc/_static/
 
 pushd .
 cd doc

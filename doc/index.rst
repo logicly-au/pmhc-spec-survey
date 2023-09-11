@@ -1,5 +1,5 @@
-PMHC-MDS YES PHN Specification
-==============================
+PMHC-MDS Survey Specification
+=============================
 
 Version |version|
 

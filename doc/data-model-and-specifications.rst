@@ -10,15 +10,15 @@ Data model
 
 The introductory wording on the YES PHN states "All information collected in 
 this survey is anonymous. None of the information collected will be used to identify you."
-In order to preserve this client anonymity, the YES PHN specification uses a data model 
-that stores the YES PHN survey against a Provider Organisation, not a client.
+In order to preserve this client anonymity, this specification uses a data model 
+that stores the survey against a Provider Organisation, not a client.
 
 .. _data-model-diagram:
 
-.. figure:: figures/yes-phn-data-model-v1.0.svg
-   :alt: YES PHN Version 1.0 data model
+.. figure:: figures/pmhc-mds-survey-data-model-v1.0.svg
+   :alt: PMHC MDS Survey Specification Version 1.0 data model
 
-   YES PHN Version 1.0 data model
+   PMHC MDS Survey Specification Version 1.0 data model
 
 .. note::
   * The above data model diagram is in the SVG format and can be enlarged 
@@ -102,6 +102,8 @@ YES PHN data is managed by the PHNs or Provider Organisations via upload.
 
 -----
 
+.. _definitions:
+
 .. include:: include/definitions.rst
 
 
@@ -111,6 +113,13 @@ Download Specification Files
 ----------------------------
 
 Available for software developers designing extracts for the PMHC MDS, please
-click the link below to download the PMHC MDS YES PHN Specification files:
+click the link below to download the PMHC MDS Specification files:
 
-* `Specification zip <_static/pmhcmds-yes-phn-spec-meta.zip>`_
+* `Specification zip <_static/pmhcmds-survey-spec-meta.zip>`_
+
+These files conform to the CSV on the Web (CSVW) standard that is defined at https://csvw.org/.
+
+They are used:
+
+* to generate the :ref:`record-formats` and :ref:`definitions` sections of the data specification documentation
+* in the first pass of upload validations

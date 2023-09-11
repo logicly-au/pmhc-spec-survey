@@ -1,3 +1,3 @@
 Context,CSV zip,XLSX
-Addition/Update of data,`YES-PHN-1-0.zip <_static/example-files/YES-PHN-1-0.zip>`_,`YES-PHN-1-0.xlsx <_static/example-files/YES-PHN-1-0.xlsx>`_
-Deletion of data,`YES-PHN-1-0-delete.zip <_static/example-files/YES-PHN-1-0-delete.zip>`_,`YES-PHN-1-0-delete.xlsx <_static/example-files/YES-PHN-1-0-delete.xlsx>`_
+Addition/Update of data,`PMHC-MDS-Survey-1-0.zip <_static/example-files/PMHC-MDS-Survey-1-0.zip>`_,`PMHC-MDS-Survey-1-0.xlsx <_static/example-files/PMHC-MDS-Survey-1-0.xlsx>`_
+Deletion of data,`PMHC-MDS-Survey-1-0-delete.zip <_static/example-files/PMHC-MDS-Survey-1-0-delete.zip>`_,`PMHC-MDS-Survey-1-0-delete.xlsx <_static/example-files/PMHC-MDS-Survey-1-0-delete.xlsx>`_

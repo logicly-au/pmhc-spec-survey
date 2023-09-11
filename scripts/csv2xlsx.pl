@@ -44,7 +44,7 @@ if ($delete) {
 } else {
   $context = '';
 }
-  $dir = "yes-phn$context";
+  $dir = "survey$context";
   %csvfiles = (
       'Metadata'      => "$example_dir/$dir/metadata.csv",
       'Organisations' => "$example_dir/$dir/organisations.csv",
@@ -53,7 +53,7 @@ if ($delete) {
   );
 
   # Create a new Excel workbook
-  $workbook  = Excel::Writer::XLSX->new( "$example_dir/YES-PHN-$version$context.xlsx" );
+  $workbook  = Excel::Writer::XLSX->new( "$example_dir/PMHC-MDS-Survey-$version$context.xlsx" );
 
 # Create a new CSV parsing object
 my $csv = Text::CSV_XS->new;
