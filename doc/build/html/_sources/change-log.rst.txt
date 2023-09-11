@@ -1,7 +1,7 @@
-.. _yes_phn_spec_changelog:
+.. _pmhc_mds_survey_spec_changelog:
 
-YES PHN Change log
-==========================
+PMHC MDS Survey Specification Change log
+========================================
 
 ??/??/2023 - Version 1.0
 ------------------------

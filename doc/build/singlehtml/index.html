@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>PMHC MDS YES PHN Specification 1.0.0 documentation</title>
+  <title>PMHC MDS Survey Specification 1.0.0 documentation</title>
   
 
   
@@ -50,7 +50,7 @@
           
 
           
-            <a href="index.html#document-index" class="icon icon-home" alt="Documentation Home"> PMHC MDS YES PHN Specification
+            <a href="index.html#document-index" class="icon icon-home" alt="Documentation Home"> PMHC MDS Survey Specification
           
 
           
@@ -179,7 +179,7 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="index.html#document-change-log">7. YES PHN Change log</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="index.html#document-change-log">7. PMHC MDS Survey Specification Change log</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="index.html#version-1-0">7.1. ??/??/2023 - Version 1.0</a></li>
 </ul>
 </li>
@@ -198,7 +198,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="index.html#document-index">PMHC MDS YES PHN Specification</a>
+          <a href="index.html#document-index">PMHC MDS Survey Specification</a>
         
       </nav>
 
@@ -229,7 +229,7 @@
     
       <li><a href="index.html#document-index" class="icon icon-home"></a> &raquo;</li>
         
-      <li>PMHC MDS YES PHN Specification 1.0.0 documentation</li>
+      <li>PMHC MDS Survey Specification 1.0.0 documentation</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -246,8 +246,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="pmhc-mds-yes-phn-specification">
-<h1>PMHC-MDS YES PHN Specification<a class="headerlink" href="#pmhc-mds-yes-phn-specification" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="pmhc-mds-survey-specification">
+<h1>PMHC-MDS Survey Specification<a class="headerlink" href="#pmhc-mds-survey-specification" title="Permalink to this headline">¶</a></h1>
 <p>Version 1.0.0</p>
 <div class="toctree-wrapper compound" id="data-docs">
 <span id="document-introduction"></span><div class="section" id="introduction">
@@ -330,10 +330,10 @@ to</em> <a class="reference external" href="http://docs.pmhc-mds.com/en/v1/faqs/
 <span id="id2"></span><h3><span class="section-number">4.1. </span>Data model<a class="headerlink" href="#data-model" title="Permalink to this headline">¶</a></h3>
 <p>The introductory wording on the YES PHN states “All information collected in
 this survey is anonymous. None of the information collected will be used to identify you.”
-In order to preserve this client anonymity, the YES PHN specification uses a data model
-that stores the YES PHN survey against a Provider Organisation, not a client.</p>
-<div class="figure align-default" id="id5">
-<span id="data-model-diagram"></span><img alt="YES PHN Version 1.0 data model" src="_images/yes-phn-data-model-v1.0.svg" /><p class="caption"><span class="caption-number">Fig. 4.1 </span><span class="caption-text">YES PHN Version 1.0 data model</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
+In order to preserve this client anonymity, this specification uses a data model
+that stores the survey against a Provider Organisation, not a client.</p>
+<div class="figure align-default" id="id6">
+<span id="data-model-diagram"></span><img alt="PMHC MDS Survey Specification Version 1.0 data model" src="_images/pmhc-mds-survey-data-model-v1.0.svg" /><p class="caption"><span class="caption-number">Fig. 4.1 </span><span class="caption-text">PMHC MDS Survey Specification Version 1.0 data model</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -349,8 +349,8 @@ or zoomed by opening in a new tab or window or by downloading it.</p></li>
 <span id="metadata-data-elements"></span><h4><span class="section-number">4.2.1. </span>Metadata<a class="headerlink" href="#metadata" title="Permalink to this headline">¶</a></h4>
 <p>The Metadata table must be included in file uploads in order to identify
 the type and version of the uploaded data.</p>
-<table class="docutils align-default" id="id6">
-<caption><span class="caption-number">Table 4.1 </span><span class="caption-text">Metadata record layout</span><a class="headerlink" href="#id6" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id7">
+<caption><span class="caption-number">Table 4.1 </span><span class="caption-text">Metadata record layout</span><a class="headerlink" href="#id7" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 25%" />
 <col style="width: 25%" />
@@ -379,8 +379,8 @@ the type and version of the uploaded data.</p>
 </table>
 <p>For this version of the specification the required content is shown in the
 following table:</p>
-<table class="docutils align-default" id="id7">
-<caption><span class="caption-number">Table 4.2 </span><span class="caption-text">Metadata file</span><a class="headerlink" href="#id7" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id8">
+<caption><span class="caption-number">Table 4.2 </span><span class="caption-text">Metadata file</span><a class="headerlink" href="#id8" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 50%" />
 <col style="width: 50%" />
@@ -390,7 +390,7 @@ following table:</p>
 <td><p>value</p></td>
 </tr>
 <tr class="row-even"><td><p>type</p></td>
-<td><p>YES-PHN</p></td>
+<td><p>SURVEY</p></td>
 </tr>
 <tr class="row-odd"><td><p>version</p></td>
 <td><p>1.0</p></td>
@@ -406,8 +406,8 @@ for the definition of a provider organisation.</p>
 <p>Provider Organisation data is for administrative use within the PMHC MDS
 system. It is managed by the PHNs via the PMHC MDS administrative interface,
 or upload.</p>
-<table class="docutils align-default" id="id8">
-<caption><span class="caption-number">Table 4.3 </span><span class="caption-text">Provider Organisation record layout</span><a class="headerlink" href="#id8" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id9">
+<caption><span class="caption-number">Table 4.3 </span><span class="caption-text">Provider Organisation record layout</span><a class="headerlink" href="#id9" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 25%" />
 <col style="width: 25%" />
@@ -557,8 +557,8 @@ or upload.</p>
 <div class="section" id="survey">
 <span id="survey-data-elements"></span><h4><span class="section-number">4.2.3. </span>Survey<a class="headerlink" href="#survey" title="Permalink to this headline">¶</a></h4>
 <p>Survey data is managed by the PHNs or Provider Organisations via upload.</p>
-<table class="docutils align-default" id="id9">
-<caption><span class="caption-number">Table 4.4 </span><span class="caption-text">Survey record layout</span><a class="headerlink" href="#id9" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id10">
+<caption><span class="caption-number">Table 4.4 </span><span class="caption-text">Survey record layout</span><a class="headerlink" href="#id10" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 25%" />
 <col style="width: 25%" />
@@ -603,8 +603,8 @@ or upload.</p>
 <span id="yes-phn-data-elements"></span><h5><span class="section-number">4.2.4.1. </span>YES PHN<a class="headerlink" href="#yes-phn" title="Permalink to this headline">¶</a></h5>
 <p>Further information about the YES PHN Survey is available from <a class="reference internal" href="index.html#introduction"><span class="std std-ref">Introduction</span></a> and <a class="reference internal" href="index.html#resources"><span class="std std-ref">Resources</span></a>.</p>
 <p>YES PHN data is managed by the PHNs or Provider Organisations via upload.</p>
-<table class="docutils align-default" id="id10">
-<caption><span class="caption-number">Table 4.5 </span><span class="caption-text">YES PHN record layout</span><a class="headerlink" href="#id10" title="Permalink to this table">¶</a></caption>
+<table class="docutils align-default" id="id11">
+<caption><span class="caption-number">Table 4.5 </span><span class="caption-text">YES PHN record layout</span><a class="headerlink" href="#id11" title="Permalink to this table">¶</a></caption>
 <colgroup>
 <col style="width: 25%" />
 <col style="width: 25%" />
@@ -1258,12 +1258,12 @@ or upload.</p>
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-</div>
 <hr class="docutils" />
+</div>
+</div>
+</div>
 <div class="section" id="definitions">
-<h3><span class="section-number">4.3. </span>Definitions<a class="headerlink" href="#definitions" title="Permalink to this headline">¶</a></h3>
+<span id="id4"></span><h3><span class="section-number">4.3. </span>Definitions<a class="headerlink" href="#definitions" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="abn">
 <span id="dfn-organisation-abn"></span><h4><span class="section-number">4.3.1. </span>ABN<a class="headerlink" href="#abn" title="Permalink to this headline">¶</a></h4>
 <p>The Australian Business Number of the provider organisation.</p>
@@ -2844,9 +2844,15 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 <div class="section" id="download-specification-files">
 <span id="data-specifications-download"></span><h3><span class="section-number">4.4. </span>Download Specification Files<a class="headerlink" href="#download-specification-files" title="Permalink to this headline">¶</a></h3>
 <p>Available for software developers designing extracts for the PMHC MDS, please
-click the link below to download the PMHC MDS YES PHN Specification files:</p>
+click the link below to download the PMHC MDS Specification files:</p>
 <ul class="simple">
-<li><p><a class="reference external" href="_static/pmhcmds-yes-phn-spec-meta.zip">Specification zip</a></p></li>
+<li><p><a class="reference external" href="_static/pmhcmds-survey-spec-meta.zip">Specification zip</a></p></li>
+</ul>
+<p>These files conform to the CSV on the Web (CSVW) standard that is defined at <a class="reference external" href="https://csvw.org/">https://csvw.org/</a>.</p>
+<p>They are used:</p>
+<ul class="simple">
+<li><p>to generate the <a class="reference internal" href="#record-formats"><span class="std std-ref">Record formats</span></a> and <a class="reference internal" href="#definitions"><span class="std std-ref">Definitions</span></a> sections of the data specification documentation</p></li>
+<li><p>in the first pass of upload validations</p></li>
 </ul>
 </div>
 </div>
@@ -2979,7 +2985,7 @@ cell must contain ‘1.0’</p></li>
 <td><p>value</p></td>
 </tr>
 <tr class="row-even"><td><p>type</p></td>
-<td><p>YES-PHN</p></td>
+<td><p>SURVEY</p></td>
 </tr>
 <tr class="row-odd"><td><p>version</p></td>
 <td><p>1.0</p></td>
@@ -3085,12 +3091,12 @@ uploaded before the insertions/updates.</p></li>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>Addition/Update of data</p></td>
-<td><p><a class="reference external" href="_static/example-files/YES-PHN-1-0.zip">YES-PHN-1-0.zip</a></p></td>
-<td><p><a class="reference external" href="_static/example-files/YES-PHN-1-0.xlsx">YES-PHN-1-0.xlsx</a></p></td>
+<td><p><a class="reference external" href="_static/example-files/PMHC-MDS-Survey-1-0.zip">PMHC-MDS-Survey-1-0.zip</a></p></td>
+<td><p><a class="reference external" href="_static/example-files/PMHC-MDS-Survey-1-0.xlsx">PMHC-MDS-Survey-1-0.xlsx</a></p></td>
 </tr>
 <tr class="row-odd"><td><p>Deletion of data</p></td>
-<td><p><a class="reference external" href="_static/example-files/YES-PHN-1-0-delete.zip">YES-PHN-1-0-delete.zip</a></p></td>
-<td><p><a class="reference external" href="_static/example-files/YES-PHN-1-0-delete.xlsx">YES-PHN-1-0-delete.xlsx</a></p></td>
+<td><p><a class="reference external" href="_static/example-files/PMHC-MDS-Survey-1-0-delete.zip">PMHC-MDS-Survey-1-0-delete.zip</a></p></td>
+<td><p><a class="reference external" href="_static/example-files/PMHC-MDS-Survey-1-0-delete.xlsx">PMHC-MDS-Survey-1-0-delete.xlsx</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -3169,8 +3175,8 @@ must agree with the subscales score (as per <a class="reference internal" href="
 </div>
 </div>
 </div>
-<span id="document-change-log"></span><div class="section" id="yes-phn-change-log">
-<span id="yes-phn-spec-changelog"></span><h2><span class="section-number">7. </span>YES PHN Change log<a class="headerlink" href="#yes-phn-change-log" title="Permalink to this headline">¶</a></h2>
+<span id="document-change-log"></span><div class="section" id="pmhc-mds-survey-specification-change-log">
+<span id="pmhc-mds-survey-spec-changelog"></span><h2><span class="section-number">7. </span>PMHC MDS Survey Specification Change log<a class="headerlink" href="#pmhc-mds-survey-specification-change-log" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="version-1-0">
 <h3><span class="section-number">7.1. </span>??/??/2023 - Version 1.0<a class="headerlink" href="#version-1-0" title="Permalink to this headline">¶</a></h3>
 <p>Initial release.</p>
