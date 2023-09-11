@@ -4,7 +4,7 @@
   "dc:title": "PMHC MDS Survey Data Elements",
   "dc:publisher": {
     "schema:name": "Logicly Pty Ltd",
-    "schema:url": { "@id": "http://www.logicly.com.au" }
+    "schema:url": { "@id": "https://www.logicly.com.au" }
   },
   "schema:specification": {
     "schema:name": "survey",
