@@ -1,0 +1,5 @@
+File Type,CSV filename,Excel worksheet name,Required
+:ref:`YES PHN <yes-phn-format>`,yes-phn.csv,YES PHN Instruments,Required
+:ref:`Survey <survey-format>`,surveys.csv,Surveys,Required
+:ref:`Organisations <organisation-format>`,organisations.csv,Organisations,"Optional, may only be included if the user has Organisation Management Role"
+:ref:`Metadata <metadata-format>`,metadata.csv,Metadata,Required

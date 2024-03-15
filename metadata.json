@@ -30,7 +30,7 @@
     "schema:description": "table/survey.rst",
     "tableSchema": "table/survey-metadata.json"
   }, {
-    "dc:title": "YES-PHN instrument",
+    "dc:title": "YES-PHN",
     "url": "data/yes-phn.csv",
     "schema:name": "yes-phn-instrument",
     "schema:description": "table/instrument/yes-phn-instrument.rst",

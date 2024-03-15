@@ -17,7 +17,7 @@
     "titles": [ "survey_key" ],
     "dc:title": "Survey Key",
     "schema:description": "This is a number or code assigned to each survey activity. The Survey Key is unique and stable for each survey at the level of the organisation.",
-    "schema:disambiguatingDescription": "table/survey/key.rst",
+    "schema:disambiguatingDescription": "type/key.rst",
     "schema:dateCreated": "2021-05-18",
     "datatype": {
       "base": "string",
