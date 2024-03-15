@@ -2,7 +2,7 @@
 the only value that will be accepted is 99 = Not stated / Missing. Once the review is complete
 all subscales for all recorded YES-PHNs will be calculated using the approved scoring method.**
 
-The YES PHN Outcome Scale is based on the sum of Questions 13 through 15. 
+The YES PHN Outcome Scale is based on Questions 13 through 15. 
 
 For the YES PHN Outcome Scale, the missing value used should be 99.
 
