@@ -429,9 +429,13 @@ YES PHN Experience Scale
 :Required: yes
 
 :Domain:
-  0 - 60, 99 = Not stated / Missing
+  99 - 99, 99 = Not stated / Missing
 
 :Notes:
+  **The scoring of the YES-PHN is currently under review. Until the review is complete,
+  the only value that will be accepted is 99 = Not stated / Missing. Once the review is complete
+  all subscales for all recorded YES-PHNs will be calculated using the approved scoring method.**
+  
   The YES PHN Experience Scale is based on the sum of Questions 1 through 12. Therefore scores fall in the range 12-60.
   
   If any question is missing or invalid (that is, has not been coded 1, 2, 3, 4, 5), it should be set to '99 - Not stated / Missing'.
@@ -456,9 +460,13 @@ YES PHN Outcome Scale
 :Required: yes
 
 :Domain:
-  0 - 15, 99 = Not stated / Missing
+  99 - 99, 99 = Not stated / Missing
 
 :Notes:
+  **The scoring of the YES-PHN is currently under review. Until the review is complete,
+  the only value that will be accepted is 99 = Not stated / Missing. Once the review is complete
+  all subscales for all recorded YES-PHNs will be calculated using the approved scoring method.**
+  
   The YES PHN Outcome Scale is based on the sum of Questions 13 through 15. Therefore scores fall in the range 3-15.
   
   If any question is missing or invalid (that is, has not been coded 1, 2, 3, 4, 5), it should be set to '99 - Not stated / Missing'.

@@ -211,10 +211,10 @@
 :99: Not stated / Missing"
 "`YES PHN Experience Scale`_ (yes_phn_experience_scale)
 
-",integer,yes,"0 - 60, 99 = Not stated / Missing"
+",integer,yes,"99 - 99, 99 = Not stated / Missing"
 "`YES PHN Outcome Scale`_ (yes_phn_outcome_scale)
 
-",integer,yes,"0 - 15, 99 = Not stated / Missing"
+",integer,yes,"99 - 99, 99 = Not stated / Missing"
 "`YES PHN Tags`_ (yes_phn_tags)
 
 ",string,"—","List of tags for the instrument."
