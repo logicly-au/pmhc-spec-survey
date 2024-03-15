@@ -1,4 +1,4 @@
 organisation_path,instrument_key,survey_key,yes_phn_item1,yes_phn_item2,yes_phn_item3,yes_phn_item4,yes_phn_item5,yes_phn_item6,yes_phn_item7,yes_phn_item8,yes_phn_item9,yes_phn_item10,yes_phn_item11,yes_phn_item12,yes_phn_item13,yes_phn_item14,yes_phn_item15,yes_phn_item16,yes_phn_item17,yes_phn_item18,yes_phn_item19,yes_phn_item19_other,yes_phn_item20,yes_phn_item20_other,yes_phn_item21,yes_phn_item22,yes_phn_item23,yes_phn_item24,yes_phn_item24_other,yes_phn_item25,yes_phn_item26,yes_phn_experience_scale,yes_phn_outcome_scale,yes_phn_tags
-PHN999:NFP01,I01,S01,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,"la","ti",1,,1,,1,2,3,1,"",1,1,36,9,
-PHN999:NFP01,I02,S01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,"do","re",2,,2,"Double Dutch",2,3,1,1,"",2,2,12,3,tag2
+PHN999:NFP01,I01,S01,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,"la","ti",1,,1,,1,2,3,1,"",1,1,99,99,
+PHN999:NFP01,I02,S01,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,"do","re",2,,2,"Double Dutch",2,3,1,1,"",2,2,99,99,tag2
 PHN999:NFP01,I03,S02,2,1,2,1,2,1,2,1,2,1,2,1,2,1,2,1,"mi","fa",3,"nonbinary",1,,3,2,1,1,"",3,3,99,99,aTag
