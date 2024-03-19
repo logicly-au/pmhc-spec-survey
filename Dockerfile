@@ -1,4 +1,4 @@
-FROM docker.sdlocal.net/devel/stratperlbase:multiplatform
+FROM docker.sdlocal.net/devel/stratperlbase
 
 ADD modules.txt modules.txt
 

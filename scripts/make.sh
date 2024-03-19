@@ -3,18 +3,19 @@
 # Exit if anything errors
 set -e
 
-source doc/version.conf
+source doc/version.env
 export SPEC_VERSION
+
+source config.sh
 
 if [[ -z $RECORD_MATCH ]]; then
   RECORD_MATCH=".*"
 fi
 
-docker pull docker.sdlocal.net/csvw/metadata2rst:multiplatform
-docker pull stratdat/sphinx:production
+docker pull docker.sdlocal.net/csvw/metadata2rst:release
 docker pull stratdat/sphinx-html2pdf:production
 
-docker run --rm -v `pwd`:/mnt/cwd docker.sdlocal.net/csvw/metadata2rst:multiplatform \
+docker run --rm -v `pwd`:/mnt/cwd docker.sdlocal.net/csvw/metadata2rst:release \
   --meta=metadata.json \
   --record_match "${RECORD_MATCH}"
 
@@ -44,8 +45,16 @@ fi
 GIT_VERSION=$(git describe --tags --always)
 
 echo "Building PDF"
-docker run --rm -e GIT_VERSION -v `pwd`:/mnt/workdir \
-  stratdat/sphinx:production make singlehtml
+docker compose run \
+  --build \
+  -e GIT_VERSION \
+  --rm sphinx \
+  make singlehtml
+
+# docker compose run \
+#--rm -e GIT_VERSION -v `pwd`:/mnt/workdir \
+#  stratdat/sphinx:production make singlehtml
+
 
 popd
 
@@ -64,7 +73,12 @@ docker run --rm -e GIT_VERSION -v `pwd`:/mnt/workdir \
 pushd .
 cd doc
 
-docker run --rm -e GIT_VERSION -v `pwd`:/mnt/workdir \
-  stratdat/sphinx:production make html
+docker compose run \
+  -e GIT_VERSION \
+  --rm sphinx \
+  make html
+
+#docker run --rm -e GIT_VERSION -v `pwd`:/mnt/workdir \
+#  stratdat/sphinx:production make html
 
 popd
