@@ -1,20 +1,22 @@
+
+
 <!DOCTYPE html>
-<html class="writer-html5" lang="English" >
+<html class="writer-html5" lang="English" data-content_root="./">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>4. Data model and specifications &mdash; PMHC MDS Survey Specification 1.0.0 documentation</title>
-      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
-  <!--[if lt IE 9]>
-    <script src="_static/js/html5shiv.min.js"></script>
-  <![endif]-->
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="_static/css/custom.css?v=90dea16d" />
+
   
-        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=15a40aba"></script>
-        <script src="_static/doctools.js?v=888ff710"></script>
-        <script src="_static/sphinx_highlight.js?v=4825356b"></script>
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=80cc54d1"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -33,9 +35,6 @@
           <a href="index.html" class="icon icon-home">
             PMHC MDS Survey Specification
           </a>
-              <div class="version">
-                1.0.0
-              </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
@@ -145,16 +144,17 @@
            <div itemprop="articleBody">
              
   <section id="data-model-and-specifications">
-<span id="id1"></span><h1><span class="section-number">4. </span>Data model and specifications<a class="headerlink" href="#data-model-and-specifications" title="Permalink to this heading">¶</a></h1>
+<span id="id1"></span><h1><span class="section-number">4. </span>Data model and specifications<a class="headerlink" href="#data-model-and-specifications" title="Link to this heading"></a></h1>
 <section id="data-model">
-<span id="id2"></span><h2><span class="section-number">4.1. </span>Data model<a class="headerlink" href="#data-model" title="Permalink to this heading">¶</a></h2>
+<span id="id2"></span><h2><span class="section-number">4.1. </span>Data model<a class="headerlink" href="#data-model" title="Link to this heading"></a></h2>
 <p>The introductory wording on the YES PHN states &quot;All information collected in
 this survey is anonymous. None of the information collected will be used to identify you.&quot;
 In order to preserve this client anonymity, this specification uses a data model
 that stores the survey against a Provider Organisation, not a client.</p>
 <figure class="align-default" id="id6">
-<span id="data-model-diagram"></span><img alt="PMHC MDS Survey Specification Version 1.0 data model" src="_images/pmhc-mds-survey-data-model-v1.0.svg" /><figcaption>
-<p><span class="caption-number">Fig. 4.1 </span><span class="caption-text">PMHC MDS Survey Specification Version 1.0 data model</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+<span id="data-model-diagram"></span><img alt="PMHC MDS Survey Specification Version 1.0 data model" src="_images/pmhc-mds-survey-data-model-v1.0.svg" />
+<figcaption>
+<p><span class="caption-number">Fig. 4.1 </span><span class="caption-text">PMHC MDS Survey Specification Version 1.0 data model</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
 </figcaption>
 </figure>
 <div class="admonition note">
@@ -166,13 +166,13 @@ or zoomed by opening in a new tab or window or by downloading it.</p></li>
 </div>
 </section>
 <section id="record-formats">
-<span id="id3"></span><h2><span class="section-number">4.2. </span>Record formats<a class="headerlink" href="#record-formats" title="Permalink to this heading">¶</a></h2>
+<span id="id3"></span><h2><span class="section-number">4.2. </span>Record formats<a class="headerlink" href="#record-formats" title="Link to this heading"></a></h2>
 <section id="metadata">
-<span id="metadata-data-elements"></span><h3><span class="section-number">4.2.1. </span>Metadata<a class="headerlink" href="#metadata" title="Permalink to this heading">¶</a></h3>
+<span id="metadata-data-elements"></span><h3><span class="section-number">4.2.1. </span>Metadata<a class="headerlink" href="#metadata" title="Link to this heading"></a></h3>
 <p>The Metadata table must be included in file uploads in order to identify
 the type and version of the uploaded data.</p>
 <table class="docutils align-default" id="id7">
-<caption><span class="caption-number">Table 4.1 </span><span class="caption-text">Metadata record layout</span><a class="headerlink" href="#id7" title="Permalink to this table">¶</a></caption>
+<caption><span class="caption-number">Table 4.1 </span><span class="caption-text">Metadata record layout</span><a class="headerlink" href="#id7" title="Link to this table"></a></caption>
 <thead>
 <tr class="row-odd"><th class="head"><p>Data Element (Field Name)</p></th>
 <th class="head"><p>Type (min,max)</p></th>
@@ -196,7 +196,7 @@ the type and version of the uploaded data.</p>
 <p>For this version of the specification the required content is shown in the
 following table:</p>
 <table class="docutils align-default" id="id8">
-<caption><span class="caption-number">Table 4.2 </span><span class="caption-text">Metadata file</span><a class="headerlink" href="#id8" title="Permalink to this table">¶</a></caption>
+<caption><span class="caption-number">Table 4.2 </span><span class="caption-text">Metadata file</span><a class="headerlink" href="#id8" title="Link to this table"></a></caption>
 <tbody>
 <tr class="row-odd"><td><p>key</p></td>
 <td><p>value</p></td>
@@ -212,14 +212,14 @@ following table:</p>
 <hr class="docutils" />
 </section>
 <section id="provider-organisation">
-<span id="provider-organisation-data-elements"></span><h3><span class="section-number">4.2.2. </span>Provider Organisation<a class="headerlink" href="#provider-organisation" title="Permalink to this heading">¶</a></h3>
+<span id="provider-organisation-data-elements"></span><h3><span class="section-number">4.2.2. </span>Provider Organisation<a class="headerlink" href="#provider-organisation" title="Link to this heading"></a></h3>
 <p>See <a class="reference external" href="https://docs.pmhc-mds.com/projects/data-specification/en/v4/data-model-and-specifications.html#provider-organisation">Provider Organisation Key Concepts</a>
 for the definition of a provider organisation.</p>
 <p>Provider Organisation data is for administrative use within the PMHC MDS
 system. It is managed by the PHNs via the PMHC MDS administrative interface,
 or upload.</p>
 <table class="docutils align-default" id="id9">
-<caption><span class="caption-number">Table 4.3 </span><span class="caption-text">Provider Organisation record layout</span><a class="headerlink" href="#id9" title="Permalink to this table">¶</a></caption>
+<caption><span class="caption-number">Table 4.3 </span><span class="caption-text">Provider Organisation record layout</span><a class="headerlink" href="#id9" title="Link to this table"></a></caption>
 <thead>
 <tr class="row-odd"><th class="head"><p>Data Element (Field Name)</p></th>
 <th class="head"><p>Type (min,max)</p></th>
@@ -306,7 +306,7 @@ or upload.</p>
 </td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#state">State</a> (organisation_state)</p>
-<p>METeOR: <a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/613718">613718</a></p>
+<p>METEOR: <a class="reference external" href="https://meteor.aihw.gov.au/content/613718">613718</a></p>
 </td>
 <td><p>string</p></td>
 <td><p>yes</p></td>
@@ -361,10 +361,10 @@ or upload.</p>
 <hr class="docutils" />
 </section>
 <section id="survey">
-<span id="survey-data-elements"></span><h3><span class="section-number">4.2.3. </span>Survey<a class="headerlink" href="#survey" title="Permalink to this heading">¶</a></h3>
+<span id="survey-data-elements"></span><h3><span class="section-number">4.2.3. </span>Survey<a class="headerlink" href="#survey" title="Link to this heading"></a></h3>
 <p>Survey data is managed by the PHNs or Provider Organisations via upload.</p>
 <table class="docutils align-default" id="id10">
-<caption><span class="caption-number">Table 4.4 </span><span class="caption-text">Survey record layout</span><a class="headerlink" href="#id10" title="Permalink to this table">¶</a></caption>
+<caption><span class="caption-number">Table 4.4 </span><span class="caption-text">Survey record layout</span><a class="headerlink" href="#id10" title="Link to this table"></a></caption>
 <thead>
 <tr class="row-odd"><th class="head"><p>Data Element (Field Name)</p></th>
 <th class="head"><p>Type (min,max)</p></th>
@@ -398,13 +398,13 @@ or upload.</p>
 <hr class="docutils" />
 </section>
 <section id="instruments">
-<span id="instument-data-elements"></span><h3><span class="section-number">4.2.4. </span>Instruments<a class="headerlink" href="#instruments" title="Permalink to this heading">¶</a></h3>
+<span id="instument-data-elements"></span><h3><span class="section-number">4.2.4. </span>Instruments<a class="headerlink" href="#instruments" title="Link to this heading"></a></h3>
 <section id="yes-phn">
-<span id="yes-phn-data-elements"></span><h4><span class="section-number">4.2.4.1. </span>YES PHN<a class="headerlink" href="#yes-phn" title="Permalink to this heading">¶</a></h4>
+<span id="yes-phn-data-elements"></span><h4><span class="section-number">4.2.4.1. </span>YES PHN<a class="headerlink" href="#yes-phn" title="Link to this heading"></a></h4>
 <p>Further information about the YES PHN Survey is available from <a class="reference internal" href="introduction.html#introduction"><span class="std std-ref">Introduction</span></a> and <a class="reference internal" href="resources.html#resources"><span class="std std-ref">Resources</span></a>.</p>
 <p>YES PHN data is managed by the PHNs or Provider Organisations via upload.</p>
 <table class="docutils align-default" id="id11">
-<caption><span class="caption-number">Table 4.5 </span><span class="caption-text">YES PHN record layout</span><a class="headerlink" href="#id11" title="Permalink to this table">¶</a></caption>
+<caption><span class="caption-number">Table 4.5 </span><span class="caption-text">YES PHN record layout</span><a class="headerlink" href="#id11" title="Link to this table"></a></caption>
 <thead>
 <tr class="row-odd"><th class="head"><p>Data Element (Field Name)</p></th>
 <th class="head"><p>Type (min,max)</p></th>
@@ -1057,9 +1057,9 @@ or upload.</p>
 </section>
 </section>
 <section id="definitions">
-<span id="id4"></span><h2><span class="section-number">4.3. </span>Definitions<a class="headerlink" href="#definitions" title="Permalink to this heading">¶</a></h2>
+<span id="id4"></span><h2><span class="section-number">4.3. </span>Definitions<a class="headerlink" href="#definitions" title="Link to this heading"></a></h2>
 <section id="abn">
-<span id="dfn-organisation-abn"></span><h3><span class="section-number">4.3.1. </span>ABN<a class="headerlink" href="#abn" title="Permalink to this heading">¶</a></h3>
+<span id="dfn-organisation-abn"></span><h3><span class="section-number">4.3.1. </span>ABN<a class="headerlink" href="#abn" title="Link to this heading"></a></h3>
 <p>The Australian Business Number of the provider organisation.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name<span class="colon">:</span></dt>
@@ -1075,7 +1075,7 @@ or upload.</p>
 <hr class="docutils" />
 </section>
 <section id="collection-date">
-<span id="dfn-collection-date"></span><h3><span class="section-number">4.3.2. </span>Collection Date<a class="headerlink" href="#collection-date" title="Permalink to this heading">¶</a></h3>
+<span id="dfn-collection-date"></span><h3><span class="section-number">4.3.2. </span>Collection Date<a class="headerlink" href="#collection-date" title="Link to this heading"></a></h3>
 <p>The collection date the survey instruments.</p>
 <dl class="field-list">
 <dt class="field-odd">Field name<span class="colon">:</span></dt>
@@ -1105,7 +1105,7 @@ before 1st January 2020, otherwise, the collection date must not be before
 <hr class="docutils" />
 </section>
 <section id="instrument-key">
-<span id="dfn-instrument-key"></span><h3><span class="section-number">4.3.3. </span>Instrument Key<a class="headerlink" href="#instrument-key" title="Permalink to this heading">¶</a></h3>
+<span id="dfn-instrument-key"></span><h3><span class="section-number">4.3.3. </span>Instrument Key<a class="headerlink" href="#instrument-key" title="Link to this heading"></a></h3>
 <p>A sequence of characters which uniquely identifies the survey instrument to the Primary Health Network. Assigned by the Primary Health Network.</p>
 <dl class="field-list">
 <dt class="field-odd">Field name<span class="colon">:</span></dt>
@@ -1134,7 +1134,7 @@ UUIDs</a>.</p>
 <hr class="docutils" />
 </section>
 <section id="key">
-<span id="dfn-key"></span><h3><span class="section-number">4.3.4. </span>Key<a class="headerlink" href="#key" title="Permalink to this heading">¶</a></h3>
+<span id="dfn-key"></span><h3><span class="section-number">4.3.4. </span>Key<a class="headerlink" href="#key" title="Link to this heading"></a></h3>
 <p>A metadata key name.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name<span class="colon">:</span></dt>
@@ -1150,7 +1150,7 @@ UUIDs</a>.</p>
 <hr class="docutils" />
 </section>
 <section id="legal-name">
-<span id="dfn-organisation-legal-name"></span><h3><span class="section-number">4.3.5. </span>Legal Name<a class="headerlink" href="#legal-name" title="Permalink to this heading">¶</a></h3>
+<span id="dfn-organisation-legal-name"></span><h3><span class="section-number">4.3.5. </span>Legal Name<a class="headerlink" href="#legal-name" title="Link to this heading"></a></h3>
 <p>The legal name of the provider organisation.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name<span class="colon">:</span></dt>
@@ -1166,7 +1166,7 @@ UUIDs</a>.</p>
 <hr class="docutils" />
 </section>
 <section id="name">
-<span id="dfn-organisation-name"></span><h3><span class="section-number">4.3.6. </span>Name<a class="headerlink" href="#name" title="Permalink to this heading">¶</a></h3>
+<span id="dfn-organisation-name"></span><h3><span class="section-number">4.3.6. </span>Name<a class="headerlink" href="#name" title="Link to this heading"></a></h3>
 <p>The name of the provider organisation.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name<span class="colon">:</span></dt>
@@ -1182,7 +1182,7 @@ UUIDs</a>.</p>
 <hr class="docutils" />
 </section>
 <section id="organisation-end-date">
-<span id="dfn-organisation-end-date"></span><h3><span class="section-number">4.3.7. </span>Organisation End Date<a class="headerlink" href="#organisation-end-date" title="Permalink to this heading">¶</a></h3>
+<span id="dfn-organisation-end-date"></span><h3><span class="section-number">4.3.7. </span>Organisation End Date<a class="headerlink" href="#organisation-end-date" title="Link to this heading"></a></h3>
 <p>The date on which a provider organisation stopped delivering services.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name<span class="colon">:</span></dt>
@@ -1198,7 +1198,7 @@ UUIDs</a>.</p>
 <hr class="docutils" />
 </section>
 <section id="organisation-key">
-<span id="dfn-organisation-key"></span><h3><span class="section-number">4.3.8. </span>Organisation Key<a class="headerlink" href="#organisation-key" title="Permalink to this heading">¶</a></h3>
+<span id="dfn-organisation-key"></span><h3><span class="section-number">4.3.8. </span>Organisation Key<a class="headerlink" href="#organisation-key" title="Link to this heading"></a></h3>
 <p>A sequence of characters which uniquely identifies the provider organisation to the Primary Health Network. Assigned by the Primary Health Network.</p>
 <dl class="field-list">
 <dt class="field-odd">Field name<span class="colon">:</span></dt>
@@ -1219,7 +1219,7 @@ across time. See <a class="reference internal" href="identifier-management.html#
 <hr class="docutils" />
 </section>
 <section id="organisation-path">
-<span id="dfn-organisation-path"></span><h3><span class="section-number">4.3.9. </span>Organisation Path<a class="headerlink" href="#organisation-path" title="Permalink to this heading">¶</a></h3>
+<span id="dfn-organisation-path"></span><h3><span class="section-number">4.3.9. </span>Organisation Path<a class="headerlink" href="#organisation-path" title="Link to this heading"></a></h3>
 <p>A sequence of colon separated Organisation Keys that fully specifies the Provider Organisation providing a service to the client.</p>
 <dl class="field-list">
 <dt class="field-odd">Field name<span class="colon">:</span></dt>
@@ -1264,7 +1264,7 @@ Provider Organisation's Organisation Key separated by a colon.</p>
 <hr class="docutils" />
 </section>
 <section id="organisation-start-date">
-<span id="dfn-organisation-start-date"></span><h3><span class="section-number">4.3.10. </span>Organisation Start Date<a class="headerlink" href="#organisation-start-date" title="Permalink to this heading">¶</a></h3>
+<span id="dfn-organisation-start-date"></span><h3><span class="section-number">4.3.10. </span>Organisation Start Date<a class="headerlink" href="#organisation-start-date" title="Link to this heading"></a></h3>
 <p>The date on which a provider organisation started delivering services.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name<span class="colon">:</span></dt>
@@ -1280,7 +1280,7 @@ Provider Organisation's Organisation Key separated by a colon.</p>
 <hr class="docutils" />
 </section>
 <section id="organisation-tags">
-<span id="dfn-organisation-tags"></span><h3><span class="section-number">4.3.11. </span>Organisation Tags<a class="headerlink" href="#organisation-tags" title="Permalink to this heading">¶</a></h3>
+<span id="dfn-organisation-tags"></span><h3><span class="section-number">4.3.11. </span>Organisation Tags<a class="headerlink" href="#organisation-tags" title="Link to this heading"></a></h3>
 <p>List of tags for the provider organisation.</p>
 <dl class="field-list">
 <dt class="field-odd">Field name<span class="colon">:</span></dt>
@@ -1306,7 +1306,7 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 <hr class="docutils" />
 </section>
 <section id="organisation-type">
-<span id="dfn-organisation-type"></span><h3><span class="section-number">4.3.12. </span>Organisation Type<a class="headerlink" href="#organisation-type" title="Permalink to this heading">¶</a></h3>
+<span id="dfn-organisation-type"></span><h3><span class="section-number">4.3.12. </span>Organisation Type<a class="headerlink" href="#organisation-type" title="Link to this heading"></a></h3>
 <p>The category that best describes the provider organisation.</p>
 <dl class="field-list">
 <dt class="field-odd">Field name<span class="colon">:</span></dt>
@@ -1430,7 +1430,7 @@ option to commission external providers.</p>
 <hr class="docutils" />
 </section>
 <section id="state">
-<span id="dfn-organisation-state"></span><h3><span class="section-number">4.3.13. </span>State<a class="headerlink" href="#state" title="Permalink to this heading">¶</a></h3>
+<span id="dfn-organisation-state"></span><h3><span class="section-number">4.3.13. </span>State<a class="headerlink" href="#state" title="Link to this heading"></a></h3>
 <p>The state that the provider organisation operates in.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name<span class="colon">:</span></dt>
@@ -1480,14 +1480,14 @@ option to commission external providers.</p>
 <li><p>Code is from Meteor with the addition of code for Other Territories.</p></li>
 </ul>
 </dd>
-<dt class="field-even">METeOR<span class="colon">:</span></dt>
-<dd class="field-even"><p><a class="reference external" href="http://meteor.aihw.gov.au/content/index.phtml/itemId/613718">613718</a></p>
+<dt class="field-even">METEOR<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference external" href="https://meteor.aihw.gov.au/content/613718">613718</a></p>
 </dd>
 </dl>
 <hr class="docutils" />
 </section>
 <section id="survey-key">
-<span id="dfn-survey-key"></span><h3><span class="section-number">4.3.14. </span>Survey Key<a class="headerlink" href="#survey-key" title="Permalink to this heading">¶</a></h3>
+<span id="dfn-survey-key"></span><h3><span class="section-number">4.3.14. </span>Survey Key<a class="headerlink" href="#survey-key" title="Link to this heading"></a></h3>
 <p>This is a number or code assigned to each survey activity. The Survey Key is unique and stable for each survey at the level of the organisation.</p>
 <dl class="field-list">
 <dt class="field-odd">Field name<span class="colon">:</span></dt>
@@ -1516,7 +1516,7 @@ UUIDs</a>.</p>
 <hr class="docutils" />
 </section>
 <section id="survey-tags">
-<span id="dfn-survey-tags"></span><h3><span class="section-number">4.3.15. </span>Survey Tags<a class="headerlink" href="#survey-tags" title="Permalink to this heading">¶</a></h3>
+<span id="dfn-survey-tags"></span><h3><span class="section-number">4.3.15. </span>Survey Tags<a class="headerlink" href="#survey-tags" title="Link to this heading"></a></h3>
 <p>List of tags for the survey.</p>
 <dl class="field-list">
 <dt class="field-odd">Field name<span class="colon">:</span></dt>
@@ -1542,7 +1542,7 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 <hr class="docutils" />
 </section>
 <section id="value">
-<span id="dfn-value"></span><h3><span class="section-number">4.3.16. </span>Value<a class="headerlink" href="#value" title="Permalink to this heading">¶</a></h3>
+<span id="dfn-value"></span><h3><span class="section-number">4.3.16. </span>Value<a class="headerlink" href="#value" title="Link to this heading"></a></h3>
 <p>The metadata value.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name<span class="colon">:</span></dt>
@@ -1558,7 +1558,7 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 <hr class="docutils" />
 </section>
 <section id="yes-phn-experience-scale">
-<span id="dfn-yes-phn-experience-scale"></span><h3><span class="section-number">4.3.17. </span>YES PHN Experience Scale<a class="headerlink" href="#yes-phn-experience-scale" title="Permalink to this heading">¶</a></h3>
+<span id="dfn-yes-phn-experience-scale"></span><h3><span class="section-number">4.3.17. </span>YES PHN Experience Scale<a class="headerlink" href="#yes-phn-experience-scale" title="Link to this heading"></a></h3>
 <dl class="field-list">
 <dt class="field-odd">Field name<span class="colon">:</span></dt>
 <dd class="field-odd"><p>yes_phn_experience_scale</p>
@@ -1584,7 +1584,7 @@ all subscales for all recorded YES-PHNs will be calculated using the approved sc
 <hr class="docutils" />
 </section>
 <section id="yes-phn-outcome-scale">
-<span id="dfn-yes-phn-outcome-scale"></span><h3><span class="section-number">4.3.18. </span>YES PHN Outcome Scale<a class="headerlink" href="#yes-phn-outcome-scale" title="Permalink to this heading">¶</a></h3>
+<span id="dfn-yes-phn-outcome-scale"></span><h3><span class="section-number">4.3.18. </span>YES PHN Outcome Scale<a class="headerlink" href="#yes-phn-outcome-scale" title="Link to this heading"></a></h3>
 <dl class="field-list">
 <dt class="field-odd">Field name<span class="colon">:</span></dt>
 <dd class="field-odd"><p>yes_phn_outcome_scale</p>
@@ -1610,7 +1610,7 @@ all subscales for all recorded YES-PHNs will be calculated using the approved sc
 <hr class="docutils" />
 </section>
 <section id="yes-phn-question-1">
-<span id="dfn-yes-phn-item1"></span><h3><span class="section-number">4.3.19. </span>YES PHN Question 1<a class="headerlink" href="#yes-phn-question-1" title="Permalink to this heading">¶</a></h3>
+<span id="dfn-yes-phn-item1"></span><h3><span class="section-number">4.3.19. </span>YES PHN Question 1<a class="headerlink" href="#yes-phn-question-1" title="Link to this heading"></a></h3>
 <p>You felt welcome using this service.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name<span class="colon">:</span></dt>
@@ -1648,7 +1648,7 @@ all subscales for all recorded YES-PHNs will be calculated using the approved sc
 <hr class="docutils" />
 </section>
 <section id="yes-phn-question-2">
-<span id="dfn-yes-phn-item2"></span><h3><span class="section-number">4.3.20. </span>YES PHN Question 2<a class="headerlink" href="#yes-phn-question-2" title="Permalink to this heading">¶</a></h3>
+<span id="dfn-yes-phn-item2"></span><h3><span class="section-number">4.3.20. </span>YES PHN Question 2<a class="headerlink" href="#yes-phn-question-2" title="Link to this heading"></a></h3>
 <p>You felt safe using this service.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name<span class="colon">:</span></dt>
@@ -1686,7 +1686,7 @@ all subscales for all recorded YES-PHNs will be calculated using the approved sc
 <hr class="docutils" />
 </section>
 <section id="yes-phn-question-3">
-<span id="dfn-yes-phn-item3"></span><h3><span class="section-number">4.3.21. </span>YES PHN Question 3<a class="headerlink" href="#yes-phn-question-3" title="Permalink to this heading">¶</a></h3>
+<span id="dfn-yes-phn-item3"></span><h3><span class="section-number">4.3.21. </span>YES PHN Question 3<a class="headerlink" href="#yes-phn-question-3" title="Link to this heading"></a></h3>
 <p>You had access to this service when you needed.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name<span class="colon">:</span></dt>
@@ -1724,7 +1724,7 @@ all subscales for all recorded YES-PHNs will be calculated using the approved sc
 <hr class="docutils" />
 </section>
 <section id="yes-phn-question-4">
-<span id="dfn-yes-phn-item4"></span><h3><span class="section-number">4.3.22. </span>YES PHN Question 4<a class="headerlink" href="#yes-phn-question-4" title="Permalink to this heading">¶</a></h3>
+<span id="dfn-yes-phn-item4"></span><h3><span class="section-number">4.3.22. </span>YES PHN Question 4<a class="headerlink" href="#yes-phn-question-4" title="Link to this heading"></a></h3>
 <p>You had opportunities for your family and friends to be involved in your support or care if you wanted.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name<span class="colon">:</span></dt>
@@ -1765,7 +1765,7 @@ all subscales for all recorded YES-PHNs will be calculated using the approved sc
 <hr class="docutils" />
 </section>
 <section id="yes-phn-question-5">
-<span id="dfn-yes-phn-item5"></span><h3><span class="section-number">4.3.23. </span>YES PHN Question 5<a class="headerlink" href="#yes-phn-question-5" title="Permalink to this heading">¶</a></h3>
+<span id="dfn-yes-phn-item5"></span><h3><span class="section-number">4.3.23. </span>YES PHN Question 5<a class="headerlink" href="#yes-phn-question-5" title="Link to this heading"></a></h3>
 <p>Staff were able to provide information or advice to help you manage your physical health if you wanted.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name<span class="colon">:</span></dt>
@@ -1803,7 +1803,7 @@ all subscales for all recorded YES-PHNs will be calculated using the approved sc
 <hr class="docutils" />
 </section>
 <section id="yes-phn-question-6">
-<span id="dfn-yes-phn-item6"></span><h3><span class="section-number">4.3.24. </span>YES PHN Question 6<a class="headerlink" href="#yes-phn-question-6" title="Permalink to this heading">¶</a></h3>
+<span id="dfn-yes-phn-item6"></span><h3><span class="section-number">4.3.24. </span>YES PHN Question 6<a class="headerlink" href="#yes-phn-question-6" title="Link to this heading"></a></h3>
 <p>Your individuality and values were respected (such as your culture, faith or gender identity, etc.)</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name<span class="colon">:</span></dt>
@@ -1841,7 +1841,7 @@ all subscales for all recorded YES-PHNs will be calculated using the approved sc
 <hr class="docutils" />
 </section>
 <section id="yes-phn-question-7">
-<span id="dfn-yes-phn-item7"></span><h3><span class="section-number">4.3.25. </span>YES PHN Question 7<a class="headerlink" href="#yes-phn-question-7" title="Permalink to this heading">¶</a></h3>
+<span id="dfn-yes-phn-item7"></span><h3><span class="section-number">4.3.25. </span>YES PHN Question 7<a class="headerlink" href="#yes-phn-question-7" title="Link to this heading"></a></h3>
 <p>This service listened to and followed up on feedback or complaints.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name<span class="colon">:</span></dt>
@@ -1879,7 +1879,7 @@ all subscales for all recorded YES-PHNs will be calculated using the approved sc
 <hr class="docutils" />
 </section>
 <section id="yes-phn-question-8">
-<span id="dfn-yes-phn-item8"></span><h3><span class="section-number">4.3.26. </span>YES PHN Question 8<a class="headerlink" href="#yes-phn-question-8" title="Permalink to this heading">¶</a></h3>
+<span id="dfn-yes-phn-item8"></span><h3><span class="section-number">4.3.26. </span>YES PHN Question 8<a class="headerlink" href="#yes-phn-question-8" title="Link to this heading"></a></h3>
 <p>The service respected your right to make decisions.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name<span class="colon">:</span></dt>
@@ -1917,7 +1917,7 @@ all subscales for all recorded YES-PHNs will be calculated using the approved sc
 <hr class="docutils" />
 </section>
 <section id="yes-phn-question-9">
-<span id="dfn-yes-phn-item9"></span><h3><span class="section-number">4.3.27. </span>YES PHN Question 9<a class="headerlink" href="#yes-phn-question-9" title="Permalink to this heading">¶</a></h3>
+<span id="dfn-yes-phn-item9"></span><h3><span class="section-number">4.3.27. </span>YES PHN Question 9<a class="headerlink" href="#yes-phn-question-9" title="Link to this heading"></a></h3>
 <p>The support or care available met your needs.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name<span class="colon">:</span></dt>
@@ -1955,7 +1955,7 @@ all subscales for all recorded YES-PHNs will be calculated using the approved sc
 <hr class="docutils" />
 </section>
 <section id="yes-phn-question-10">
-<span id="dfn-yes-phn-item10"></span><h3><span class="section-number">4.3.28. </span>YES PHN Question 10<a class="headerlink" href="#yes-phn-question-10" title="Permalink to this heading">¶</a></h3>
+<span id="dfn-yes-phn-item10"></span><h3><span class="section-number">4.3.28. </span>YES PHN Question 10<a class="headerlink" href="#yes-phn-question-10" title="Link to this heading"></a></h3>
 <p>Access to a peer worker/ lived experience worker, if you wanted.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name<span class="colon">:</span></dt>
@@ -1996,7 +1996,7 @@ all subscales for all recorded YES-PHNs will be calculated using the approved sc
 <hr class="docutils" />
 </section>
 <section id="yes-phn-question-11">
-<span id="dfn-yes-phn-item11"></span><h3><span class="section-number">4.3.29. </span>YES PHN Question 11<a class="headerlink" href="#yes-phn-question-11" title="Permalink to this heading">¶</a></h3>
+<span id="dfn-yes-phn-item11"></span><h3><span class="section-number">4.3.29. </span>YES PHN Question 11<a class="headerlink" href="#yes-phn-question-11" title="Link to this heading"></a></h3>
 <p>The support or care available met your needs.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name<span class="colon">:</span></dt>
@@ -2034,7 +2034,7 @@ all subscales for all recorded YES-PHNs will be calculated using the approved sc
 <hr class="docutils" />
 </section>
 <section id="yes-phn-question-12">
-<span id="dfn-yes-phn-item12"></span><h3><span class="section-number">4.3.30. </span>YES PHN Question 12<a class="headerlink" href="#yes-phn-question-12" title="Permalink to this heading">¶</a></h3>
+<span id="dfn-yes-phn-item12"></span><h3><span class="section-number">4.3.30. </span>YES PHN Question 12<a class="headerlink" href="#yes-phn-question-12" title="Link to this heading"></a></h3>
 <p>Development of a plan with you that considered all of your needs (including support, coordination and follow up).</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name<span class="colon">:</span></dt>
@@ -2075,7 +2075,7 @@ all subscales for all recorded YES-PHNs will be calculated using the approved sc
 <hr class="docutils" />
 </section>
 <section id="yes-phn-question-13">
-<span id="dfn-yes-phn-item13"></span><h3><span class="section-number">4.3.31. </span>YES PHN Question 13<a class="headerlink" href="#yes-phn-question-13" title="Permalink to this heading">¶</a></h3>
+<span id="dfn-yes-phn-item13"></span><h3><span class="section-number">4.3.31. </span>YES PHN Question 13<a class="headerlink" href="#yes-phn-question-13" title="Link to this heading"></a></h3>
 <p>The effect of this service on your hopefulness for the future.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name<span class="colon">:</span></dt>
@@ -2113,7 +2113,7 @@ all subscales for all recorded YES-PHNs will be calculated using the approved sc
 <hr class="docutils" />
 </section>
 <section id="yes-phn-question-14">
-<span id="dfn-yes-phn-item14"></span><h3><span class="section-number">4.3.32. </span>YES PHN Question 14<a class="headerlink" href="#yes-phn-question-14" title="Permalink to this heading">¶</a></h3>
+<span id="dfn-yes-phn-item14"></span><h3><span class="section-number">4.3.32. </span>YES PHN Question 14<a class="headerlink" href="#yes-phn-question-14" title="Link to this heading"></a></h3>
 <p>The effect of this service on your skills and strategies to look after your own health and wellbeing.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name<span class="colon">:</span></dt>
@@ -2151,7 +2151,7 @@ all subscales for all recorded YES-PHNs will be calculated using the approved sc
 <hr class="docutils" />
 </section>
 <section id="yes-phn-question-15">
-<span id="dfn-yes-phn-item15"></span><h3><span class="section-number">4.3.33. </span>YES PHN Question 15<a class="headerlink" href="#yes-phn-question-15" title="Permalink to this heading">¶</a></h3>
+<span id="dfn-yes-phn-item15"></span><h3><span class="section-number">4.3.33. </span>YES PHN Question 15<a class="headerlink" href="#yes-phn-question-15" title="Link to this heading"></a></h3>
 <p>The effect of this service on your ability to manage your day to day life.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name<span class="colon">:</span></dt>
@@ -2189,7 +2189,7 @@ all subscales for all recorded YES-PHNs will be calculated using the approved sc
 <hr class="docutils" />
 </section>
 <section id="yes-phn-question-16">
-<span id="dfn-yes-phn-item16"></span><h3><span class="section-number">4.3.34. </span>YES PHN Question 16<a class="headerlink" href="#yes-phn-question-16" title="Permalink to this heading">¶</a></h3>
+<span id="dfn-yes-phn-item16"></span><h3><span class="section-number">4.3.34. </span>YES PHN Question 16<a class="headerlink" href="#yes-phn-question-16" title="Link to this heading"></a></h3>
 <p>Overall, how would you rate your experience with this service in the last 3 months?</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name<span class="colon">:</span></dt>
@@ -2227,7 +2227,7 @@ all subscales for all recorded YES-PHNs will be calculated using the approved sc
 <hr class="docutils" />
 </section>
 <section id="yes-phn-question-17">
-<span id="dfn-yes-phn-item17"></span><h3><span class="section-number">4.3.35. </span>YES PHN Question 17<a class="headerlink" href="#yes-phn-question-17" title="Permalink to this heading">¶</a></h3>
+<span id="dfn-yes-phn-item17"></span><h3><span class="section-number">4.3.35. </span>YES PHN Question 17<a class="headerlink" href="#yes-phn-question-17" title="Link to this heading"></a></h3>
 <p>My experience would have been better if … (write in).</p>
 <dl class="field-list">
 <dt class="field-odd">Field name<span class="colon">:</span></dt>
@@ -2247,7 +2247,7 @@ all subscales for all recorded YES-PHNs will be calculated using the approved sc
 <hr class="docutils" />
 </section>
 <section id="yes-phn-question-18">
-<span id="dfn-yes-phn-item18"></span><h3><span class="section-number">4.3.36. </span>YES PHN Question 18<a class="headerlink" href="#yes-phn-question-18" title="Permalink to this heading">¶</a></h3>
+<span id="dfn-yes-phn-item18"></span><h3><span class="section-number">4.3.36. </span>YES PHN Question 18<a class="headerlink" href="#yes-phn-question-18" title="Link to this heading"></a></h3>
 <p>The best things about this service were … (write in.)</p>
 <dl class="field-list">
 <dt class="field-odd">Field name<span class="colon">:</span></dt>
@@ -2267,7 +2267,7 @@ all subscales for all recorded YES-PHNs will be calculated using the approved sc
 <hr class="docutils" />
 </section>
 <section id="yes-phn-question-19">
-<span id="dfn-yes-phn-item19"></span><h3><span class="section-number">4.3.37. </span>YES PHN Question 19<a class="headerlink" href="#yes-phn-question-19" title="Permalink to this heading">¶</a></h3>
+<span id="dfn-yes-phn-item19"></span><h3><span class="section-number">4.3.37. </span>YES PHN Question 19<a class="headerlink" href="#yes-phn-question-19" title="Link to this heading"></a></h3>
 <p>What is your gender identity?</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name<span class="colon">:</span></dt>
@@ -2299,7 +2299,7 @@ all subscales for all recorded YES-PHNs will be calculated using the approved sc
 <hr class="docutils" />
 </section>
 <section id="yes-phn-question-19-other">
-<span id="dfn-yes-phn-item19-other"></span><h3><span class="section-number">4.3.38. </span>YES PHN Question 19 Other<a class="headerlink" href="#yes-phn-question-19-other" title="Permalink to this heading">¶</a></h3>
+<span id="dfn-yes-phn-item19-other"></span><h3><span class="section-number">4.3.38. </span>YES PHN Question 19 Other<a class="headerlink" href="#yes-phn-question-19-other" title="Link to this heading"></a></h3>
 <p>What is your gender identity (other)?</p>
 <dl class="field-list">
 <dt class="field-odd">Field name<span class="colon">:</span></dt>
@@ -2319,7 +2319,7 @@ all subscales for all recorded YES-PHNs will be calculated using the approved sc
 <hr class="docutils" />
 </section>
 <section id="yes-phn-question-20">
-<span id="dfn-yes-phn-item20"></span><h3><span class="section-number">4.3.39. </span>YES PHN Question 20<a class="headerlink" href="#yes-phn-question-20" title="Permalink to this heading">¶</a></h3>
+<span id="dfn-yes-phn-item20"></span><h3><span class="section-number">4.3.39. </span>YES PHN Question 20<a class="headerlink" href="#yes-phn-question-20" title="Link to this heading"></a></h3>
 <p>What is the main language you speak at home?</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name<span class="colon">:</span></dt>
@@ -2348,7 +2348,7 @@ all subscales for all recorded YES-PHNs will be calculated using the approved sc
 <hr class="docutils" />
 </section>
 <section id="yes-phn-question-20-other">
-<span id="dfn-yes-phn-item20-other"></span><h3><span class="section-number">4.3.40. </span>YES PHN Question 20 Other<a class="headerlink" href="#yes-phn-question-20-other" title="Permalink to this heading">¶</a></h3>
+<span id="dfn-yes-phn-item20-other"></span><h3><span class="section-number">4.3.40. </span>YES PHN Question 20 Other<a class="headerlink" href="#yes-phn-question-20-other" title="Link to this heading"></a></h3>
 <p>What is the main language you speak at home (other)?</p>
 <dl class="field-list">
 <dt class="field-odd">Field name<span class="colon">:</span></dt>
@@ -2368,7 +2368,7 @@ all subscales for all recorded YES-PHNs will be calculated using the approved sc
 <hr class="docutils" />
 </section>
 <section id="yes-phn-question-21">
-<span id="dfn-yes-phn-item21"></span><h3><span class="section-number">4.3.41. </span>YES PHN Question 21<a class="headerlink" href="#yes-phn-question-21" title="Permalink to this heading">¶</a></h3>
+<span id="dfn-yes-phn-item21"></span><h3><span class="section-number">4.3.41. </span>YES PHN Question 21<a class="headerlink" href="#yes-phn-question-21" title="Link to this heading"></a></h3>
 <p>Are you of Aboriginal or Torres Strait Island origin?</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name<span class="colon">:</span></dt>
@@ -2403,7 +2403,7 @@ all subscales for all recorded YES-PHNs will be calculated using the approved sc
 <hr class="docutils" />
 </section>
 <section id="yes-phn-question-22">
-<span id="dfn-yes-phn-item22"></span><h3><span class="section-number">4.3.42. </span>YES PHN Question 22<a class="headerlink" href="#yes-phn-question-22" title="Permalink to this heading">¶</a></h3>
+<span id="dfn-yes-phn-item22"></span><h3><span class="section-number">4.3.42. </span>YES PHN Question 22<a class="headerlink" href="#yes-phn-question-22" title="Link to this heading"></a></h3>
 <p>What is your age?</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name<span class="colon">:</span></dt>
@@ -2441,7 +2441,7 @@ all subscales for all recorded YES-PHNs will be calculated using the approved sc
 <hr class="docutils" />
 </section>
 <section id="yes-phn-question-23">
-<span id="dfn-yes-phn-item23"></span><h3><span class="section-number">4.3.43. </span>YES PHN Question 23<a class="headerlink" href="#yes-phn-question-23" title="Permalink to this heading">¶</a></h3>
+<span id="dfn-yes-phn-item23"></span><h3><span class="section-number">4.3.43. </span>YES PHN Question 23<a class="headerlink" href="#yes-phn-question-23" title="Link to this heading"></a></h3>
 <p>How long have you been receiving support or care from this service?</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name<span class="colon">:</span></dt>
@@ -2479,7 +2479,7 @@ all subscales for all recorded YES-PHNs will be calculated using the approved sc
 <hr class="docutils" />
 </section>
 <section id="yes-phn-question-24">
-<span id="dfn-yes-phn-item24"></span><h3><span class="section-number">4.3.44. </span>YES PHN Question 24<a class="headerlink" href="#yes-phn-question-24" title="Permalink to this heading">¶</a></h3>
+<span id="dfn-yes-phn-item24"></span><h3><span class="section-number">4.3.44. </span>YES PHN Question 24<a class="headerlink" href="#yes-phn-question-24" title="Link to this heading"></a></h3>
 <p>Who referred you to this service?</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name<span class="colon">:</span></dt>
@@ -2517,7 +2517,7 @@ all subscales for all recorded YES-PHNs will be calculated using the approved sc
 <hr class="docutils" />
 </section>
 <section id="yes-phn-question-24-other">
-<span id="dfn-yes-phn-item24-other"></span><h3><span class="section-number">4.3.45. </span>YES PHN Question 24 Other<a class="headerlink" href="#yes-phn-question-24-other" title="Permalink to this heading">¶</a></h3>
+<span id="dfn-yes-phn-item24-other"></span><h3><span class="section-number">4.3.45. </span>YES PHN Question 24 Other<a class="headerlink" href="#yes-phn-question-24-other" title="Link to this heading"></a></h3>
 <p>Who referred you to this service (other)?</p>
 <dl class="field-list">
 <dt class="field-odd">Field name<span class="colon">:</span></dt>
@@ -2537,7 +2537,7 @@ all subscales for all recorded YES-PHNs will be calculated using the approved sc
 <hr class="docutils" />
 </section>
 <section id="yes-phn-question-25">
-<span id="dfn-yes-phn-item25"></span><h3><span class="section-number">4.3.46. </span>YES PHN Question 25<a class="headerlink" href="#yes-phn-question-25" title="Permalink to this heading">¶</a></h3>
+<span id="dfn-yes-phn-item25"></span><h3><span class="section-number">4.3.46. </span>YES PHN Question 25<a class="headerlink" href="#yes-phn-question-25" title="Link to this heading"></a></h3>
 <p>How involved were you in choosing this service?</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name<span class="colon">:</span></dt>
@@ -2569,7 +2569,7 @@ all subscales for all recorded YES-PHNs will be calculated using the approved sc
 <hr class="docutils" />
 </section>
 <section id="yes-phn-question-26">
-<span id="dfn-yes-phn-item26"></span><h3><span class="section-number">4.3.47. </span>YES PHN Question 26<a class="headerlink" href="#yes-phn-question-26" title="Permalink to this heading">¶</a></h3>
+<span id="dfn-yes-phn-item26"></span><h3><span class="section-number">4.3.47. </span>YES PHN Question 26<a class="headerlink" href="#yes-phn-question-26" title="Link to this heading"></a></h3>
 <p>Did someone help you complete this survey?</p>
 <dl class="field-list simple">
 <dt class="field-odd">Field name<span class="colon">:</span></dt>
@@ -2604,7 +2604,7 @@ all subscales for all recorded YES-PHNs will be calculated using the approved sc
 <hr class="docutils" />
 </section>
 <section id="yes-phn-tags">
-<span id="dfn-yes-phn-tags"></span><h3><span class="section-number">4.3.48. </span>YES PHN Tags<a class="headerlink" href="#yes-phn-tags" title="Permalink to this heading">¶</a></h3>
+<span id="dfn-yes-phn-tags"></span><h3><span class="section-number">4.3.48. </span>YES PHN Tags<a class="headerlink" href="#yes-phn-tags" title="Link to this heading"></a></h3>
 <p>List of tags for the instrument.</p>
 <dl class="field-list">
 <dt class="field-odd">Field name<span class="colon">:</span></dt>
@@ -2631,7 +2631,7 @@ Department. e.g. <code class="docutils literal notranslate"><span class="pre">!r
 </section>
 </section>
 <section id="download-specification-files">
-<span id="data-specifications-download"></span><h2><span class="section-number">4.4. </span>Download Specification Files<a class="headerlink" href="#download-specification-files" title="Permalink to this heading">¶</a></h2>
+<span id="data-specifications-download"></span><h2><span class="section-number">4.4. </span>Download Specification Files<a class="headerlink" href="#download-specification-files" title="Link to this heading"></a></h2>
 <p>Available for software developers designing extracts for the PMHC MDS, please
 click the link below to download the PMHC MDS Specification files:</p>
 <ul class="simple">
