@@ -105,7 +105,7 @@ All uploads must include a Metadata file/worksheet.
 - In the first row, the first cell must contain 'key' and the second cell
   must contain 'value'
 - In the second row, the first cell must contain 'type' and the second
-  cell must contain 'YES-PHN'
+  cell must contain 'SURVEY'
 - In the third row, the first cell must contain 'version' and the second
   cell must contain '1.0'
 
